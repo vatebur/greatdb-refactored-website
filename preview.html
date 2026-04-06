@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreatDB 重构预览</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0a0e14;
+            color: #e6edf3;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #00ffff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .intro {
+            font-size: 1.25rem;
+            color: #8b949e;
+            margin-bottom: 3rem;
+            line-height: 1.8;
+        }
+
+        .preview-link {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #00ffff, #ff00ff);
+            color: #0a0e14;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-bottom: 3rem;
+            transition: transform 0.3s;
+        }
+
+        .preview-link:hover {
+            transform: translateY(-2px);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .feature {
+            background: #1a2332;
+            border: 1px solid #30363d;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .feature h3 {
+            color: #00ffff;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .feature ul {
+            list-style: none;
+            color: #8b949e;
+        }
+
+        .feature li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .feature li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #00ffff;
+        }
+
+        .comparison {
+            background: #1a2332;
+            border: 1px solid #30363d;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+        }
+
+        .comparison h2 {
+            color: #ff00ff;
+            margin-bottom: 1.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #30363d;
+        }
+
+        th {
+            color: #00ffff;
+            font-weight: bold;
+        }
+
+        td {
+            color: #8b949e;
+        }
+
+        .highlight {
+            color: #00ff88;
+            font-weight: bold;
+        }
+
+        .tech-stack {
+            background: #1a2332;
+            border: 1px solid #30363d;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .tech-stack h2 {
+            color: #00ffff;
+            margin-bottom: 1rem;
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .tech-tag {
+            background: rgba(0, 255, 255, 0.1);
+            border: 1px solid #00ffff;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            color: #00ffff;
+            font-size: 0.9rem;
+        }
+
+        code {
+            background: #0a0e14;
+            padding: 0.25rem 0.5rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #ff00ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GreatDB 网站重构完成 ✓</h1>
+
+        <p class="intro">
+            采用 <strong>Tech-Brutalist</strong> 设计风格，打造独特的数据库品牌形象。
+            使用现代 Web 技术，实现高性能、高交互性的用户体验。
+        </p>
+
+        <a href="index.html" class="preview-link">🚀 查看完整网站</a>
+
+        <div class="features">
+            <div class="feature">
+                <h3>🎨 视觉设计</h3>
+                <ul>
+                    <li>Tech-Brutalist 美学风格</li>
+                    <li>暗色主题 + 霓虹配色</li>
+                    <li>Orbitron 几何字体</li>
+                    <li>动态网格背景</li>
+                    <li>3D 数据立方体</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>⚡ 交互动画</h3>
+                <ul>
+                    <li>标题逐行滑入效果</li>
+                    <li>数字计数动画</li>
+                    <li>卡片 3D 倾斜</li>
+                    <li>鼠标跟随视差</li>
+                    <li>数据流粒子效果</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>🚀 技术实现</h3>
+                <ul>
+                    <li>纯 HTML/CSS/JS</li>
+                    <li>CSS Grid 布局</li>
+                    <li>Intersection Observer</li>
+                    <li>GPU 硬件加速</li>
+                    <li>响应式设计</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>📱 性能优化</h3>
+                <ul>
+                    <li>CSS 动画优先</li>
+                    <li>懒加载动画</li>
+                    <li>低端设备降级</li>
+                    <li>语义化 HTML</li>
+                    <li>可访问性支持</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="comparison">
+            <h2>设计对比</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>维度</th>
+                        <th>原网站</th>
+                        <th>重构版本</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>视觉风格</strong></td>
+                        <td>传统企业风格</td>
+                        <td class="highlight">Tech-Brutalist</td>
+                    </tr>
+                    <tr>
+                        <td><strong>色彩方案</strong></td>
+                        <td>蓝白为主</td>
+                        <td class="highlight">暗色 + 青色/品红</td>
+                    </tr>
+                    <tr>
+                        <td><strong>字体选择</strong></td>
+                        <td>系统字体</td>
+                        <td class="highlight">Orbitron + Noto Sans SC</td>
+                    </tr>
+                    <tr>
+                        <td><strong>动画效果</strong></td>
+                        <td>基础轮播</td>
+                        <td class="highlight">多层次交互动画</td>
+                    </tr>
+                    <tr>
+                        <td><strong>布局创新</strong></td>
+                        <td>对称网格</td>
+                        <td class="highlight">非对称创新布局</td>
+                    </tr>
+                    <tr>
+                        <td><strong>品牌识别</strong></td>
+                        <td>通用</td>
+                        <td class="highlight">强烈技术属性</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tech-stack">
+            <h2>技术栈</h2>
+            <div class="tech-list">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript ES6+</span>
+                <span class="tech-tag">CSS Grid</span>
+                <span class="tech-tag">Flexbox</span>
+                <span class="tech-tag">CSS Animations</span>
+                <span class="tech-tag">Intersection Observer</span>
+                <span class="tech-tag">Google Fonts</span>
+                <span class="tech-tag">Responsive Design</span>
+            </div>
+        </div>
+
+        <div style="margin-top: 3rem; padding: 2rem; background: #1a2332; border-left: 4px solid #00ffff; border-radius: 4px;">
+            <h3 style="color: #00ffff; margin-bottom: 1rem;">📁 文件结构</h3>
+            <pre style="color: #8b949e; line-height: 1.8;">
+refactored-website/
+├── index.html          # 主页面（完整重构）
+├── css/
+│   └── style.css       # 完整样式表（Tech-Brutalist 风格）
+├── js/
+│   └── main.js         # 交互逻辑（动画、计数器、3D 效果）
+├── README.md           # 设计文档
+└── preview.html        # 本预览页面
+            </pre>
+        </div>
+
+        <div style="margin-top: 3rem; text-align: center; color: #8b949e;">
+            <p>设计理念：避免通用 AI 美学，打造独特的技术品牌形象</p>
+            <p style="margin-top: 1rem;">
+                <code>Tech-Brutalist</code> × <code>Data Visualization</code> × <code>Modern Web</code>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
