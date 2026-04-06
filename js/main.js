@@ -43,12 +43,16 @@ document.querySelectorAll('.stat-number').forEach(counter => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+        const href = this.getAttribute('href');
+        // Validate href to prevent XSS via querySelector
+        if (href && /^#[\w-]+$/.test(href)) {
+            const target = document.querySelector(href);
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
         }
     });
 });
@@ -319,10 +323,12 @@ function createParticle(x, y) {
     animate();
 }
 
-// Console easter egg
-console.log('%c[GreatDB]', 'color: #00ffff; font-size: 20px; font-weight: bold;');
-console.log('%c新一代分布式数据库系统', 'color: #ff00ff; font-size: 14px;');
-console.log('%c想加入我们？发送简历至 hr@greatdb.com', 'color: #8b949e; font-size: 12px;');
+// Console easter egg (disable in production)
+if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+    console.log('%c[GreatDB]', 'color: #00ffff; font-size: 20px; font-weight: bold;');
+    console.log('%c新一代分布式数据库系统', 'color: #ff00ff; font-size: 14px;');
+    console.log('%c想加入我们？发送简历至 hr@greatdb.com', 'color: #8b949e; font-size: 12px;');
+}
 
 // Performance optimization: Reduce animations on low-end devices
 if (navigator.hardwareConcurrency && navigator.hardwareConcurrency < 4) {
@@ -337,4 +343,6 @@ if (navigator.hardwareConcurrency && navigator.hardwareConcurrency < 4) {
     document.head.appendChild(reducedStyle);
 }
 
-console.log('%c✓ Website initialized', 'color: #00ff88; font-weight: bold;');
+if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+    console.log('%c✓ Website initialized', 'color: #00ff88; font-weight: bold;');
+}
