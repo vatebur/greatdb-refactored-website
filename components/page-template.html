@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}} - 万里数据库 GreatDB</title>
+    <meta name="description" content="{{DESCRIPTION}}">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@700;900&family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{BASE_PATH}}css/style.css">
+</head>
+<body>
+    <div class="grid-overlay"></div>
+    <div class="data-particles"></div>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="{{BASE_PATH}}index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.25rem;">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">GreatDB</span>
+                    <span class="logo-bracket">]</span>
+                    <span class="logo-cursor">_</span>
+                </a>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="{{BASE_PATH}}products/" data-text="产品">产品</a></li>
+                <li><a href="{{BASE_PATH}}solutions/" data-text="解决方案">解决方案</a></li>
+                <li><a href="{{BASE_PATH}}cases/" data-text="案例">案例</a></li>
+                <li><a href="{{BASE_PATH}}about/" data-text="关于">关于</a></li>
+                <li><a href="https://greatsql.cn" target="_blank" data-text="社区">社区</a></li>
+            </ul>
+
+            <a href="{{BASE_PATH}}trial.html" class="nav-cta">
+                <span class="cta-text">免费试用</span>
+                <span class="cta-arrow">→</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="content-page">
+        {{CONTENT}}
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">GreatDB</span>
+                    <span class="logo-bracket">]</span>
+                </div>
+                <p class="footer-tagline">新一代分布式数据库系统</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>产品</h4>
+                    <ul>
+                        <li><a href="{{BASE_PATH}}products/centralized.html">安全数据库集中式</a></li>
+                        <li><a href="{{BASE_PATH}}products/distributed.html">安全数据库分布式</a></li>
+                        <li><a href="{{BASE_PATH}}products/management.html">数据库管理平台</a></li>
+                        <li><a href="{{BASE_PATH}}products/migration.html">数据迁移服务平台</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>解决方案</h4>
+                    <ul>
+                        <li><a href="{{BASE_PATH}}solutions/">MySQL替代方案</a></li>
+                        <li><a href="{{BASE_PATH}}solutions/">Oracle替代方案</a></li>
+                        <li><a href="{{BASE_PATH}}solutions/">两地三中心</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="{{BASE_PATH}}about/">公司介绍</a></li>
+                        <li><a href="{{BASE_PATH}}about/careers.html">加入我们</a></li>
+                        <li><a href="{{BASE_PATH}}about/partners.html">合作伙伴</a></li>
+                        <li><a href="https://greatsql.cn" target="_blank">开源社区</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li>业务专线: 400-032-7868</li>
+                        <li>简历投递: hr@greatdb.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2020 北京万里开源软件有限公司 | 京ICP备06057874号</p>
+        </div>
+    </footer>
+
+    <script src="{{BASE_PATH}}js/main.js"></script>
+</body>
+</html>
