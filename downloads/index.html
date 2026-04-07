@@ -4,31 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>软件下载 - 万里数据库 GreatDB</title>
-    <meta name="description" content="万里数据库">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self';">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@700;900&family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .downloads-page { padding: 7rem 2rem 4rem; max-width: 1200px; margin: 0 auto; }
+        .section-heading { font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-text-secondary); letter-spacing: 0.1em; margin-bottom: 1.25rem; }
+        .download-table { width: 100%; border-collapse: collapse; }
+        .download-table th { font-family: var(--font-mono); font-size: 0.7rem; color: var(--color-text-secondary); text-align: left; padding: 0.6rem 1rem; border-bottom: 1px solid var(--color-border); white-space: nowrap; }
+        .download-table td { padding: 1rem; border-bottom: 1px solid var(--color-border); font-size: 0.875rem; color: var(--color-text-secondary); vertical-align: middle; }
+        .download-table td:first-child { color: var(--color-text); font-weight: 500; }
+        .download-table tr:hover td { background: var(--color-surface); }
+        .version-tag { font-family: var(--font-mono); font-size: 0.8rem; color: var(--color-primary); }
+        .date-tag { font-family: var(--font-mono); font-size: 0.75rem; }
+        .download-btn { display: inline-block; font-family: var(--font-mono); font-size: 0.75rem; padding: 0.4rem 1rem; border: 1px solid var(--color-primary); color: var(--color-primary); text-decoration: none; transition: all 0.2s; }
+        .download-btn:hover { background: var(--color-primary); color: var(--color-bg); }
+        .notice { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 3px solid var(--color-accent); padding: 1rem 1.25rem; font-size: 0.85rem; color: var(--color-text-secondary); margin-bottom: 2rem; }
+        .notice a { color: var(--color-primary); }
+    </style>
 </head>
 <body>
     <div class="grid-overlay"></div>
-    <div class="data-particles"></div>
 
     <nav class="nav">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="../index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.25rem;">
-                    <span class="logo-bracket">[</span>
-                    <span class="logo-text">GreatDB</span>
-                    <span class="logo-bracket">]</span>
-                    <span class="logo-cursor">_</span>
+                <a href="../index.html" style="text-decoration:none;color:inherit;display:flex;align-items:center;gap:0.25rem;">
+                    <span class="logo-bracket">[</span><span class="logo-text">GreatDB</span><span class="logo-bracket">]</span><span class="logo-cursor">_</span>
                 </a>
             </div>
-
             <ul class="nav-menu">
                 <li><a href="../products/index.html" data-text="产品">产品</a></li>
                 <li><a href="../solutions/index.html" data-text="解决方案">解决方案</a></li>
@@ -36,73 +44,80 @@
                 <li><a href="../about/index.html" data-text="关于">关于</a></li>
                 <li><a href="https://greatsql.cn" target="_blank" data-text="社区">社区</a></li>
             </ul>
-
             <button class="theme-toggle" id="themeToggle" aria-label="切换主题">🌙</button>
-            <a href="../trial.html" class="nav-cta">
-                <span class="cta-text">免费试用</span>
-                <span class="cta-arrow">→</span>
-            </a>
+            <a href="../trial.html" class="nav-cta"><span class="cta-text">免费试用</span><span class="cta-arrow">→</span></a>
         </div>
     </nav>
 
-    <main class="content-page">
-        <div id="wrapper"> <div class="box"> <div class="container"> <div class="boxx"> <div class="logo"><a href="index.html"><img src="static/home/images/logo.png" alt="" /></a></div> <div class="pc_nav"> <ul> <li class="le"><a href="product.html">产品</a> <div class="dnou2"> <a href="product/cid/45.html">安全数据库集中式</a> <a href="product/cid/2.html">安全数据库分布式</a> <a href="product/cid/3.html">数据库管理平台</a> <a href="product/cid/47.html">数据迁移服务平台</a> </div> </li> <li class=""><a href="news/cid/52.html">解决方案</a> </li> <li class="le"><a href="case.html">客户案例</a> <div class="dnou2"> <a href="cases/8.html">金融</a> <a href="cases/9.html">电信</a> <a href="cases/10.html">能源</a> <a href="cases/7.html">政府</a> </div> </li> <li class=""><a href="zt/mysql-57-eol.html">5.7停服专区</a> </li> <li class="le"><a href="about.html">关于我们</a> <div class="dnou2"> <a href="about/cid/44.html">公司介绍</a> <a href="career.html">加入我们</a> <a href="about/cid/38.html">测试报告</a> <a href="news/cid/40.html">公司新闻</a> <a href="about/cid/37.html">兼容列表</a> <a href="news/cid/41.html">行业前瞻</a> <a href="partner.html">合作伙伴</a> </div> </li> <li class=""><a href="https://greatsql.cn">开源社区</a></li> <li class="le"><a href="down.html">下载服务</a> <div class="dnou2"> <a href="down/cid/49.html">安全漏洞补丁下载</a> <a href="down.html">软件下载</a> <a href="down/cid/43.html">文档下载</a> </div> </li> </ul> </div> <div class="pc_m"> <p class="zcdl"><a href="Home/mfsy/mfsy.html">免费试用</a></p> </div> <button id="mm-menu-toggle" class="mm-menu-toggle">Toggle Menu</button> </div> </div> </div> <div class="bantu" style="background:url(Uploads/20210616/df9fa2cdc8d648a922cc76b0b6a943e9.jpg) no-repeat center center"> <div class="ban_z ban_z1"> <div class="container"> <p class="wow fadeInDown" data-wow-delay="100ms"></p> <div class="ban_z"> <div class="container"> <p class="wow fadeInDown" data-wow-delay="150ms">软件下载</p> <span class="wow fadeInDown" data-wow-delay="100ms"></span> </div> </div> </div> </div> </div> <style> .soft_l { width:100%;border:1px solid #f1f1f1;} .soft_l th,.soft_l td { border:1px solid #f1f1f1;font-size:16px;} .soft_l th { line-height:46px;background:#1f2227;color:#fff;} .soft_l td { line-height:46px;padding:0 10px;} .soft_l td:nth-child(3) { text-align:center;} .soft_l td:nth-child(4) { text-align:center;} .soft_l td:nth-child(4) a { display:block; width:180px;height:36px;line-height:36px;background:red;color:#fff;margin:0 auto;font-size:16px;border-radius: 20px;} @media (max-width: 768px){ } </style> <div class="cp"> <div class="cp_m"> <div class="container"> <h3 class="wow fadeInDown"></h3> <div class=""> <table class="soft_l" border="0" cellpadding="0" cellspacing="0"> <tr> <th>软件名称</th> <th>最新版本</th> <th width="150">更新时间</th> <th width="300">下载</th> </tr> <tr> <td>GreatSQL开源数据库</td> <td>GreatSQL 8.0.32-27（技术咨询可加微信 “ wanlidbc ” ）</td> <td>2025-03-10</td> <td><a href="https://gitee.com/GreatSQL/GreatSQL/releases/tag/GreatSQL-8.0.32-27" target="_blank" class="d" data="4" is_post="0">点击下载</a></td> </tr> </table> </div> </div> </div> </div> <div class="footer"> <div class="container"> <div class="foot_t"> <div class="foot_tl"> <ul> <h2><a href="product.html">产品</a></h2> <li><a href="product/cid/45.html">安全数据库集中式</a> <li><a href="product/cid/2.html">安全数据库分布式</a> <li><a href="product/cid/3.html">数据库管理平台</a> <li><a href="product/cid/47.html">数据迁移服务平台</a> </ul> <ul> <h2><a href="news/cid/52.html">解决方案</a></h2> </ul> <ul> <h2><a href="case.html">客户案例</a></h2> <li><a href="cases/8.html">金融</a> <li><a href="cases/9.html">电信</a> <li><a href="cases/10.html">能源</a> <li><a href="cases/7.html">政府</a> </ul> <ul> <h2><a href="zt/mysql-57-eol.html">5.7停服专区</a></h2> </ul> <ul> <h2><a href="about.html">关于我们</a></h2> </ul> <ul> <h2><a href="partner.html">合作伙伴</a></h2> </ul> <ul> <h2><a href="down.html">下载服务</a></h2> </ul> </div> <div class="foot_tr"> <img src="static/home/tu/ewm.jpg" alt="" /> <p>关注我们</p> </div> <div class="foot_tb"> <font>友情链接：</font> <span> <em><a target="_blank" href="https://www.troy.cn">创意信息</a></em> <em><a target="_blank" href="http://www.grid-elec.com">格蒂电力</a></em> <em><a target="_blank" href="https://www.turbolinux.com.cn">Turbolinux</a></em> </span> <font style="font-weight:bold;color:red">简历投递:</font> <font style="padding-left:15px;font-weight:bold;width:20%;color:red">hr@greatdb.com</font> </div> </div> <div class="foot_b"> <span>© 2020 北京万里开源软件有限公司 <a href="http://beian.miit.gov.cn/" target="_blank">京ICP备06057874号</a> <a href="http://beian.miit.gov.cn/" target="_blank">京公网安备11010502043278号</a></span> </div> <div class="elementor=widget-container" style="text-align: center;"> <a href="https://xyt.xcc.cn/getpcInfo?sn=1468826546242641920&language=CN&certType=8&url=*.greatdb.com" target="_blank" style="position: relative;display: inline-block;height: 38px;v class="elementor=widget-container" style="text-align: center;"> <div style="width:100%;height:100%;position: absolute;top: 0;left: 0;"></div><embed src="https://program.xinchacha.com/web/1468826546242641920=*.greatdb.com.svg"width="103" height="38" type="image/svg+xml" pluginspage="//www.adobe.com/svg/viewer/install/"/></a> </div> </div> </div> </div> <nav id="mm-menu" class="mm-menu"> <ul class="menu-list accordion"> <li class="toggle accordion-toggle"><span class="icon-plus"></span><a href="javascript:;">产品</a></li> <ul class="menu-submenu accordion-content"> <li><a href="product/cid/45.html">安全数据库集中式</a></li> <li><a href="product/cid/2.html">安全数据库分布式</a></li> <li><a href="product/cid/3.html">数据库管理平台</a></li> <li><a href="product/cid/47.html">数据迁移服务平台</a></li> </ul> <li><a href="news/cid/52.html">解决方案</a></li> <li class="toggle accordion-toggle"><span class="icon-plus"></span><a href="javascript:;">客户案例</a></li> <ul class="menu-submenu accordion-content"> <li><a href="cases/8.html">金融</a></li> <li><a href="cases/9.html">电信</a></li> <li><a href="cases/10.html">能源</a></li> <li><a href="cases/7.html">政府</a></li> </ul> <li><a href="zt/mysql-57-eol.html">5.7停服专区</a></li> <li class="toggle accordion-toggle"><span class="icon-plus"></span><a href="javascript:;">关于我们</a></li> <ul class="menu-submenu accordion-content"> <li><a href="about/cid/44.html">公司介绍</a></li> <li><a href="about/cid/46.html">加入我们</a></li> <li><a href="about/cid/38.html">测试报告</a></li> <li><a href="about/cid/40.html">公司新闻</a></li> <li><a href="about/cid/37.html">兼容列表</a></li> <li><a href="about/cid/41.html">行业前瞻</a></li> <li><a href="partner.html">合作伙伴</a></li> </ul> <li><a href="https://greatsql.cn">开源社区</a></li> <li class="toggle accordion-toggle"><span class="icon-plus"></span><a href="javascript:;">下载服务</a></li> <ul class="menu-submenu accordion-content"> <li><a href="down/cid/49.html">安全漏洞补丁下载</a></li> <li><a href="down.html">软件下载</a></li> <li><a href="down/cid/43.html">文档下载</a></li> </ul> </ul> </nav> <div class="side-bar" id="abc"> <a class="icon-phone">电话咨询 <div class="chat-tips-phone"><span class="title">公司热线：</span><span class="phone">400-032-7868</span></div></a> <a class="icon-wechat">关注微信<div class="wechat-tips"><img src="static/home/tu/ewm.jpg"><p>扫码关注我们</p></div></a> <a href="Home/mfsy/mfsy.html" class="icon-marketing">免费试用</a> <a class="icon-top" id="gotop" style="position: fixed; cursor: pointer; display: block; right: 9px;"></a> <div class="gubo" onclick="javascript:turnoff('abc')"></div> </div> <style> .gb_kf { position:fixed;left:10px;bottom:20px;z-index:99999;} .gb_kf .mf_r { width:500px;padding:20px;box-shadow: 0px 20px 20px rgba(224, 0, 26, 0.3);transition: all 0.2s ease;} .gb_kf .mfrb p span { width:15%;} .gb_kf .mfrb p font { width:85%;} .gb_kf .mfrb .yzm { height:47px;} .gb_kf .mfrb .wbk1 { width:42%;} .gb_kf .mfrt img { margin-bottom:0;} .gb_kf_box { display:none;} .gb_kf_form { position:relative;} .gb_kf_open { background:url(wlkf1.png) no-repeat;background-size:100%;display:block;width:284px;height:260px;} .gb_kf_box_close { position:absolute;right:20px;top:10px;font-size:16px;font-weight:900;color:#fff;} @media (max-width: 768px) { .gb_kf .mf_r { width:100%;} .gb_kf .mfrb p span { width:20%;} } </style> <div class="gb_kf"> <div class="xw_mores"> <a href="javascript:;" class="gb_kf_open"></a> </div> <div class="gb_kf_box"> <div class="gb_kf_form"> <a href="javascript:;" class="gb_kf_box_close">关闭</a> <form id="form1" onsubmit="return false" action="down.html#" method="post"> <div class="mf_r"> <div class="mfrt"> <img src="static/home/images/logo.png" alt=""> <p>客服人员收到留言后将会第一时间联系您!</p> </div> <div class="mfrb"> <p><span>姓名：</span><font><input type="text" name="name" id="name" class="wbk" placeholder="请输入姓名"></font></p> <p><span>手机号：</span><font><input type="text" name="phone" id="phone" class="wbk" placeholder="请输入手机号"></font></p> <p><span>公司：</span><font><input type="text" name="company" id="company" class="wbk" placeholder="请输入公司名称"></font></p> <p><span>留言：</span><font><input type="text" name="message" id="message" class="wbk" placeholder="请输入留言"></font></p> <p><span>验证码：</span><font><input type="text" name="code" id="code" class="wbk1" placeholder="验证码"><img class="yzm" src="captcha.html" onclick="this.src='/captcha.html?'+Math.random()" title="点击切换" style="width: 54%;"></font></p> <div class="mftj"><a class="" onclick="gb_kf_sub()">提交信息</a></div> </div> </div> </form> </div> </div> </div>
+    <main class="downloads-page">
+        <div class="section-header" style="margin-bottom:2rem;">
+            <div class="section-label">&lt;DOWNLOADS /&gt;</div>
+            <h1 class="section-title">软件下载</h1>
+        </div>
+
+        <div class="notice">
+            技术咨询可添加微信：<strong>wanlidbc</strong>，或拨打业务热线 400-032-7868。
+        </div>
+
+        <div class="section-heading">// 开源版本</div>
+        <table class="download-table">
+            <thead>
+                <tr>
+                    <th>软件名称</th>
+                    <th>最新版本</th>
+                    <th>更新时间</th>
+                    <th>下载</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GreatSQL 开源数据库</td>
+                    <td><span class="version-tag">GreatSQL 8.0.32-27</span></td>
+                    <td><span class="date-tag">2025-03-10</span></td>
+                    <td><a href="https://gitee.com/GreatSQL/GreatSQL/releases/tag/GreatSQL-8.0.32-27" target="_blank" class="download-btn">点击下载 →</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="margin-top:3rem;" class="section-heading">// 企业版本</div>
+        <div style="background:var(--color-surface);border:1px solid var(--color-border);padding:2rem;text-align:center;">
+            <p style="color:var(--color-text-secondary);margin-bottom:1rem;">GreatDB Enterprise / GreatDB Cluster 企业版请联系销售获取安装包</p>
+            <a href="../trial.html" class="btn btn-primary">申请免费试用</a>
+        </div>
     </main>
 
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <div class="footer-logo">
-                    <span class="logo-bracket">[</span>
-                    <span class="logo-text">GreatDB</span>
-                    <span class="logo-bracket">]</span>
-                </div>
+                <div class="footer-logo"><span class="logo-bracket">[</span><span class="logo-text">GreatDB</span><span class="logo-bracket">]</span></div>
                 <p class="footer-tagline">新一代分布式数据库系统</p>
             </div>
-
             <div class="footer-links">
-                <div class="footer-column">
-                    <h4>产品</h4>
-                    <ul>
-                        <li><a href="../products/centralized.html">安全数据库集中式</a></li>
-                        <li><a href="../products/distributed.html">安全数据库分布式</a></li>
-                        <li><a href="../products/management.html">数据库管理平台</a></li>
-                        <li><a href="../products/migration.html">数据迁移服务平台</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4>解决方案</h4>
-                    <ul>
-                        <li><a href="../solutions/index.html">MySQL替代方案</a></li>
-                        <li><a href="../solutions/index.html">Oracle替代方案</a></li>
-                        <li><a href="../solutions/index.html">两地三中心</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4>关于我们</h4>
-                    <ul>
-                        <li><a href="../about/index.html">公司介绍</a></li>
-                        <li><a href="../about/careers.html">加入我们</a></li>
-                        <li><a href="../about/partners.html">合作伙伴</a></li>
-                        <li><a href="https://greatsql.cn" target="_blank">开源社区</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4>联系方式</h4>
-                    <ul>
-                        <li>业务专线: 400-032-7868</li>
-                        <li>简历投递: hr@greatdb.com</li>
-                    </ul>
-                </div>
+                <div class="footer-column"><h4>产品</h4><ul>
+                    <li><a href="../products/centralized.html">安全数据库集中式</a></li>
+                    <li><a href="../products/distributed.html">安全数据库分布式</a></li>
+                    <li><a href="../products/management.html">数据库管理平台</a></li>
+                    <li><a href="../products/migration.html">数据迁移服务平台</a></li>
+                </ul></div>
+                <div class="footer-column"><h4>解决方案</h4><ul>
+                    <li><a href="../solutions/solution-592.html">MySQL替代方案</a></li>
+                    <li><a href="../solutions/solution-593.html">Oracle替代方案</a></li>
+                    <li><a href="../solutions/solution-594.html">两地三中心</a></li>
+                    <li><a href="../solutions/solution-595.html">数据库上云</a></li>
+                </ul></div>
+                <div class="footer-column"><h4>关于我们</h4><ul>
+                    <li><a href="../about/index.html">公司介绍</a></li>
+                    <li><a href="../about/careers.html">加入我们</a></li>
+                    <li><a href="../about/partners.html">合作伙伴</a></li>
+                    <li><a href="https://greatsql.cn" target="_blank">开源社区</a></li>
+                </ul></div>
+                <div class="footer-column"><h4>联系方式</h4><ul>
+                    <li>业务专线: 400-032-7868</li>
+                    <li>简历投递: hr@greatdb.com</li>
+                </ul></div>
             </div>
         </div>
-
-        <div class="footer-bottom">
-            <p>© 2020 北京万里开源软件有限公司 | 京ICP备06057874号</p>
-        </div>
+        <div class="footer-bottom"><p>© 2020 北京万里开源软件有限公司 | 京ICP备06057874号</p></div>
     </footer>
 
     <script src="../js/main.js"></script>
