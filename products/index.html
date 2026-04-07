@@ -4,223 +4,263 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>产品 - 万里数据库 GreatDB</title>
-    <meta name="description" content="万里数据库产品系列：集中式数据库、分布式数据库、管理平台、数据迁移工具">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self';">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@700;900&family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .products-page { padding: 7rem 2rem 4rem; max-width: 1200px; margin: 0 auto; }
+        .product-tabs { display: flex; gap: 0; border-bottom: 1px solid var(--color-border); margin-bottom: 3rem; overflow-x: auto; }
+        .product-tab { font-family: var(--font-mono); font-size: 0.8rem; padding: 0.75rem 1.25rem; border: none; background: none; color: var(--color-text-secondary); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; white-space: nowrap; transition: all 0.2s; }
+        .product-tab:hover { color: var(--color-text); }
+        .product-tab.active { color: var(--color-primary); border-bottom-color: var(--color-primary); }
+        .product-panel { display: none; }
+        .product-panel.active { display: block; }
+        .product-hero { display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: start; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--color-border); }
+        .product-hero-label { font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-primary); margin-bottom: 0.5rem; }
+        .product-hero-title { font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 1rem; }
+        .product-hero-desc { color: var(--color-text-secondary); line-height: 1.8; max-width: 600px; }
+        .product-hero-cta { margin-top: 1.5rem; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; margin-bottom: 3rem; }
+        .feature-item { background: var(--color-surface); border: 1px solid var(--color-border); padding: 1.25rem; }
+        .feature-name { font-family: var(--font-mono); font-size: 0.8rem; color: var(--color-primary); margin-bottom: 0.5rem; }
+        .feature-desc { font-size: 0.875rem; color: var(--color-text-secondary); line-height: 1.6; }
+        .section-heading { font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-text-secondary); letter-spacing: 0.1em; margin-bottom: 1.25rem; }
+        .scenarios { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 3rem; }
+        .scenario-tag { font-family: var(--font-mono); font-size: 0.8rem; padding: 0.4rem 0.9rem; border: 1px solid var(--color-border); color: var(--color-text-secondary); }
+        .related-solutions { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }
+        .related-item { background: var(--color-surface); border: 1px solid var(--color-border); padding: 1rem 1.25rem; text-decoration: none; transition: border-color 0.2s; }
+        .related-item:hover { border-color: var(--color-primary); }
+        .related-item h4 { font-size: 0.9rem; color: var(--color-text); margin-bottom: 0.4rem; }
+        .related-item p { font-size: 0.8rem; color: var(--color-text-secondary); line-height: 1.5; }
+        @media (max-width: 768px) { .product-hero { grid-template-columns: 1fr; } }
+    </style>
 </head>
 <body>
     <div class="grid-overlay"></div>
-    <div class="data-particles"></div>
 
     <nav class="nav">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="../index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.25rem;">
-                    <span class="logo-bracket">[</span>
-                    <span class="logo-text">GreatDB</span>
-                    <span class="logo-bracket">]</span>
-                    <span class="logo-cursor">_</span>
+                <a href="../index.html" style="text-decoration:none;color:inherit;display:flex;align-items:center;gap:0.25rem;">
+                    <span class="logo-bracket">[</span><span class="logo-text">GreatDB</span><span class="logo-bracket">]</span><span class="logo-cursor">_</span>
                 </a>
             </div>
-
             <ul class="nav-menu">
-                <li><a href="../products/" data-text="产品">产品</a></li>
-                <li><a href="../solutions/" data-text="解决方案">解决方案</a></li>
-                <li><a href="../cases/" data-text="案例">案例</a></li>
-                <li><a href="../about/" data-text="关于">关于</a></li>
+                <li><a href="../products/index.html" data-text="产品">产品</a></li>
+                <li><a href="../solutions/index.html" data-text="解决方案">解决方案</a></li>
+                <li><a href="../cases/index.html" data-text="案例">案例</a></li>
+                <li><a href="../about/index.html" data-text="关于">关于</a></li>
                 <li><a href="https://greatsql.cn" target="_blank" data-text="社区">社区</a></li>
             </ul>
-
-            <a href="../trial.html" class="nav-cta">
-                <span class="cta-text">免费试用</span>
-                <span class="cta-arrow">→</span>
-            </a>
+            <button class="theme-toggle" id="themeToggle" aria-label="切换主题">🌙</button>
+            <a href="../trial.html" class="nav-cta"><span class="cta-text">免费试用</span><span class="cta-arrow">→</span></a>
         </div>
     </nav>
 
-    <main class="content-page">
-        <div class="content-breadcrumb">
-            <a href="../index.html">首页</a>
-            <span>/</span>
-            <span>产品</span>
+    <main class="products-page">
+        <div class="section-header" style="margin-bottom:2rem;">
+            <div class="section-label">&lt;PRODUCTS /&gt;</div>
+            <h1 class="section-title">产品系列</h1>
         </div>
 
-        <h1>产品系列</h1>
-        <p>万里数据库提供完整的数据库产品线，满足不同场景的业务需求</p>
+        <div class="product-tabs">
+            <button class="product-tab active" data-product="centralized">安全数据库集中式</button>
+            <button class="product-tab" data-product="distributed">安全数据库分布式</button>
+            <button class="product-tab" data-product="management">数据库管理平台</button>
+            <button class="product-tab" data-product="migration">数据迁移服务平台</button>
+        </div>
 
-        <section class="products-grid" style="margin-top: 4rem;">
-            <div class="product-card" data-index="01">
-                <div class="card-header">
-                    <span class="card-index">01</span>
-                    <div class="card-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <rect x="4" y="4" width="32" height="32" stroke="currentColor" stroke-width="2"/>
-                            <rect x="10" y="10" width="20" height="20" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="20" cy="20" r="4" fill="currentColor"/>
-                        </svg>
+        <!-- 集中式 -->
+        <div class="product-panel active" id="panel-centralized">
+            <div class="product-hero">
+                <div>
+                    <div class="product-hero-label">GreatDB Enterprise</div>
+                    <h2 class="product-hero-title">安全数据库集中式</h2>
+                    <p class="product-hero-desc">万里安全数据库(集中式)GreatDB Enterprise是一款自主研发的集中式数据库产品，基于数据冗余与副本管理确保数据库系统的稳定可靠无单点，同时提供完备的事务支持，适用于金融级在线事务处理和高并发业务场景。</p>
+                    <div class="product-hero-cta">
+                        <a href="../trial.html" class="btn btn-primary">免费试用</a>
+                        <a href="centralized.html" class="btn btn-secondary" style="margin-left:0.75rem;">详细介绍</a>
                     </div>
                 </div>
-                <h3 class="card-title">安全数据库<br>集中式</h3>
-                <p class="card-description">
-                    基于数据冗余与副本管理确保系统稳定可靠无单点，提供完备的事务支持，适用于金融级在线事务处理
-                </p>
-                <ul class="card-features">
-                    <li>高可用性架构</li>
-                    <li>ACID 事务保证</li>
-                    <li>金融级安全</li>
-                </ul>
-                <a href="centralized.html" class="card-link">
-                    <span>了解详情</span>
-                    <span class="link-arrow">→</span>
-                </a>
             </div>
+            <div class="section-heading">// 关键技术特性</div>
+            <div class="features-grid">
+                <div class="feature-item"><div class="feature-name">高可靠</div><div class="feature-desc">通过多数派协议保证副本的一致性，通过组复制机制保障组件的高可用；支持同城多中心和异地灾备部署方式，可以做到 RPO=0，RTO &lt; 60s。</div></div>
+                <div class="feature-item"><div class="feature-name">数据安全</div><div class="feature-desc">提供企业级数据安全特性，包括密码复杂度、账户增强、访问控制，同时提供国密算法存储加密和通信加密，保障数据安全。</div></div>
+                <div class="feature-item"><div class="feature-name">便捷运维</div><div class="feature-desc">提供运维管理平台，覆盖数据库全生命周期管理，简化日常运维；提供 Oracle 迁移、评估功能，协助用户进行迁移操作。</div></div>
+                <div class="feature-item"><div class="feature-name">高兼容</div><div class="feature-desc">完全兼容 MySQL 生态，基于 MySQL 的业务程序可以无缝迁移到 GreatDB；兼容 Oracle 特性，包括递归查询、窗口函数、序列等。</div></div>
+                <div class="feature-item"><div class="feature-name">高性能</div><div class="feature-desc">优化 InnoDB 引擎，提升事务吞吐与并行查询优化性能；优化 MGR 架构，大幅提升性能吞吐与稳定性，提供透明读写分离，实现读扩展。</div></div>
+                <div class="feature-item"><div class="feature-name">国产化</div><div class="feature-desc">支持国产芯片：龙芯、申威、飞腾、鲲鹏、海光、兆芯；支持国产操作系统：麒麟软件、统信UOS、openEuler、麒麟信安、TurboLinux 等。</div></div>
+            </div>
+            <div class="section-heading">// 应用场景</div>
+            <div class="scenarios">
+                <span class="scenario-tag">去 Oracle 业务场景</span>
+                <span class="scenario-tag">高可用强一致场景</span>
+                <span class="scenario-tag">多中心容灾部署</span>
+                <span class="scenario-tag">MySQL 替代</span>
+            </div>
+            <div class="section-heading">// 相关解决方案</div>
+            <div class="related-solutions">
+                <a href="../solutions/solution-592.html" class="related-item"><h4>GreatDB替代MySQL解决方案</h4><p>GreatDB完美合规替代MySQL</p></a>
+                <a href="../solutions/solution-593.html" class="related-item"><h4>GreatDB替代Oracle解决方案</h4><p>GreatDB完成Oracle数据库国产化替代</p></a>
+                <a href="../solutions/solution-234.html" class="related-item"><h4>国家突发事件预警系统</h4><p>采用GreatDB分布式数据库支撑国家级预警信息发布管理平台建设</p></a>
+            </div>
+        </div>
 
-            <div class="product-card" data-index="02">
-                <div class="card-header">
-                    <span class="card-index">02</span>
-                    <div class="card-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="30" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="10" cy="30" r="4" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="30" cy="30" r="4" stroke="currentColor" stroke-width="2"/>
-                            <line x1="10" y1="10" x2="30" y2="10" stroke="currentColor" stroke-width="2"/>
-                            <line x1="10" y1="30" x2="30" y2="30" stroke="currentColor" stroke-width="2"/>
-                            <line x1="10" y1="10" x2="10" y2="30" stroke="currentColor" stroke-width="2"/>
-                            <line x1="30" y1="10" x2="30" y2="30" stroke="currentColor" stroke-width="2"/>
-                        </svg>
+        <!-- 分布式 -->
+        <div class="product-panel" id="panel-distributed">
+            <div class="product-hero">
+                <div>
+                    <div class="product-hero-label">GreatDB Cluster</div>
+                    <h2 class="product-hero-title">安全数据库分布式</h2>
+                    <p class="product-hero-desc">万里安全数据库（分布式）GreatDB Cluster 是一款原生分布式关系型数据库软件，具有动态扩展、数据强一致、集群高可用等特性。采用 shared-nothing 架构，基于数据冗余与副本管理确保数据库稳定可靠，基于数据 sharding 与分布式并行执行技术实现高性能，并具备动态扩大或缩小计算和数据节点能力。</p>
+                    <div class="product-hero-cta">
+                        <a href="../trial.html" class="btn btn-primary">免费试用</a>
+                        <a href="distributed.html" class="btn btn-secondary" style="margin-left:0.75rem;">详细介绍</a>
                     </div>
                 </div>
-                <h3 class="card-title">安全数据库<br>分布式</h3>
-                <p class="card-description">
-                    原生分布式架构，动态扩展、数据强一致、集群高可用，基于 sharding 与分布式并行执行实现高性能
-                </p>
-                <ul class="card-features">
-                    <li>Shared-Nothing 架构</li>
-                    <li>动态扩展能力</li>
-                    <li>数据强一致性</li>
-                </ul>
-                <a href="distributed.html" class="card-link">
-                    <span>了解详情</span>
-                    <span class="link-arrow">→</span>
-                </a>
             </div>
+            <div class="section-heading">// 关键技术特性</div>
+            <div class="features-grid">
+                <div class="feature-item"><div class="feature-name">SQL支持</div><div class="feature-desc">完美兼容 MySQL 协议语法，同时兼容 Oracle 常用语法特性；支持丰富的数据库对象，包括存储过程、触发器、用户自定义函数、包、序列等。</div></div>
+                <div class="feature-item"><div class="feature-name">数据分布策略灵活</div><div class="feature-desc">支持单表、全局表、分片表等数据分布策略；支持热点数据评估，支持分片间数据灵活迁移；支持扩展分片后集群数据一键自动重分布至新节点。</div></div>
+                <div class="feature-item"><div class="feature-name">线性扩展</div><div class="feature-desc">支持动态添加数据节点，增强数据集群的计算能力和存储能力，同时可实现查询语句分布式并行执行，随计算节点增加吞吐量线性增长。</div></div>
+                <div class="feature-item"><div class="feature-name">集群高可靠</div><div class="feature-desc">多数派一致性算法保证数据强一致，故障自愈确保系统 RPO 为零；支持两地三中心部署，构建去中心化跨机房对等部署，实现金融级别的容灾能力。</div></div>
+            </div>
+            <div class="section-heading">// 应用场景</div>
+            <div class="scenarios">
+                <span class="scenario-tag">核心事务场景</span>
+                <span class="scenario-tag">高一致性</span>
+                <span class="scenario-tag">Oracle 国产化</span>
+                <span class="scenario-tag">大数据量高并发</span>
+            </div>
+            <div class="section-heading">// 相关解决方案</div>
+            <div class="related-solutions">
+                <a href="../solutions/solution-594.html" class="related-item"><h4>数据库两地三中心解决方案</h4><p>高可用灾备解决方案，完美解决各种场景下的灾备切换问题</p></a>
+                <a href="../solutions/solution-596.html" class="related-item"><h4>多业务数据库整合解决方案</h4><p>采用国产化分布式数据库对原来多业务系统的数据库整合</p></a>
+                <a href="../solutions/solution-276.html" class="related-item"><h4>电力监控系统解决方案</h4><p>聚焦"卡脖子"技术，加快推进自主研发和技术替代</p></a>
+                <a href="../solutions/solution-128.html" class="related-item"><h4>能源行业协同机制信息管理平台解决方案</h4><p>实现"一个集群，多个业务库"的支撑目标</p></a>
+            </div>
+        </div>
 
-            <div class="product-card" data-index="03">
-                <div class="card-header">
-                    <span class="card-index">03</span>
-                    <div class="card-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <rect x="4" y="8" width="32" height="6" stroke="currentColor" stroke-width="2"/>
-                            <rect x="4" y="17" width="32" height="6" stroke="currentColor" stroke-width="2"/>
-                            <rect x="4" y="26" width="32" height="6" stroke="currentColor" stroke-width="2"/>
-                        </svg>
+        <!-- 管理平台 -->
+        <div class="product-panel" id="panel-management">
+            <div class="product-hero">
+                <div>
+                    <div class="product-hero-label">GreatADM</div>
+                    <h2 class="product-hero-title">数据库管理平台</h2>
+                    <p class="product-hero-desc">GreatADM 是一款自主研发的数据库运维管理平台，提供稳定、高效、易用的操作界面。支持 GreatDB 分布式和集中式从安全部署、运维管理、监控告警、运行分析、日志巡检到健康评估等在内的数据库全链路全生命周期的管理，极大地缩短产品上线时间，降低了数据库运维和管理成本。</p>
+                    <div class="product-hero-cta">
+                        <a href="../trial.html" class="btn btn-primary">免费试用</a>
+                        <a href="management.html" class="btn btn-secondary" style="margin-left:0.75rem;">详细介绍</a>
                     </div>
                 </div>
-                <h3 class="card-title">数据库<br>管理平台</h3>
-                <p class="card-description">
-                    全链路全生命周期管理平台，从安全部署、运维管理、监控告警到健康评估，降低运维成本
-                </p>
-                <ul class="card-features">
-                    <li>可视化运维</li>
-                    <li>智能监控告警</li>
-                    <li>多云资源调度</li>
-                </ul>
-                <a href="management.html" class="card-link">
-                    <span>了解详情</span>
-                    <span class="link-arrow">→</span>
-                </a>
             </div>
+            <div class="section-heading">// 关键技术特性</div>
+            <div class="features-grid">
+                <div class="feature-item"><div class="feature-name">集群敏捷交付</div><div class="feature-desc">支持分布式和集中式集群标准化、模板化一键式安装，为客户提供高效项目部署交付；支持多种主机资源分配方案，提高主机利用效率，为企业节能降本。</div></div>
+                <div class="feature-item"><div class="feature-name">量身定制化服务</div><div class="feature-desc">支持用户定制化大屏展示和客户告警平台的统一管理；支持多种告警策略、定时任务和高级自定义监控接入。</div></div>
+                <div class="feature-item"><div class="feature-name">多架构灵活运管</div><div class="feature-desc">支持分布式数据库的动态纳管、集群拓扑变更、在线扩展、集群升级、备份巡检策略定制等运维管理能力；支持集中式数据库多种架构的快速交付。</div></div>
+                <div class="feature-item"><div class="feature-name">数据库运行分析</div><div class="feature-desc">支持数据库运行状态分析和SQL优化，如死锁检测、TOPSQL等；提供全链路的运行状态监控和巡检分析，并提供完整的健康评估和巡检报告。</div></div>
+            </div>
+            <div class="section-heading">// 应用场景</div>
+            <div class="scenarios">
+                <span class="scenario-tag">多集群统一运维</span>
+                <span class="scenario-tag">集中式数据库管理</span>
+                <span class="scenario-tag">多机房集群管理</span>
+            </div>
+        </div>
 
-            <div class="product-card" data-index="04">
-                <div class="card-header">
-                    <span class="card-index">04</span>
-                    <div class="card-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <path d="M8 20L20 8L32 20L20 32L8 20Z" stroke="currentColor" stroke-width="2"/>
-                            <path d="M20 14L26 20L20 26L14 20L20 14Z" stroke="currentColor" stroke-width="2"/>
-                        </svg>
+        <!-- 迁移平台 -->
+        <div class="product-panel" id="panel-migration">
+            <div class="product-hero">
+                <div>
+                    <div class="product-hero-label">GreatDTS</div>
+                    <h2 class="product-hero-title">数据迁移服务平台</h2>
+                    <p class="product-hero-desc">GreatDTS 是一款提供评估、迁移、同步和校验一体化解决方案的数据库迁移产品，支持 GreatDB、Oracle、MySQL、Kafka 等数据源之间的全量数据迁移和增量数据同步，实现数据迁移、异地容灾等业务场景。通过支持业务数据的按需分发、数据集中和复制管理，降低企业异构数据迁移的成本。</p>
+                    <div class="product-hero-cta">
+                        <a href="../trial.html" class="btn btn-primary">免费试用</a>
+                        <a href="migration.html" class="btn btn-secondary" style="margin-left:0.75rem;">详细介绍</a>
                     </div>
                 </div>
-                <h3 class="card-title">数据迁移<br>服务平台</h3>
-                <p class="card-description">
-                    评估、迁移、同步、校验一体化解决方案，支持多种数据源，实现数据迁移与异地容灾
-                </p>
-                <ul class="card-features">
-                    <li>全量增量同步</li>
-                    <li>多源异构支持</li>
-                    <li>数据一致性校验</li>
-                </ul>
-                <a href="migration.html" class="card-link">
-                    <span>了解详情</span>
-                    <span class="link-arrow">→</span>
-                </a>
             </div>
-        </section>
+            <div class="section-heading">// 关键技术特性</div>
+            <div class="features-grid">
+                <div class="feature-item"><div class="feature-name">精准转换</div><div class="feature-desc">支持 Oracle 对象兼容转换；支持普通表转换为分布式表。</div></div>
+                <div class="feature-item"><div class="feature-name">准确评估</div><div class="feature-desc">快速准确评估对象定义和应用 SQL 兼容性，给出详细评估改造点及改造建议。</div></div>
+                <div class="feature-item"><div class="feature-name">断点续传</div><div class="feature-desc">系统或网络不稳定情况下，断点续传功能可保障迁移任务有效完成。</div></div>
+                <div class="feature-item"><div class="feature-name">数据零丢失</div><div class="feature-desc">事务级控制，数据零丢失。</div></div>
+                <div class="feature-item"><div class="feature-name">灵活同步</div><div class="feature-desc">支持异构数据库间数据同步；支持异地数据容灾。</div></div>
+                <div class="feature-item"><div class="feature-name">快速验证</div><div class="feature-desc">支持行数校验、数据一致性校验；通过多线程并发校验，提高校验速度和效率。</div></div>
+            </div>
+            <div class="section-heading">// 应用场景</div>
+            <div class="scenarios">
+                <span class="scenario-tag">Oracle国产化迁移</span>
+                <span class="scenario-tag">异地多活</span>
+                <span class="scenario-tag">数据库上云</span>
+            </div>
+            <div class="section-heading">// 相关解决方案</div>
+            <div class="related-solutions">
+                <a href="../solutions/solution-595.html" class="related-item"><h4>数据库上云解决方案</h4><p>万里GreatDTS迁移评估工具保证数据复制服务的在线迁移特性，实现数据库平滑迁移上云</p></a>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <div class="footer-logo">
-                    <span class="logo-bracket">[</span>
-                    <span class="logo-text">GreatDB</span>
-                    <span class="logo-bracket">]</span>
-                </div>
+                <div class="footer-logo"><span class="logo-bracket">[</span><span class="logo-text">GreatDB</span><span class="logo-bracket">]</span></div>
                 <p class="footer-tagline">新一代分布式数据库系统</p>
             </div>
-
             <div class="footer-links">
-                <div class="footer-column">
-                    <h4>产品</h4>
-                    <ul>
-                        <li><a href="centralized.html">安全数据库集中式</a></li>
-                        <li><a href="distributed.html">安全数据库分布式</a></li>
-                        <li><a href="management.html">数据库管理平台</a></li>
-                        <li><a href="migration.html">数据迁移服务平台</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4>解决方案</h4>
-                    <ul>
-                        <li><a href="../solutions/">MySQL替代方案</a></li>
-                        <li><a href="../solutions/">Oracle替代方案</a></li>
-                        <li><a href="../solutions/">两地三中心</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4>关于我们</h4>
-                    <ul>
-                        <li><a href="../about/">公司介绍</a></li>
-                        <li><a href="../about/careers.html">加入我们</a></li>
-                        <li><a href="../about/partners.html">合作伙伴</a></li>
-                        <li><a href="https://greatsql.cn" target="_blank">开源社区</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4>联系方式</h4>
-                    <ul>
-                        <li>业务专线: 400-032-7868</li>
-                        <li>简历投递: hr@greatdb.com</li>
-                    </ul>
-                </div>
+                <div class="footer-column"><h4>产品</h4><ul>
+                    <li><a href="centralized.html">安全数据库集中式</a></li>
+                    <li><a href="distributed.html">安全数据库分布式</a></li>
+                    <li><a href="management.html">数据库管理平台</a></li>
+                    <li><a href="migration.html">数据迁移服务平台</a></li>
+                </ul></div>
+                <div class="footer-column"><h4>解决方案</h4><ul>
+                    <li><a href="../solutions/solution-592.html">MySQL替代方案</a></li>
+                    <li><a href="../solutions/solution-593.html">Oracle替代方案</a></li>
+                    <li><a href="../solutions/solution-594.html">两地三中心</a></li>
+                    <li><a href="../solutions/solution-595.html">数据库上云</a></li>
+                </ul></div>
+                <div class="footer-column"><h4>关于我们</h4><ul>
+                    <li><a href="../about/index.html">公司介绍</a></li>
+                    <li><a href="../about/careers.html">加入我们</a></li>
+                    <li><a href="../about/partners.html">合作伙伴</a></li>
+                    <li><a href="https://greatsql.cn" target="_blank">开源社区</a></li>
+                </ul></div>
+                <div class="footer-column"><h4>联系方式</h4><ul>
+                    <li>业务专线: 400-032-7868</li>
+                    <li>简历投递: hr@greatdb.com</li>
+                </ul></div>
             </div>
         </div>
-
-        <div class="footer-bottom">
-            <p>© 2020 北京万里开源软件有限公司 | 京ICP备06057874号</p>
-        </div>
+        <div class="footer-bottom"><p>© 2020 北京万里开源软件有限公司 | 京ICP备06057874号</p></div>
     </footer>
 
     <script src="../js/main.js"></script>
+    <script>
+    // Tab switching
+    const tabs = document.querySelectorAll('.product-tab');
+    const panels = document.querySelectorAll('.product-panel');
+    const PRODUCT_MAP = { centralized: 'centralized', distributed: 'distributed', management: 'management', migration: 'migration' };
+
+    function switchProduct(id) {
+        tabs.forEach(t => t.classList.toggle('active', t.dataset.product === id));
+        panels.forEach(p => p.classList.toggle('active', p.id === 'panel-' + id));
+    }
+
+    tabs.forEach(tab => tab.addEventListener('click', () => switchProduct(tab.dataset.product)));
+
+    // Support ?product=xxx URL param
+    const param = new URLSearchParams(location.search).get('product');
+    if (param && PRODUCT_MAP[param]) switchProduct(param);
+    </script>
 </body>
 </html>

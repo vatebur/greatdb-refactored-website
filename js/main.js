@@ -346,3 +346,21 @@ if (navigator.hardwareConcurrency && navigator.hardwareConcurrency < 4) {
 if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
     console.log('%c✓ Website initialized', 'color: #00ff88; font-weight: bold;');
 }
+
+// Theme toggle
+(function() {
+    const saved = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', saved === 'light' ? 'light' : 'dark');
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('themeToggle');
+        if (!btn) return;
+        btn.textContent = document.documentElement.getAttribute('data-theme') === 'light' ? '🌙' : '☀️';
+        btn.addEventListener('click', () => {
+            const next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+            btn.textContent = next === 'light' ? '🌙' : '☀️';
+        });
+    });
+})();

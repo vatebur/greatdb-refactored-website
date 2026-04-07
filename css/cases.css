@@ -1,0 +1,13 @@
+/* Cases sidebar groups */
+.sidebar-group {
+    margin-bottom: 1.25rem;
+}
+
+.sidebar-group-label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--color-accent);
+    letter-spacing: 0.1em;
+    margin-bottom: 0.25rem;
+    padding-left: 0.75rem;
+}

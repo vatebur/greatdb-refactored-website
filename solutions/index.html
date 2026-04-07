@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>解决方案 - 万里数据库 GreatDB</title>
-    <meta name="description" content="万里数据库解决方案：MySQL替代、Oracle替代、两地三中心">
+    <meta name="description" content="万里数据库解决方案：MySQL替代、Oracle替代、两地三中心、上云、多业务整合等">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@700;900&family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
@@ -26,12 +28,13 @@
                 </a>
             </div>
             <ul class="nav-menu">
-                <li><a href="../products/" data-text="产品">产品</a></li>
-                <li><a href="../solutions/" data-text="解决方案">解决方案</a></li>
-                <li><a href="../cases/" data-text="案例">案例</a></li>
-                <li><a href="../about/" data-text="关于">关于</a></li>
+                <li><a href="../products/index.html" data-text="产品">产品</a></li>
+                <li><a href="../solutions/index.html" data-text="解决方案">解决方案</a></li>
+                <li><a href="../cases/index.html" data-text="案例">案例</a></li>
+                <li><a href="../about/index.html" data-text="关于">关于</a></li>
                 <li><a href="https://greatsql.cn" target="_blank" data-text="社区">社区</a></li>
             </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="切换主题">🌙</button>
             <a href="../trial.html" class="nav-cta">
                 <span class="cta-text">免费试用</span>
                 <span class="cta-arrow">→</span>
@@ -39,33 +42,89 @@
         </div>
     </nav>
 
-    <main class="content-page">
-        <div class="content-breadcrumb">
-            <a href="../index.html">首页</a>
-            <span>/</span>
-            <span>解决方案</span>
-        </div>
+    <main style="padding: 7rem 2rem 4rem;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div class="section-header">
+                <div class="section-label">&lt;SOLUTIONS /&gt;</div>
+                <h1 class="section-title">解决方案</h1>
+                <p style="color: var(--color-text-secondary); margin-top: 1rem;">万里数据库为不同场景提供完整的解决方案</p>
+            </div>
 
-        <h1>解决方案</h1>
-        <p>万里数据库为不同场景提供完整的解决方案</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; margin-top: 3rem;">
 
-        <div class="sy_jj" style="margin-top: 4rem;">
-            <ul style="list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                <li style="background: var(--color-surface); padding: 2rem; border: 1px solid var(--color-border); border-radius: 8px;">
-                    <h2 style="color: var(--color-primary); margin-bottom: 1rem;">GreatDB替代MySQL解决方案</h2>
-                    <p style="color: var(--color-text-secondary);">GreatDB完美合规替代MySQL</p>
-                </li>
+                <a href="solution-592.html" class="product-card" style="text-decoration: none; display: block;" data-index="01">
+                    <div class="card-header">
+                        <span class="card-index">01</span>
+                    </div>
+                    <h3 style="color: var(--color-primary); margin-bottom: 0.75rem; font-size: 1.1rem;">GreatDB替代MySQL解决方案</h3>
+                    <p style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.6;">GreatDB完美合规替代MySQL，保持高度兼容性，助力国产化迁移</p>
+                    <div class="card-link" style="margin-top: 1rem;">了解详情 →</div>
+                </a>
 
-                <li style="background: var(--color-surface); padding: 2rem; border: 1px solid var(--color-border); border-radius: 8px;">
-                    <h2 style="color: var(--color-primary); margin-bottom: 1rem;">GreatDB替代Oracle解决方案</h2>
-                    <p style="color: var(--color-text-secondary);">GreatDB完成Oracle数据库国产化替代</p>
-                </li>
+                <a href="solution-593.html" class="product-card" style="text-decoration: none; display: block;" data-index="02">
+                    <div class="card-header">
+                        <span class="card-index">02</span>
+                    </div>
+                    <h3 style="color: var(--color-primary); margin-bottom: 0.75rem; font-size: 1.1rem;">GreatDB替代Oracle解决方案</h3>
+                    <p style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.6;">GreatDB完成Oracle数据库国产化替代，降低授权成本</p>
+                    <div class="card-link" style="margin-top: 1rem;">了解详情 →</div>
+                </a>
 
-                <li style="background: var(--color-surface); padding: 2rem; border: 1px solid var(--color-border); border-radius: 8px;">
-                    <h2 style="color: var(--color-primary); margin-bottom: 1rem;">数据库两地三中心解决方案</h2>
-                    <p style="color: var(--color-text-secondary);">万里数据库两地三中心高可用灾备解决方案可以完美解决各种场景下的灾备切换问题</p>
-                </li>
-            </ul>
+                <a href="solution-594.html" class="product-card" style="text-decoration: none; display: block;" data-index="03">
+                    <div class="card-header">
+                        <span class="card-index">03</span>
+                    </div>
+                    <h3 style="color: var(--color-primary); margin-bottom: 0.75rem; font-size: 1.1rem;">数据库两地三中心解决方案</h3>
+                    <p style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.6;">高可用灾备解决方案，完美解决各种场景下的灾备切换问题</p>
+                    <div class="card-link" style="margin-top: 1rem;">了解详情 →</div>
+                </a>
+
+                <a href="solution-595.html" class="product-card" style="text-decoration: none; display: block;" data-index="04">
+                    <div class="card-header">
+                        <span class="card-index">04</span>
+                    </div>
+                    <h3 style="color: var(--color-primary); margin-bottom: 0.75rem; font-size: 1.1rem;">数据库上云解决方案</h3>
+                    <p style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.6;">万里GreatDTS迁移评估工具保证数据复制服务的在线迁移特性，实现平滑上云</p>
+                    <div class="card-link" style="margin-top: 1rem;">了解详情 →</div>
+                </a>
+
+                <a href="solution-596.html" class="product-card" style="text-decoration: none; display: block;" data-index="05">
+                    <div class="card-header">
+                        <span class="card-index">05</span>
+                    </div>
+                    <h3 style="color: var(--color-primary); margin-bottom: 0.75rem; font-size: 1.1rem;">多业务数据库整合解决方案</h3>
+                    <p style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.6;">采用国产化分布式数据库对原来多业务系统的数据库整合，降本增效</p>
+                    <div class="card-link" style="margin-top: 1rem;">了解详情 →</div>
+                </a>
+
+                <a href="solution-276.html" class="product-card" style="text-decoration: none; display: block;" data-index="06">
+                    <div class="card-header">
+                        <span class="card-index">06</span>
+                    </div>
+                    <h3 style="color: var(--color-primary); margin-bottom: 0.75rem; font-size: 1.1rem;">电力监控系统解决方案</h3>
+                    <p style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.6;">聚焦"卡脖子"技术，加快推进自主研发和技术替代，保障能源安全</p>
+                    <div class="card-link" style="margin-top: 1rem;">了解详情 →</div>
+                </a>
+
+                <a href="solution-234.html" class="product-card" style="text-decoration: none; display: block;" data-index="07">
+                    <div class="card-header">
+                        <span class="card-index">07</span>
+                    </div>
+                    <h3 style="color: var(--color-primary); margin-bottom: 0.75rem; font-size: 1.1rem;">国家突发事件预警系统</h3>
+                    <p style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.6;">采用GreatDB分布式数据库支撑国家级预警信息发布管理平台建设</p>
+                    <div class="card-link" style="margin-top: 1rem;">了解详情 →</div>
+                </a>
+
+                <a href="solution-128.html" class="product-card" style="text-decoration: none; display: block;" data-index="08">
+                    <div class="card-header">
+                        <span class="card-index">08</span>
+                    </div>
+                    <h3 style="color: var(--color-primary); margin-bottom: 0.75rem; font-size: 1.1rem;">能源行业协同机制信息管理平台解决方案</h3>
+                    <p style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.6;">实现"一个集群，多个业务库"的支撑目标，在数据库建设维度上实现降本增效</p>
+                    <div class="card-link" style="margin-top: 1rem;">了解详情 →</div>
+                </a>
+
+            </div>
         </div>
     </main>
 
@@ -87,6 +146,24 @@
                         <li><a href="../products/distributed.html">安全数据库分布式</a></li>
                         <li><a href="../products/management.html">数据库管理平台</a></li>
                         <li><a href="../products/migration.html">数据迁移服务平台</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>解决方案</h4>
+                    <ul>
+                        <li><a href="solution-592.html">MySQL替代方案</a></li>
+                        <li><a href="solution-593.html">Oracle替代方案</a></li>
+                        <li><a href="solution-594.html">两地三中心</a></li>
+                        <li><a href="solution-595.html">数据库上云</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="../about/index.html">公司介绍</a></li>
+                        <li><a href="../about/careers.html">加入我们</a></li>
+                        <li><a href="../about/partners.html">合作伙伴</a></li>
+                        <li><a href="https://greatsql.cn" target="_blank">开源社区</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">

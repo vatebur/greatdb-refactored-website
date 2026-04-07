@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>免费试用 - 万里数据库 GreatDB</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@700;900&family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="grid-overlay"></div>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.25rem;">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">GreatDB</span>
+                    <span class="logo-bracket">]</span>
+                    <span class="logo-cursor">_</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="products/index.html" data-text="产品">产品</a></li>
+                <li><a href="solutions/index.html" data-text="解决方案">解决方案</a></li>
+                <li><a href="cases/index.html" data-text="案例">案例</a></li>
+                <li><a href="about/index.html" data-text="关于">关于</a></li>
+                <li><a href="https://greatsql.cn" target="_blank" data-text="社区">社区</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="切换主题">🌙</button>
+            <a href="trial.html" class="nav-cta">
+                <span class="cta-text">免费试用</span>
+                <span class="cta-arrow">→</span>
+            </a>
+        </div>
+    </nav>
+
+    <main style="min-height: 70vh; display: flex; align-items: center; justify-content: center; padding: 6rem 2rem 4rem;">
+        <div style="max-width: 600px; width: 100%; text-align: center;">
+            <div class="section-label" style="margin-bottom: 1rem;">&lt;FREE TRIAL /&gt;</div>
+            <h1 style="font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 1rem;">
+                申请免费试用
+            </h1>
+            <p style="color: var(--color-text-muted); margin-bottom: 2.5rem;">填写以下信息，我们的技术顾问将在1个工作日内与您联系。</p>
+
+            <form style="display: flex; flex-direction: column; gap: 1rem; text-align: left;">
+                <div>
+                    <label style="display: block; font-family: var(--font-mono); font-size: 0.8rem; color: var(--color-primary); margin-bottom: 0.4rem;">姓名 *</label>
+                    <input type="text" required placeholder="您的姓名" style="width: 100%; padding: 0.75rem 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(0,255,255,0.2); color: var(--color-text); font-family: var(--font-body); font-size: 1rem; outline: none; box-sizing: border-box;">
+                </div>
+                <div>
+                    <label style="display: block; font-family: var(--font-mono); font-size: 0.8rem; color: var(--color-primary); margin-bottom: 0.4rem;">公司 *</label>
+                    <input type="text" required placeholder="您的公司名称" style="width: 100%; padding: 0.75rem 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(0,255,255,0.2); color: var(--color-text); font-family: var(--font-body); font-size: 1rem; outline: none; box-sizing: border-box;">
+                </div>
+                <div>
+                    <label style="display: block; font-family: var(--font-mono); font-size: 0.8rem; color: var(--color-primary); margin-bottom: 0.4rem;">联系电话 *</label>
+                    <input type="tel" required placeholder="您的联系电话" style="width: 100%; padding: 0.75rem 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(0,255,255,0.2); color: var(--color-text); font-family: var(--font-body); font-size: 1rem; outline: none; box-sizing: border-box;">
+                </div>
+                <div>
+                    <label style="display: block; font-family: var(--font-mono); font-size: 0.8rem; color: var(--color-primary); margin-bottom: 0.4rem;">邮箱</label>
+                    <input type="email" placeholder="您的邮箱地址" style="width: 100%; padding: 0.75rem 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(0,255,255,0.2); color: var(--color-text); font-family: var(--font-body); font-size: 1rem; outline: none; box-sizing: border-box;">
+                </div>
+                <div>
+                    <label style="display: block; font-family: var(--font-mono); font-size: 0.8rem; color: var(--color-primary); margin-bottom: 0.4rem;">感兴趣的产品</label>
+                    <select style="width: 100%; padding: 0.75rem 1rem; background: #0a0e14; border: 1px solid rgba(0,255,255,0.2); color: var(--color-text); font-family: var(--font-body); font-size: 1rem; outline: none; box-sizing: border-box;">
+                        <option value="">请选择</option>
+                        <option value="centralized">安全数据库集中式</option>
+                        <option value="distributed">安全数据库分布式</option>
+                        <option value="management">数据库管理平台</option>
+                        <option value="migration">数据迁移服务平台</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem; width: 100%; justify-content: center;">提交申请</button>
+            </form>
+
+            <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--color-text-muted);">
+                或直接致电业务专线：<a href="tel:4000327868" style="color: var(--color-primary);">400-032-7868</a>
+            </p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">GreatDB</span>
+                    <span class="logo-bracket">]</span>
+                </div>
+                <p class="footer-tagline">新一代分布式数据库系统</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>产品</h4>
+                    <ul>
+                        <li><a href="products/centralized.html">安全数据库集中式</a></li>
+                        <li><a href="products/distributed.html">安全数据库分布式</a></li>
+                        <li><a href="products/management.html">数据库管理平台</a></li>
+                        <li><a href="products/migration.html">数据迁移服务平台</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>解决方案</h4>
+                    <ul>
+                        <li><a href="solutions/index.html">MySQL替代方案</a></li>
+                        <li><a href="solutions/index.html">Oracle替代方案</a></li>
+                        <li><a href="solutions/index.html">两地三中心</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="about/index.html">公司介绍</a></li>
+                        <li><a href="about/careers.html">加入我们</a></li>
+                        <li><a href="about/partners.html">合作伙伴</a></li>
+                        <li><a href="https://greatsql.cn" target="_blank">开源社区</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li>业务专线: 400-032-7868</li>
+                        <li>简历投递: hr@greatdb.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2020 北京万里开源软件有限公司 | 京ICP备06057874号</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

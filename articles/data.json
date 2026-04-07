@@ -1,0 +1,2160 @@
+[
+  {
+    "id": "news-865",
+    "type": "news",
+    "category": "news",
+    "title": "喜报 | 运营商双中标！万里数据库再度携手陕西移动 成功落地北京联通",
+    "date": "2025-12-05",
+    "summary": ""
+  },
+  {
+    "id": "news-866",
+    "type": "news",
+    "category": "news",
+    "title": "技术 | 实战演练显实力！万里数据库技术团队通过中国移动运维技能竞赛晋级",
+    "date": "2025-12-05",
+    "summary": ""
+  },
+  {
+    "id": "news-867",
+    "type": "news",
+    "category": "news",
+    "title": "解决方案 | 平滑替代MySQL：万里数据库助力某市考试院报名系统高效国产化迁移",
+    "date": "2025-12-05",
+    "summary": ""
+  },
+  {
+    "id": "news-868",
+    "type": "news",
+    "category": "news",
+    "title": "展会 | GreatSQL亮相2025开放原子开发者大会 HTAP与AI创新实践受瞩目",
+    "date": "2025-12-05",
+    "summary": ""
+  },
+  {
+    "id": "news-869",
+    "type": "news",
+    "category": "news",
+    "title": "兼容月报 | 生态突破 万里数据库携手15家伙伴筑牢数字生态基石",
+    "date": "2025-12-05",
+    "summary": ""
+  },
+  {
+    "id": "news-870",
+    "type": "news",
+    "category": "news",
+    "title": "喜报 | 金融双中标！万里数据库中标光大兴陇信托、宁波通商银行国产数据库项目",
+    "date": "2025-12-05",
+    "summary": ""
+  },
+  {
+    "id": "news-871",
+    "type": "news",
+    "category": "news",
+    "title": "预告 | GreatSQL与您相约2025开放原子开发者大会 共探开源数据库HTAP与AI新实践",
+    "date": "2025-12-05",
+    "summary": ""
+  },
+  {
+    "id": "news-872",
+    "type": "news",
+    "category": "news",
+    "title": "喜报｜中国移动中标三连！万里数据库彰显全域布局实力",
+    "date": "2025-12-05",
+    "summary": ""
+  },
+  {
+    "id": "news-873",
+    "type": "news",
+    "category": "news",
+    "title": "解决方案 | 200+系统信创改造！万里数据库助力中信银行信用卡中心实现高效平滑迁移",
+    "date": "2025-12-05",
+    "summary": ""
+  },
+  {
+    "id": "news-874",
+    "type": "news",
+    "category": "news",
+    "title": "展会 | GreatSQL精彩亮相GOTC 2025 共建开源数据库生态新未来",
+    "date": "2025-12-05",
+    "summary": ""
+  },
+  {
+    "id": "news-862",
+    "type": "news",
+    "category": "news",
+    "title": "万里数据库GreatDB亮相上合组织数字经济论坛 与哈萨克斯坦人工智能发展协会签署合作协议",
+    "date": "2025-07-18",
+    "summary": ""
+  },
+  {
+    "id": "news-861",
+    "type": "news",
+    "category": "news",
+    "title": "立足国贸新起点 智启数据新征程 | 万里数据库总部乔迁新址啦！",
+    "date": "2025-07-04",
+    "summary": ""
+  },
+  {
+    "id": "news-859",
+    "type": "news",
+    "category": "news",
+    "title": "零改造+不停机 GreatDB助力中国移动办公系统MySQL数据库替换",
+    "date": "2025-06-13",
+    "summary": ""
+  },
+  {
+    "id": "news-860",
+    "type": "news",
+    "category": "news",
+    "title": "项目纪实｜中泰期货无缝切换GreatDB 铸造国产底座新标杆",
+    "date": "2025-06-13",
+    "summary": ""
+  },
+  {
+    "id": "news-851",
+    "type": "news",
+    "category": "news",
+    "title": "战略合作 | 争当数字甘肃“开路先锋” 万里数据库出席信创产业发展战略合作仪式",
+    "date": "2025-03-14",
+    "summary": ""
+  },
+  {
+    "id": "news-852",
+    "type": "news",
+    "category": "news",
+    "title": "聚焦两会｜科技强音激荡 万里数据库以技术创新筑基新质生产力",
+    "date": "2025-03-14",
+    "summary": ""
+  },
+  {
+    "id": "news-853",
+    "type": "news",
+    "category": "news",
+    "title": "20+生态伙伴、5大领域全栈适配！万里数据库交出硬核双月兼容答卷",
+    "date": "2025-03-14",
+    "summary": ""
+  },
+  {
+    "id": "news-854",
+    "type": "news",
+    "category": "news",
+    "title": "赋能国家战略的“记忆基石” 万里数据库服务档案管理系统",
+    "date": "2025-03-14",
+    "summary": ""
+  },
+  {
+    "id": "news-848",
+    "type": "news",
+    "category": "news",
+    "title": "喜报 | 西安接力！万里数据库入围西安事业单位集中式数据库框架采购项目",
+    "date": "2025-02-28",
+    "summary": ""
+  },
+  {
+    "id": "news-849",
+    "type": "news",
+    "category": "news",
+    "title": "数据迁移丨如何用AI完成 PostgreSQL 到 GreatSQL 迁移？附全干货解析~",
+    "date": "2025-02-28",
+    "summary": ""
+  },
+  {
+    "id": "news-846",
+    "type": "news",
+    "category": "news",
+    "title": "解决方案 | 6周极速换“心”！GreatDB无缝替换MySQL 0宕机+数据0丢失的国产升级之道",
+    "date": "2025-02-20",
+    "summary": ""
+  },
+  {
+    "id": "news-847",
+    "type": "news",
+    "category": "news",
+    "title": "荣誉 | 银行客户赞誉满分！万里数据库接连收获工商银行、光大银行感谢信",
+    "date": "2025-02-20",
+    "summary": ""
+  },
+  {
+    "id": "news-844",
+    "type": "news",
+    "category": "news",
+    "title": "荣誉 | 引领国产数据库技术突破 万里数据库获评“领雁行动”领先科学技术成果",
+    "date": "2025-02-14",
+    "summary": ""
+  },
+  {
+    "id": "news-845",
+    "type": "news",
+    "category": "news",
+    "title": "荣誉奖项 | 实力见证！万里数据库闪耀2024信创“大比武”大赛 揽获多项殊荣",
+    "date": "2025-02-14",
+    "summary": ""
+  },
+  {
+    "id": "news-840",
+    "type": "news",
+    "category": "news",
+    "title": "喜报 | 中标再+1！万里数据库助力中国移动咪咕公司自主可控数据库项目",
+    "date": "2024-11-22",
+    "summary": ""
+  },
+  {
+    "id": "news-841",
+    "type": "news",
+    "category": "news",
+    "title": "展会 | 聚焦数智未来 万里数据库受邀操作系统大会 & openEuler Summit 2024",
+    "date": "2024-11-22",
+    "summary": ""
+  },
+  {
+    "id": "news-842",
+    "type": "news",
+    "category": "news",
+    "title": "喜报 | 万里数据库入围四川省2024年基础软件框架协议采购项目",
+    "date": "2024-11-22",
+    "summary": ""
+  },
+  {
+    "id": "news-843",
+    "type": "news",
+    "category": "news",
+    "title": "软件业用新创造价值",
+    "date": "2024-11-22",
+    "summary": ""
+  },
+  {
+    "id": "news-836",
+    "type": "news",
+    "category": "news",
+    "title": "万里数据库中标中移（成都）2024综合办公系统自主可控数据库项目",
+    "date": "2024-11-15",
+    "summary": ""
+  },
+  {
+    "id": "news-837",
+    "type": "news",
+    "category": "news",
+    "title": "省级认证！万里数据库与湖南信创适配中心完成“两芯一生态”适配",
+    "date": "2024-11-15",
+    "summary": ""
+  },
+  {
+    "id": "news-838",
+    "type": "news",
+    "category": "news",
+    "title": "一体化成为AI时代数据库新变化",
+    "date": "2024-11-15",
+    "summary": ""
+  },
+  {
+    "id": "news-839",
+    "type": "news",
+    "category": "news",
+    "title": "北京市经济和信息化局关于印发《北京市加快建设信息软件产业创新发展高地行动方案》的通知",
+    "date": "2024-11-15",
+    "summary": ""
+  },
+  {
+    "id": "news-834",
+    "type": "news",
+    "category": "news",
+    "title": "光大银行喜获多项人行“金发奖” 万里数据库深度参与、联研共建",
+    "date": "2024-11-08",
+    "summary": ""
+  },
+  {
+    "id": "news-835",
+    "type": "news",
+    "category": "news",
+    "title": "万里数据库高质量通过北京市“专精特新”中小企业复核",
+    "date": "2024-11-08",
+    "summary": ""
+  },
+  {
+    "id": "news-830",
+    "type": "news",
+    "category": "news",
+    "title": "双月报来了！万里数据库8-9月持续开展全链路国产兼容适配",
+    "date": "2024-10-31",
+    "summary": ""
+  },
+  {
+    "id": "news-831",
+    "type": "news",
+    "category": "news",
+    "title": "无代码，不编程｜记万里数据库第24个与程序员节同庆的日子",
+    "date": "2024-10-31",
+    "summary": ""
+  },
+  {
+    "id": "news-832",
+    "type": "news",
+    "category": "news",
+    "title": "万里数据库中标中移苏研院2024自主可控数据库采购项目",
+    "date": "2024-10-31",
+    "summary": ""
+  },
+  {
+    "id": "news-833",
+    "type": "news",
+    "category": "news",
+    "title": "万里数据库携手运营商打造“智慧家庭” GreatDB助力美好生活",
+    "date": "2024-10-31",
+    "summary": ""
+  },
+  {
+    "id": "news-825",
+    "type": "news",
+    "category": "news",
+    "title": "实现关键领域突破 中国翼型谱系及数据库在西安发布",
+    "date": "2024-10-18",
+    "summary": ""
+  },
+  {
+    "id": "news-826",
+    "type": "news",
+    "category": "news",
+    "title": "分布式数据库优势明显 怎么采？",
+    "date": "2024-10-18",
+    "summary": ""
+  },
+  {
+    "id": "news-827",
+    "type": "news",
+    "category": "news",
+    "title": "2024世界计算大会｜万里数据库蝉联“专题展优秀成果奖”",
+    "date": "2024-10-18",
+    "summary": ""
+  },
+  {
+    "id": "news-828",
+    "type": "news",
+    "category": "news",
+    "title": "喜报｜服务深圳数字化转型 万里数据库入围深圳市政府采购项目！",
+    "date": "2024-10-18",
+    "summary": ""
+  },
+  {
+    "id": "news-829",
+    "type": "news",
+    "category": "news",
+    "title": "斩获殊荣！GreatSQL亮相2024 OSCAR开源产业大会 彰显开源实力",
+    "date": "2024-10-18",
+    "summary": ""
+  },
+  {
+    "id": "news-822",
+    "type": "news",
+    "category": "news",
+    "title": "链接未来！万里数据库加入移动云「算力网络数据库生态产业链」",
+    "date": "2024-10-12",
+    "summary": ""
+  },
+  {
+    "id": "news-823",
+    "type": "news",
+    "category": "news",
+    "title": "下周三见！与GreatSQL一起相约OSCAR 开源产业大会",
+    "date": "2024-10-12",
+    "summary": ""
+  },
+  {
+    "id": "news-824",
+    "type": "news",
+    "category": "news",
+    "title": "万里数据库牵手中国移动杭研院 为全国智慧家庭插上“安全翅膀”",
+    "date": "2024-10-12",
+    "summary": ""
+  },
+  {
+    "id": "news-819",
+    "type": "news",
+    "category": "news",
+    "title": "945万！万里数据库中标光大银行分布式数据库技术服务选型项目",
+    "date": "2024-09-30",
+    "summary": ""
+  },
+  {
+    "id": "news-820",
+    "type": "news",
+    "category": "news",
+    "title": "万里数据库+GreatSQL亮相2024开源生态大会 探索开源技术升级",
+    "date": "2024-09-30",
+    "summary": ""
+  },
+  {
+    "id": "news-821",
+    "type": "news",
+    "category": "news",
+    "title": "国产数据库，百家争鸣的盛宴正在散场，十大诸侯的“王者之战”正式打响！",
+    "date": "2024-09-30",
+    "summary": ""
+  },
+  {
+    "id": "news-818",
+    "type": "news",
+    "category": "news",
+    "title": "国产数据库在金融领域应用逐渐深入",
+    "date": "2024-09-29",
+    "summary": ""
+  },
+  {
+    "id": "news-817",
+    "type": "news",
+    "category": "news",
+    "title": "赋能开源生态建设 GreatSQL邀您参加2024开放原子开源生态大会",
+    "date": "2024-09-20",
+    "summary": ""
+  },
+  {
+    "id": "news-813",
+    "type": "news",
+    "category": "news",
+    "title": "为医疗数字化转型装上“安全锁” MySQL 5.7平滑替代攻略来了！",
+    "date": "2024-09-13",
+    "summary": ""
+  },
+  {
+    "id": "news-814",
+    "type": "news",
+    "category": "news",
+    "title": "万里数据库入围江苏省党政机关、事业单位及团体数据库采购项目",
+    "date": "2024-09-13",
+    "summary": ""
+  },
+  {
+    "id": "news-815",
+    "type": "news",
+    "category": "news",
+    "title": "倒计时三年：国产数据库100%替代走到哪了？",
+    "date": "2024-09-13",
+    "summary": ""
+  },
+  {
+    "id": "news-816",
+    "type": "news",
+    "category": "news",
+    "title": "科技观察丨向量数据库，能承受期望之重吗？",
+    "date": "2024-09-13",
+    "summary": ""
+  },
+  {
+    "id": "news-809",
+    "type": "news",
+    "category": "news",
+    "title": "我国迈入数据库产业第一梯队 市场规模占全球7.2%",
+    "date": "2024-09-06",
+    "summary": ""
+  },
+  {
+    "id": "news-810",
+    "type": "news",
+    "category": "news",
+    "title": "7 个关键的数据库概念，人人都应该了解",
+    "date": "2024-09-06",
+    "summary": ""
+  },
+  {
+    "id": "news-811",
+    "type": "news",
+    "category": "news",
+    "title": "战略合作｜万里数据库携手道合云 共建安全创新智慧党校平台",
+    "date": "2024-09-06",
+    "summary": ""
+  },
+  {
+    "id": "news-812",
+    "type": "news",
+    "category": "news",
+    "title": "包拯断案 | 数据库从库GTID在变化 为何没有数据写入@还故障一个真相",
+    "date": "2024-09-06",
+    "summary": ""
+  },
+  {
+    "id": "news-807",
+    "type": "news",
+    "category": "news",
+    "title": "万里数据库领导前往ITSU访谈交流 共谋信息技术服务创新发展",
+    "date": "2024-08-30",
+    "summary": ""
+  },
+  {
+    "id": "news-808",
+    "type": "news",
+    "category": "news",
+    "title": "兼容月报｜行业应用多元化兼容 万里数据库7月适配成果一览",
+    "date": "2024-08-30",
+    "summary": ""
+  },
+  {
+    "id": "news-805",
+    "type": "news",
+    "category": "news",
+    "title": "瞄准2027年，国内金融业数据库国产化提速",
+    "date": "2024-08-29",
+    "summary": ""
+  },
+  {
+    "id": "news-806",
+    "type": "news",
+    "category": "news",
+    "title": "高新产业链观察——分布式国产数据库迎来阶段性发展机遇，有望成为数字经济有力驱动",
+    "date": "2024-08-29",
+    "summary": ""
+  },
+  {
+    "id": "news-800",
+    "type": "news",
+    "category": "news",
+    "title": "解决方案 | 交通国产化进行时 GreatDB助力高速联网收费系统国产改造",
+    "date": "2024-08-23",
+    "summary": ""
+  },
+  {
+    "id": "news-802",
+    "type": "news",
+    "category": "news",
+    "title": "国产数据库助力数字中国建设高质量发展",
+    "date": "2024-08-23",
+    "summary": ""
+  },
+  {
+    "id": "news-803",
+    "type": "news",
+    "category": "news",
+    "title": "《搜索型数据库白皮书》发布",
+    "date": "2024-08-23",
+    "summary": ""
+  },
+  {
+    "id": "news-804",
+    "type": "news",
+    "category": "news",
+    "title": "新版本 | GreatSQL 8.0.32-26全新发布 增强“四高”诸多新特性",
+    "date": "2024-08-23",
+    "summary": ""
+  },
+  {
+    "id": "news-796",
+    "type": "news",
+    "category": "news",
+    "title": "人工智能时代，数据库技术创新提速赋能",
+    "date": "2024-08-16",
+    "summary": ""
+  },
+  {
+    "id": "news-797",
+    "type": "news",
+    "category": "news",
+    "title": "我国数据库产业进入关键应用期",
+    "date": "2024-08-16",
+    "summary": ""
+  },
+  {
+    "id": "news-798",
+    "type": "news",
+    "category": "news",
+    "title": "助力金融科技发展 万里数据库当选中关村金科产业联盟理事单位",
+    "date": "2024-08-16",
+    "summary": ""
+  },
+  {
+    "id": "news-799",
+    "type": "news",
+    "category": "news",
+    "title": "万里数据库中标重庆移动数据库License框架采购项目",
+    "date": "2024-08-16",
+    "summary": ""
+  },
+  {
+    "id": "news-791",
+    "type": "news",
+    "category": "news",
+    "title": "荣誉 | 连续4年上榜！万里数据库再度入选「中国信创500强」",
+    "date": "2024-08-09",
+    "summary": ""
+  },
+  {
+    "id": "news-792",
+    "type": "news",
+    "category": "news",
+    "title": "包拯断案 | 数据库CPU突然飙升 怎么破@还故障一个真相",
+    "date": "2024-08-09",
+    "summary": ""
+  },
+  {
+    "id": "news-794",
+    "type": "news",
+    "category": "news",
+    "title": "国企数字化转型的进展、趋势与政策选择",
+    "date": "2024-08-09",
+    "summary": ""
+  },
+  {
+    "id": "news-795",
+    "type": "news",
+    "category": "news",
+    "title": "信创新政解读 | 国资发改联合印发2024第53号文《关于规范中央企业采购管理工作的指导意见》",
+    "date": "2024-08-09",
+    "summary": ""
+  },
+  {
+    "id": "news-787",
+    "type": "news",
+    "category": "news",
+    "title": "战略合作 | 万里数据库携手中科曙光 发布数据库一体机联合解决方案",
+    "date": "2024-08-02",
+    "summary": ""
+  },
+  {
+    "id": "news-788",
+    "type": "news",
+    "category": "news",
+    "title": "包拯断案 | 数据库从库复制延迟引发高可用风险 怎么破@还故障一个真相",
+    "date": "2024-08-02",
+    "summary": ""
+  },
+  {
+    "id": "news-789",
+    "type": "news",
+    "category": "news",
+    "title": "央国企信创有望迎来加速新周期，信创迎来2.0阶段",
+    "date": "2024-08-02",
+    "summary": ""
+  },
+  {
+    "id": "news-790",
+    "type": "news",
+    "category": "news",
+    "title": "医疗信创“元年”之后的主要任务、四大挑战与破局之道",
+    "date": "2024-08-02",
+    "summary": ""
+  },
+  {
+    "id": "news-786",
+    "type": "news",
+    "category": "news",
+    "title": "前沿 | 金融业数据库创新发展研究",
+    "date": "2024-07-26",
+    "summary": ""
+  },
+  {
+    "id": "news-783",
+    "type": "news",
+    "category": "news",
+    "title": "兼容月报丨发力软件应用创新生态建设！万里数据库6月完成51款产品适配认证",
+    "date": "2024-07-25",
+    "summary": ""
+  },
+  {
+    "id": "news-784",
+    "type": "news",
+    "category": "news",
+    "title": "解决方案 | EIP系统国产化进行时！GreatDB分布式10节点实现系统高可用",
+    "date": "2024-07-25",
+    "summary": ""
+  },
+  {
+    "id": "news-785",
+    "type": "news",
+    "category": "news",
+    "title": "金融行业分布式数据库应用观察",
+    "date": "2024-07-25",
+    "summary": ""
+  },
+  {
+    "id": "news-778",
+    "type": "news",
+    "category": "news",
+    "title": "喜讯丨树立诚信典范！万里数据库荣获“北京市共铸诚信企业”称号",
+    "date": "2024-07-19",
+    "summary": ""
+  },
+  {
+    "id": "news-779",
+    "type": "news",
+    "category": "news",
+    "title": "重磅丨报告参编+入选图谱+首批共建！万里数据库闪耀2024可信数据库大会",
+    "date": "2024-07-19",
+    "summary": ""
+  },
+  {
+    "id": "news-780",
+    "type": "news",
+    "category": "news",
+    "title": "报告：我国数据库市场规模超500亿元，占全球7.34%",
+    "date": "2024-07-19",
+    "summary": ""
+  },
+  {
+    "id": "news-781",
+    "type": "news",
+    "category": "news",
+    "title": "金融时报 | 专家共话数字金融助力新质生产力发展",
+    "date": "2024-07-19",
+    "summary": ""
+  },
+  {
+    "id": "news-774",
+    "type": "news",
+    "category": "news",
+    "title": "展会 | GreatSQL亮相全球数字经济大会 开源数据库赋能金融数字化转型",
+    "date": "2024-07-11",
+    "summary": ""
+  },
+  {
+    "id": "news-775",
+    "type": "news",
+    "category": "news",
+    "title": "项目纪实 | 业务不停机、升级0感知！万里数据库生产环境助力操作系统升级 获客户点赞",
+    "date": "2024-07-11",
+    "summary": ""
+  },
+  {
+    "id": "news-776",
+    "type": "news",
+    "category": "news",
+    "title": "“新质生产力”持续火热，信创的春天来了吗？",
+    "date": "2024-07-11",
+    "summary": ""
+  },
+  {
+    "id": "news-777",
+    "type": "news",
+    "category": "news",
+    "title": "打造制造业数字化转型合力",
+    "date": "2024-07-11",
+    "summary": ""
+  },
+  {
+    "id": "news-769",
+    "type": "news",
+    "category": "news",
+    "title": "展会 | 荣誉当选！万里数据库亮相全球运维大会 联合创始人当选全球数据库及开源峰会荣誉顾问",
+    "date": "2024-07-05",
+    "summary": ""
+  },
+  {
+    "id": "news-770",
+    "type": "news",
+    "category": "news",
+    "title": "喜报 | 万里数据库成功入围广西政府采购中心2024信息类产品框架协议采购项目",
+    "date": "2024-07-05",
+    "summary": ""
+  },
+  {
+    "id": "news-771",
+    "type": "news",
+    "category": "news",
+    "title": "解决方案 | 最低成本替换MySQL！万里分布式数据库为城商行外审系统提升性能超200%",
+    "date": "2024-07-05",
+    "summary": ""
+  },
+  {
+    "id": "news-772",
+    "type": "news",
+    "category": "news",
+    "title": "观察｜国产信创加速崛起：为何要在2027年前实现全领域“系统革命”？",
+    "date": "2024-07-05",
+    "summary": ""
+  },
+  {
+    "id": "news-773",
+    "type": "news",
+    "category": "news",
+    "title": "国产信创数据库的选型分析",
+    "date": "2024-07-05",
+    "summary": ""
+  },
+  {
+    "id": "news-766",
+    "type": "news",
+    "category": "news",
+    "title": "生态合作 业务共赢 | 广州天河科技园管委会一行莅临万里数据库走访调研",
+    "date": "2024-06-28",
+    "summary": ""
+  },
+  {
+    "id": "news-767",
+    "type": "news",
+    "category": "news",
+    "title": "信创 | 信创产业数字化转型与升级：路径规划与实践！",
+    "date": "2024-06-28",
+    "summary": ""
+  },
+  {
+    "id": "news-768",
+    "type": "news",
+    "category": "news",
+    "title": "收藏 | 医疗信创改造任务、适配方法及设计思路！",
+    "date": "2024-06-28",
+    "summary": ""
+  },
+  {
+    "id": "news-762",
+    "type": "news",
+    "category": "news",
+    "title": "兼容月报丨践行国产化 万里数据库5月完成28款产品适配认证",
+    "date": "2024-06-21",
+    "summary": ""
+  },
+  {
+    "id": "news-763",
+    "type": "news",
+    "category": "news",
+    "title": "展会丨共筑算力基础设施底座 万里数据库亮相多样性算力产业峰会",
+    "date": "2024-06-21",
+    "summary": ""
+  },
+  {
+    "id": "news-764",
+    "type": "news",
+    "category": "news",
+    "title": "深度 | 国产数据库如何夯实生态建设？",
+    "date": "2024-06-21",
+    "summary": ""
+  },
+  {
+    "id": "news-765",
+    "type": "news",
+    "category": "news",
+    "title": "国产数据库跨越生态拐点 仍需“技术收敛”",
+    "date": "2024-06-21",
+    "summary": ""
+  },
+  {
+    "id": "news-758",
+    "type": "news",
+    "category": "news",
+    "title": "大数据时代制造企业数字化转型的新内涵",
+    "date": "2024-06-14",
+    "summary": ""
+  },
+  {
+    "id": "news-760",
+    "type": "news",
+    "category": "news",
+    "title": "信创应用给运维带来的变化如何应对？",
+    "date": "2024-06-14",
+    "summary": ""
+  },
+  {
+    "id": "news-756",
+    "type": "news",
+    "category": "news",
+    "title": "信创=国产化？一文带你快速了解信创和国产化",
+    "date": "2024-06-07",
+    "summary": ""
+  },
+  {
+    "id": "news-757",
+    "type": "news",
+    "category": "news",
+    "title": "信创行业标准化建设有望实现新突破",
+    "date": "2024-06-07",
+    "summary": ""
+  },
+  {
+    "id": "news-752",
+    "type": "news",
+    "category": "news",
+    "title": "数据库信创转型中选型的基本原则和关键因素",
+    "date": "2024-05-31",
+    "summary": ""
+  },
+  {
+    "id": "news-753",
+    "type": "news",
+    "category": "news",
+    "title": "信创数据库：机遇与挑战并存的未来之路",
+    "date": "2024-05-31",
+    "summary": ""
+  },
+  {
+    "id": "news-748",
+    "type": "news",
+    "category": "news",
+    "title": "重磅利好！信创统招采购时代即将来临",
+    "date": "2024-05-24",
+    "summary": ""
+  },
+  {
+    "id": "news-749",
+    "type": "news",
+    "category": "news",
+    "title": "目录 | 信创名录、信创产品目录、信创标准，信创产品之间关系",
+    "date": "2024-05-24",
+    "summary": ""
+  },
+  {
+    "id": "news-743",
+    "type": "news",
+    "category": "news",
+    "title": "国家发改委、国家数据局印发《数字经济2024年工作要点》",
+    "date": "2024-05-17",
+    "summary": ""
+  },
+  {
+    "id": "news-744",
+    "type": "news",
+    "category": "news",
+    "title": "《2024中国数字经济产业机会深度洞察报告》发布",
+    "date": "2024-05-17",
+    "summary": ""
+  },
+  {
+    "id": "news-737",
+    "type": "news",
+    "category": "news",
+    "title": "【精读】2023网信自主创新调研报告-数据库",
+    "date": "2024-05-10",
+    "summary": ""
+  },
+  {
+    "id": "news-738",
+    "type": "news",
+    "category": "news",
+    "title": "加快数字中国建设，为中国式现代化注入强大动力",
+    "date": "2024-05-10",
+    "summary": ""
+  },
+  {
+    "id": "news-734",
+    "type": "news",
+    "category": "news",
+    "title": "石化联合会解读《石化化工行业数字化转型实施指南》",
+    "date": "2024-04-26",
+    "summary": ""
+  },
+  {
+    "id": "news-735",
+    "type": "news",
+    "category": "news",
+    "title": "​争当发展新质生产力的主力军",
+    "date": "2024-04-26",
+    "summary": ""
+  },
+  {
+    "id": "news-730",
+    "type": "news",
+    "category": "news",
+    "title": "【转发】北京市经济和信息化局关于印发《北京市加快建设信息软件产业创新发展高地行动方案》的通知",
+    "date": "2024-04-19",
+    "summary": ""
+  },
+  {
+    "id": "news-731",
+    "type": "news",
+    "category": "news",
+    "title": "三部门联合印发《关于深化制造业金融服务 助力推进新型工业化的通知》",
+    "date": "2024-04-19",
+    "summary": ""
+  },
+  {
+    "id": "news-723",
+    "type": "news",
+    "category": "news",
+    "title": "多重利好 | 2024，信创进入新阶段！",
+    "date": "2024-04-11",
+    "summary": ""
+  },
+  {
+    "id": "news-724",
+    "type": "news",
+    "category": "news",
+    "title": "一文解读《数据库政府采购需求标准》",
+    "date": "2024-04-11",
+    "summary": ""
+  },
+  {
+    "id": "news-721",
+    "type": "news",
+    "category": "news",
+    "title": "国采中心：探索联合采购助力全国统一大市场建设",
+    "date": "2024-04-03",
+    "summary": ""
+  },
+  {
+    "id": "news-722",
+    "type": "news",
+    "category": "news",
+    "title": "18部委联合行动：构筑关键技术领域创新高地，引领数字化转型新质未来",
+    "date": "2024-04-03",
+    "summary": ""
+  },
+  {
+    "id": "news-718",
+    "type": "news",
+    "category": "news",
+    "title": "构建全国一体化算力网，要处理好四个方面的关系",
+    "date": "2024-03-29",
+    "summary": ""
+  },
+  {
+    "id": "news-719",
+    "type": "news",
+    "category": "news",
+    "title": "互联网科技 ｜人工智能大模型遇上数据库：未来已来，火花四溅！",
+    "date": "2024-03-29",
+    "summary": ""
+  },
+  {
+    "id": "news-714",
+    "type": "news",
+    "category": "news",
+    "title": "财政部发文，信创资金来了！",
+    "date": "2024-03-21",
+    "summary": ""
+  },
+  {
+    "id": "news-715",
+    "type": "news",
+    "category": "news",
+    "title": "从政府工作报告看2024年“信创”发展风向！",
+    "date": "2024-03-21",
+    "summary": ""
+  },
+  {
+    "id": "news-709",
+    "type": "news",
+    "category": "news",
+    "title": "李强总理重磅报告：清醒看到挑战！全国将开辟新赛道、AI+行动启动、强化国家战略科技力量新机会来了！",
+    "date": "2024-03-15",
+    "summary": ""
+  },
+  {
+    "id": "news-710",
+    "type": "news",
+    "category": "news",
+    "title": "【聚焦全国两会】政府工作报告，全文！",
+    "date": "2024-03-15",
+    "summary": ""
+  },
+  {
+    "id": "news-705",
+    "type": "news",
+    "category": "news",
+    "title": "人民日报仲音：不断塑造发展新动能新优势",
+    "date": "2024-03-07",
+    "summary": ""
+  },
+  {
+    "id": "news-706",
+    "type": "news",
+    "category": "news",
+    "title": "全国政协委员、中国信通院院长余晓晖：加快推进算力互联互通，构建算力服务统一大市场",
+    "date": "2024-03-07",
+    "summary": ""
+  },
+  {
+    "id": "news-701",
+    "type": "news",
+    "category": "news",
+    "title": "关于城市轨道交通设备国产化的实施意见 ​",
+    "date": "2024-03-01",
+    "summary": ""
+  },
+  {
+    "id": "news-702",
+    "type": "news",
+    "category": "news",
+    "title": "我国轨道交通智能运维产业展望(摘录)",
+    "date": "2024-03-01",
+    "summary": ""
+  },
+  {
+    "id": "news-697",
+    "type": "news",
+    "category": "news",
+    "title": "新趋势下，国产数据库或“春山可望”",
+    "date": "2024-02-23",
+    "summary": ""
+  },
+  {
+    "id": "news-698",
+    "type": "news",
+    "category": "news",
+    "title": "从Oracle数据库迁移到国产数据库的11个难点解析",
+    "date": "2024-02-23",
+    "summary": ""
+  },
+  {
+    "id": "news-694",
+    "type": "news",
+    "category": "news",
+    "title": "金融科技的未来：浅析2024年行业变革与预测",
+    "date": "2024-02-07",
+    "summary": ""
+  },
+  {
+    "id": "news-695",
+    "type": "news",
+    "category": "news",
+    "title": "金融科技：发展背景、国际现状及未来展望",
+    "date": "2024-02-07",
+    "summary": ""
+  },
+  {
+    "id": "news-691",
+    "type": "news",
+    "category": "news",
+    "title": "新华社第一观察 | 习近平总书记重要讲话深刻阐释金融强国内涵",
+    "date": "2024-02-02",
+    "summary": ""
+  },
+  {
+    "id": "news-692",
+    "type": "news",
+    "category": "news",
+    "title": "新形势下科技金融的发展方向",
+    "date": "2024-02-02",
+    "summary": ""
+  },
+  {
+    "id": "news-689",
+    "type": "news",
+    "category": "news",
+    "title": "2023年相关数字经济（国家）政策汇总",
+    "date": "2024-01-26",
+    "summary": ""
+  },
+  {
+    "id": "news-669",
+    "type": "news",
+    "category": "news",
+    "title": "重磅 | 万里数据库首批通过安全可靠测评！",
+    "date": "2023-12-29",
+    "summary": ""
+  },
+  {
+    "id": "news-416",
+    "type": "news",
+    "category": "news",
+    "title": "数据库行业深度研究：国产数据库百花齐放，崛起正当时",
+    "date": "2022-11-25",
+    "summary": ""
+  },
+  {
+    "id": "news-413",
+    "type": "news",
+    "category": "news",
+    "title": "重磅！2022年中国信创产业政策汇总及解读（全）政策助推信创产业高质量发展",
+    "date": "2022-11-18",
+    "summary": ""
+  },
+  {
+    "id": "news-414",
+    "type": "news",
+    "category": "news",
+    "title": "数据库行业专题研究：信创正当时，国产数据库发展提速",
+    "date": "2022-11-18",
+    "summary": ""
+  },
+  {
+    "id": "news-410",
+    "type": "news",
+    "category": "news",
+    "title": "​ 撬动万亿市场！央国企信创快速落地刻不容缓",
+    "date": "2022-11-10",
+    "summary": ""
+  },
+  {
+    "id": "news-411",
+    "type": "news",
+    "category": "news",
+    "title": "全面加速国产替代！信创迎来行业拐点",
+    "date": "2022-11-10",
+    "summary": ""
+  },
+  {
+    "id": "news-407",
+    "type": "news",
+    "category": "news",
+    "title": "将数据库迁移到云上的5个原因",
+    "date": "2022-11-04",
+    "summary": ""
+  },
+  {
+    "id": "news-408",
+    "type": "news",
+    "category": "news",
+    "title": "从互联网到传统行业，云原生数据库的进阶之旅",
+    "date": "2022-11-04",
+    "summary": ""
+  },
+  {
+    "id": "news-403",
+    "type": "news",
+    "category": "news",
+    "title": "关键应用数据库选型防跑偏指南",
+    "date": "2022-10-28",
+    "summary": ""
+  },
+  {
+    "id": "news-404",
+    "type": "news",
+    "category": "news",
+    "title": "解读《2022 分布式数据库发展趋势研究报告》",
+    "date": "2022-10-28",
+    "summary": ""
+  },
+  {
+    "id": "news-398",
+    "type": "news",
+    "category": "news",
+    "title": "数据库行业专题研究：关键三问深度解读",
+    "date": "2022-10-20",
+    "summary": ""
+  },
+  {
+    "id": "news-399",
+    "type": "news",
+    "category": "news",
+    "title": "数据库市场迎来大变局，“后来者”云原生数据库将成企业必选项",
+    "date": "2022-10-20",
+    "summary": ""
+  },
+  {
+    "id": "news-392",
+    "type": "news",
+    "category": "news",
+    "title": "据库市场迎来大变局，“后来者”云原生数据库将成企业必选项",
+    "date": "2022-10-14",
+    "summary": ""
+  },
+  {
+    "id": "news-393",
+    "type": "news",
+    "category": "news",
+    "title": "云原生数据库让AI触达未来",
+    "date": "2022-10-14",
+    "summary": ""
+  },
+  {
+    "id": "news-390",
+    "type": "news",
+    "category": "news",
+    "title": "一文读懂企业究竟需要什么样的数据架构",
+    "date": "2022-09-30",
+    "summary": ""
+  },
+  {
+    "id": "news-391",
+    "type": "news",
+    "category": "news",
+    "title": "图片、视频、DNA序列……非结构化数据井喷，新技术风向标在哪？",
+    "date": "2022-09-30",
+    "summary": ""
+  },
+  {
+    "id": "news-386",
+    "type": "news",
+    "category": "news",
+    "title": "董宇：数据库行业背景及发展趋势分析",
+    "date": "2022-09-23",
+    "summary": ""
+  },
+  {
+    "id": "news-387",
+    "type": "news",
+    "category": "news",
+    "title": "存算分离是否成为开源分布式数据库主流架构？",
+    "date": "2022-09-23",
+    "summary": ""
+  },
+  {
+    "id": "news-379",
+    "type": "news",
+    "category": "news",
+    "title": "解读《2022 分布式数据库发展趋势研究报告》",
+    "date": "2022-09-16",
+    "summary": ""
+  },
+  {
+    "id": "news-380",
+    "type": "news",
+    "category": "news",
+    "title": "加速迈入云原生时代，国产数据库行业要变天",
+    "date": "2022-09-16",
+    "summary": ""
+  },
+  {
+    "id": "news-376",
+    "type": "news",
+    "category": "news",
+    "title": "浅谈云原生数据库：回顾过去，未来可期",
+    "date": "2022-09-08",
+    "summary": ""
+  },
+  {
+    "id": "news-377",
+    "type": "news",
+    "category": "news",
+    "title": "云原生数据库VS传统数据库",
+    "date": "2022-09-08",
+    "summary": ""
+  },
+  {
+    "id": "news-369",
+    "type": "news",
+    "category": "news",
+    "title": "传统数据库走向消亡？",
+    "date": "2022-08-26",
+    "summary": ""
+  },
+  {
+    "id": "news-370",
+    "type": "news",
+    "category": "news",
+    "title": "未来已来！分布式数据库的“星辰大海”绝不仅限于替换！",
+    "date": "2022-08-26",
+    "summary": ""
+  },
+  {
+    "id": "news-364",
+    "type": "news",
+    "category": "news",
+    "title": "国产数据库出海，技术大航海时代的冒险与底气",
+    "date": "2022-08-19",
+    "summary": ""
+  },
+  {
+    "id": "news-365",
+    "type": "news",
+    "category": "news",
+    "title": "信创潮下国内数据库厂商多点开花 分布式或贡献未来市场新增量",
+    "date": "2022-08-19",
+    "summary": ""
+  },
+  {
+    "id": "news-360",
+    "type": "news",
+    "category": "news",
+    "title": "数据库架构选型与落地，看这篇就够了",
+    "date": "2022-08-11",
+    "summary": ""
+  },
+  {
+    "id": "news-361",
+    "type": "news",
+    "category": "news",
+    "title": "构建数据安全防护的“新基建”——数据运行环境安全保护",
+    "date": "2022-08-11",
+    "summary": ""
+  },
+  {
+    "id": "news-355",
+    "type": "news",
+    "category": "news",
+    "title": "国产数据库近200家！谈谈数据库技术选型",
+    "date": "2022-08-05",
+    "summary": ""
+  },
+  {
+    "id": "news-356",
+    "type": "news",
+    "category": "news",
+    "title": "数据库深度复盘与展望",
+    "date": "2022-08-05",
+    "summary": ""
+  },
+  {
+    "id": "news-351",
+    "type": "news",
+    "category": "news",
+    "title": "信创行业深度报告：行而不辍，未来可期",
+    "date": "2022-07-29",
+    "summary": ""
+  },
+  {
+    "id": "news-352",
+    "type": "news",
+    "category": "news",
+    "title": "计算机行业东数西算专题报告：以变应变，“指”向数字经济新版图",
+    "date": "2022-07-29",
+    "summary": ""
+  },
+  {
+    "id": "news-347",
+    "type": "news",
+    "category": "news",
+    "title": "国产软件：信创政策推动下，国产替代可期",
+    "date": "2022-07-22",
+    "summary": ""
+  },
+  {
+    "id": "news-348",
+    "type": "news",
+    "category": "news",
+    "title": "企业在什么情况下引入分布式数据库？",
+    "date": "2022-07-22",
+    "summary": ""
+  },
+  {
+    "id": "news-340",
+    "type": "news",
+    "category": "news",
+    "title": "IDC：到2026年中国关系型数据库软件市场规模将达95.5亿美元 未来5年CAGR为28.1%",
+    "date": "2022-07-14",
+    "summary": ""
+  },
+  {
+    "id": "news-341",
+    "type": "news",
+    "category": "news",
+    "title": "中国通信标准化协会：从跟跑到并跑 我国数据库产业高速发展",
+    "date": "2022-07-14",
+    "summary": ""
+  },
+  {
+    "id": "news-338",
+    "type": "news",
+    "category": "news",
+    "title": "我国数据库三大发展趋势：国产化、上云、开源",
+    "date": "2022-07-08",
+    "summary": ""
+  },
+  {
+    "id": "news-339",
+    "type": "news",
+    "category": "news",
+    "title": "中国数据库：自立自强正当时",
+    "date": "2022-07-08",
+    "summary": ""
+  },
+  {
+    "id": "news-334",
+    "type": "news",
+    "category": "news",
+    "title": "国产数据库的黄金周期要来了吗？",
+    "date": "2022-07-01",
+    "summary": ""
+  },
+  {
+    "id": "news-335",
+    "type": "news",
+    "category": "news",
+    "title": "数字化转型场景大爆发，分布式数据库广泛替代政企数字基础设施",
+    "date": "2022-07-01",
+    "summary": ""
+  },
+  {
+    "id": "news-330",
+    "type": "news",
+    "category": "news",
+    "title": "一文看懂数据库行业的六大发展趋势",
+    "date": "2022-06-24",
+    "summary": ""
+  },
+  {
+    "id": "news-331",
+    "type": "news",
+    "category": "news",
+    "title": "赛迪发布《“十四五”关键应用领域之数据库市场研究报告》，万里数据库入围领导者象限",
+    "date": "2022-06-24",
+    "summary": ""
+  },
+  {
+    "id": "news-324",
+    "type": "news",
+    "category": "news",
+    "title": "数据库行业深度复盘与展望：筚路蓝缕，星火燎原",
+    "date": "2022-06-17",
+    "summary": ""
+  },
+  {
+    "id": "news-325",
+    "type": "news",
+    "category": "news",
+    "title": "数据库杂谈｜全球“万人迷”MySQL在中国“境遇”如何？",
+    "date": "2022-06-17",
+    "summary": ""
+  },
+  {
+    "id": "news-322",
+    "type": "news",
+    "category": "news",
+    "title": "数据库行业分析：从全球IT产业趋势到国产数据库发展之路",
+    "date": "2022-06-10",
+    "summary": ""
+  },
+  {
+    "id": "news-323",
+    "type": "news",
+    "category": "news",
+    "title": "行业解析：数据库商业市场三问三答",
+    "date": "2022-06-10",
+    "summary": ""
+  },
+  {
+    "id": "news-238",
+    "type": "news",
+    "category": "news",
+    "title": "“国产14nm芯片明年量产” 引争议！“浮躁风”要不得",
+    "date": "2021-06-30",
+    "summary": ""
+  },
+  {
+    "id": "news-237",
+    "type": "news",
+    "category": "news",
+    "title": "美国政府关闭伊朗 36 个 com/net 媒体网站",
+    "date": "2021-06-25",
+    "summary": ""
+  },
+  {
+    "id": "news-236",
+    "type": "news",
+    "category": "news",
+    "title": "AI 时代：智算、超算怎么选 ？",
+    "date": "2021-06-24",
+    "summary": ""
+  },
+  {
+    "id": "news-233",
+    "type": "news",
+    "category": "news",
+    "title": "深度分析 | 中国云计算自主可控发展趋势",
+    "date": "2021-06-23",
+    "summary": ""
+  },
+  {
+    "id": "news-232",
+    "type": "news",
+    "category": "news",
+    "title": "深度分析 | 信创产业市场测算、行业信创发展节奏、产品迭代及价格变化、未来预测",
+    "date": "2021-06-22",
+    "summary": ""
+  },
+  {
+    "id": "news-231",
+    "type": "news",
+    "category": "news",
+    "title": "“十四五”开局，信创产业发展新蓝海格局已现！",
+    "date": "2021-06-21",
+    "summary": ""
+  },
+  {
+    "id": "news-229",
+    "type": "news",
+    "category": "news",
+    "title": "来而不往非礼也，反击来了！",
+    "date": "2021-06-18",
+    "summary": ""
+  },
+  {
+    "id": "news-228",
+    "type": "news",
+    "category": "news",
+    "title": "《数据安全法》经全国人大常委会表决通过!",
+    "date": "2021-06-17",
+    "summary": ""
+  },
+  {
+    "id": "news-227",
+    "type": "news",
+    "category": "news",
+    "title": "大数据时代银行应对策略",
+    "date": "2021-06-16",
+    "summary": ""
+  },
+  {
+    "id": "news-225",
+    "type": "news",
+    "category": "news",
+    "title": "46家区域性银行数字化转型调查：意愿强烈进展缓慢，核心人才短缺",
+    "date": "2021-06-15",
+    "summary": ""
+  },
+  {
+    "id": "news-224",
+    "type": "news",
+    "category": "news",
+    "title": "深度 | 你真的了解分布式数据库吗？",
+    "date": "2021-06-10",
+    "summary": ""
+  },
+  {
+    "id": "news-217",
+    "type": "news",
+    "category": "news",
+    "title": "展会 | 赋能通信应用实践 万里受邀光合组织通信大数据生态闭门会",
+    "date": "2021-06-02",
+    "summary": ""
+  },
+  {
+    "id": "news-216",
+    "type": "news",
+    "category": "news",
+    "title": "展会 | 首批完成金融分布式数据库验证测试 万里闪耀2021第四届中国金融科技发展大会",
+    "date": "2021-05-28",
+    "summary": ""
+  },
+  {
+    "id": "news-215",
+    "type": "news",
+    "category": "news",
+    "title": "活动 | 万里受邀数据库大咖讲坛 揭秘复杂场景下的国产化运维实践",
+    "date": "2021-05-26",
+    "summary": ""
+  },
+  {
+    "id": "news-214",
+    "type": "news",
+    "category": "news",
+    "title": "技术干货 | 同样的Python代码，为啥能删表却不能更新数据？",
+    "date": "2021-05-24",
+    "summary": ""
+  },
+  {
+    "id": "news-213",
+    "type": "news",
+    "category": "news",
+    "title": "活动 | 3306π新一代数据库技术论坛圆满落幕，MGR最佳实践你get了吗？",
+    "date": "2021-05-22",
+    "summary": ""
+  },
+  {
+    "id": "news-212",
+    "type": "news",
+    "category": "news",
+    "title": "同心共荣 智创未来——万里数据库亮相2021年5G新文创产业峰会",
+    "date": "2021-05-21",
+    "summary": ""
+  },
+  {
+    "id": "news-209",
+    "type": "news",
+    "category": "news",
+    "title": "要闻 | 万里安全数据库通过四川信创中心权威评测 为四川信创发展注入新活力",
+    "date": "2021-05-19",
+    "summary": ""
+  },
+  {
+    "id": "news-208",
+    "type": "news",
+    "category": "news",
+    "title": "3306π社区专访 | MGR如何用作跨中心多活解决方案？",
+    "date": "2021-05-18",
+    "summary": ""
+  },
+  {
+    "id": "news-207",
+    "type": "news",
+    "category": "news",
+    "title": "展会 | 赋能金融科技数字化转型 万里数据库受邀2021中国金融业金融科技应用发展研讨会（广东站）",
+    "date": "2021-05-14",
+    "summary": ""
+  },
+  {
+    "id": "news-206",
+    "type": "news",
+    "category": "news",
+    "title": "展会 | 万里数据库亮相2021光合组织春季领导人峰会 抢抓信创产业发展机遇",
+    "date": "2021-05-13",
+    "summary": ""
+  },
+  {
+    "id": "news-205",
+    "type": "news",
+    "category": "news",
+    "title": "福利 | 3306π技术分享会广州站再度启航 免费门票先到先得！",
+    "date": "2021-05-11",
+    "summary": ""
+  },
+  {
+    "id": "news-204",
+    "type": "news",
+    "category": "news",
+    "title": "要闻 | 万里总经理郑红云荣膺“2021中国数字生态英雄榜金融数字化服务杰出人物”奖",
+    "date": "2021-05-09",
+    "summary": ""
+  },
+  {
+    "id": "news-203",
+    "type": "news",
+    "category": "news",
+    "title": "喜讯 | 万里数据库成功入选联通沃音乐解决方案合作方",
+    "date": "2021-05-07",
+    "summary": ""
+  },
+  {
+    "id": "news-202",
+    "type": "news",
+    "category": "news",
+    "title": "技术干货 | 详解慢SQL故障引发MySQL高可用切换排查的全过程",
+    "date": "2021-04-29",
+    "summary": ""
+  },
+  {
+    "id": "news-201",
+    "type": "news",
+    "category": "news",
+    "title": "生态 | 万里数据库正式入驻中国电信天翼云市场",
+    "date": "2021-04-28",
+    "summary": ""
+  },
+  {
+    "id": "news-200",
+    "type": "news",
+    "category": "news",
+    "title": "生态 | 万里安全数据库与东方通中间件及服务器完成兼容互认证！",
+    "date": "2021-04-27",
+    "summary": ""
+  },
+  {
+    "id": "news-199",
+    "type": "news",
+    "category": "news",
+    "title": "活动 | 万里做客华为开发者大会成都站，解读行业关注话题",
+    "date": "2021-04-26",
+    "summary": ""
+  },
+  {
+    "id": "news-196",
+    "type": "news",
+    "category": "news",
+    "title": "预告 | 4月25日HDC，万里与您共论基础软件产业新趋势",
+    "date": "2021-04-22",
+    "summary": ""
+  },
+  {
+    "id": "news-195",
+    "type": "news",
+    "category": "news",
+    "title": "生态 | 万里数据库完美兼容广电运通服务器 助力金融科技更美好！",
+    "date": "2021-04-21",
+    "summary": ""
+  },
+  {
+    "id": "news-193",
+    "type": "news",
+    "category": "news",
+    "title": "深度 | 你真的了解分布式数据库吗？",
+    "date": "2021-04-15",
+    "summary": ""
+  },
+  {
+    "id": "news-192",
+    "type": "news",
+    "category": "news",
+    "title": "技术干货 | GreatSQL MGR优化参考",
+    "date": "2021-04-13",
+    "summary": ""
+  },
+  {
+    "id": "news-184",
+    "type": "news",
+    "category": "news",
+    "title": "展会 | 万里数据库受邀CITE专访 解析信创产业新动向",
+    "date": "2021-04-11",
+    "summary": ""
+  },
+  {
+    "id": "news-183",
+    "type": "news",
+    "category": "news",
+    "title": "展会 | 数据可信 创变未来——万里数据库亮相2021CITE首届信创生态展区",
+    "date": "2021-04-10",
+    "summary": ""
+  },
+  {
+    "id": "news-182",
+    "type": "news",
+    "category": "news",
+    "title": "展会 | 叮！万里数据库向您发出一封2021中国电子信息博览会邀请函~",
+    "date": "2021-04-07",
+    "summary": ""
+  },
+  {
+    "id": "news-181",
+    "type": "news",
+    "category": "news",
+    "title": "生态 | 万里数据库与麒麟软件达成战略合作 开启生态共荣新篇章！",
+    "date": "2021-04-06",
+    "summary": ""
+  },
+  {
+    "id": "news-173",
+    "type": "news",
+    "category": "news",
+    "title": "GreatSQL，打造更好的MGR生态",
+    "date": "2021-04-02",
+    "summary": ""
+  },
+  {
+    "id": "news-172",
+    "type": "news",
+    "category": "news",
+    "title": "生态 | 万里数据库与电科云系列产品完成兼容互认证",
+    "date": "2021-04-01",
+    "summary": ""
+  },
+  {
+    "id": "news-171",
+    "type": "news",
+    "category": "news",
+    "title": "生态 | 万里数据库与电科云达成全面战略合作 共推信创产业生态做大做强",
+    "date": "2021-03-25",
+    "summary": ""
+  },
+  {
+    "id": "news-169",
+    "type": "news",
+    "category": "news",
+    "title": "2021央采榜单花落谁家？万里安全数据库乘风而上 实力入围",
+    "date": "2021-03-22",
+    "summary": ""
+  },
+  {
+    "id": "news-170",
+    "type": "news",
+    "category": "news",
+    "title": "活动 | 技术共享 社区共赢——解锁MGR Bug的16种修复神操作",
+    "date": "2021-03-22",
+    "summary": ""
+  },
+  {
+    "id": "news-168",
+    "type": "news",
+    "category": "news",
+    "title": "活动 | 技术共享 社区共赢——解锁MGR Bug的16种修复神操作",
+    "date": "2021-03-20",
+    "summary": ""
+  },
+  {
+    "id": "news-167",
+    "type": "news",
+    "category": "news",
+    "title": "直播 | 周四下午2点相约信创行业发展高端研讨会——数据库专场",
+    "date": "2021-03-18",
+    "summary": ""
+  },
+  {
+    "id": "news-153",
+    "type": "news",
+    "category": "news",
+    "title": "专访 | 3306π社区专访CTO娄帅，畅谈万里数据库的MGR Bug修复之路",
+    "date": "2021-03-17",
+    "summary": ""
+  },
+  {
+    "id": "news-152",
+    "type": "news",
+    "category": "news",
+    "title": "热点 | 聚焦两会科技创新 万里数据库交出“数据库创新产品奖”完美答卷",
+    "date": "2021-03-12",
+    "summary": ""
+  },
+  {
+    "id": "news-150",
+    "type": "news",
+    "category": "news",
+    "title": "福利 | 3306π技术分享会成都站火爆开启，万里免费送票啦！",
+    "date": "2021-03-11",
+    "summary": ""
+  },
+  {
+    "id": "news-166",
+    "type": "news",
+    "category": "news",
+    "title": "要闻 | 万里数据库荣膺2020年度数据库创新产品奖",
+    "date": "2021-03-08",
+    "summary": ""
+  },
+  {
+    "id": "news-165",
+    "type": "news",
+    "category": "news",
+    "title": "生态|万里数据库加入绿色计算产业联盟，共推产业发展",
+    "date": "2021-03-04",
+    "summary": ""
+  },
+  {
+    "id": "news-164",
+    "type": "news",
+    "category": "news",
+    "title": "再获肯定 | 万里数据库入选《2020年度中国信创TOP500》",
+    "date": "2021-03-02",
+    "summary": ""
+  },
+  {
+    "id": "news-163",
+    "type": "news",
+    "category": "news",
+    "title": "万里数据库亮相2021世界移动通信大会，助力5G技术升级",
+    "date": "2021-02-25",
+    "summary": ""
+  },
+  {
+    "id": "news-162",
+    "type": "news",
+    "category": "news",
+    "title": "一封感谢信 | 一份认可、一份鼓励、一份荣誉",
+    "date": "2021-02-05",
+    "summary": ""
+  },
+  {
+    "id": "news-161",
+    "type": "news",
+    "category": "news",
+    "title": "万里数据库又双叒叕获大奖",
+    "date": "2021-01-29",
+    "summary": ""
+  },
+  {
+    "id": "news-160",
+    "type": "news",
+    "category": "news",
+    "title": "生态|推进数据领域强强联合，万里数据库与迪思杰完成兼容适配",
+    "date": "2021-01-26",
+    "summary": ""
+  },
+  {
+    "id": "news-159",
+    "type": "news",
+    "category": "news",
+    "title": "万里数据库与联通在线沃音乐携手 共建海纳数据智能联合研发实验室",
+    "date": "2021-01-22",
+    "summary": ""
+  },
+  {
+    "id": "news-158",
+    "type": "news",
+    "category": "news",
+    "title": "生态|万里数据库成为光合组织金融科技委员会首批成员单位",
+    "date": "2021-01-21",
+    "summary": ""
+  },
+  {
+    "id": "news-157",
+    "type": "news",
+    "category": "news",
+    "title": "老鱼笔记 | 万里数据库是一家怎样的公司？",
+    "date": "2021-01-19",
+    "summary": ""
+  },
+  {
+    "id": "news-156",
+    "type": "news",
+    "category": "news",
+    "title": "万里数据库加入广州天河信创产业联盟，助力园区核心竞争力提升",
+    "date": "2021-01-13",
+    "summary": ""
+  },
+  {
+    "id": "news-155",
+    "type": "news",
+    "category": "news",
+    "title": "生态 | 共推能源行业国产化，万里数据库与远光软件完成兼容适配",
+    "date": "2021-01-08",
+    "summary": ""
+  },
+  {
+    "id": "news-154",
+    "type": "news",
+    "category": "news",
+    "title": "3分钟了解万里数据库的2020",
+    "date": "2021-01-04",
+    "summary": ""
+  },
+  {
+    "id": "news-147",
+    "type": "news",
+    "category": "news",
+    "title": "万里数据库重磅亮相DTCC 2020，斩获“年度创新企业”奖",
+    "date": "2020-12-20",
+    "summary": ""
+  },
+  {
+    "id": "news-144",
+    "type": "news",
+    "category": "news",
+    "title": "万里数据库再获肯定，荣获首届全国信创大赛大奖",
+    "date": "2020-12-14",
+    "summary": ""
+  },
+  {
+    "id": "news-143",
+    "type": "news",
+    "category": "news",
+    "title": "金融信息技术创新生态实验室成立，万里数据库助力自主可控",
+    "date": "2020-12-10",
+    "summary": ""
+  },
+  {
+    "id": "news-59",
+    "type": "news",
+    "category": "news",
+    "title": "喜报！万里开源中标光大银行开源数据库软件现场服务项目",
+    "date": "2020-11-10",
+    "summary": ""
+  },
+  {
+    "id": "news-61",
+    "type": "news",
+    "category": "news",
+    "title": "openEuler 社区正式成立 Xfce SIG",
+    "date": "2020-10-20",
+    "summary": ""
+  },
+  {
+    "id": "news-62",
+    "type": "news",
+    "category": "news",
+    "title": "创意信息总经理何文江：打造大数据产品和解决方案综合提供商",
+    "date": "2020-09-10",
+    "summary": ""
+  },
+  {
+    "id": "news-63",
+    "type": "news",
+    "category": "news",
+    "title": "万里开源获信通院分布式事务型数据库测评证书",
+    "date": "2020-08-10",
+    "summary": ""
+  },
+  {
+    "id": "news-60",
+    "type": "news",
+    "category": "news",
+    "title": "万里开源：入围中移动自主可控数据库项目 加速跻身国产数据库第一梯队​",
+    "date": "2020-07-22",
+    "summary": ""
+  },
+  {
+    "id": "news-64",
+    "type": "news",
+    "category": "news",
+    "title": "万里开源数据库与统信UOS完成兼容性互认，再拓信创生态版图",
+    "date": "2020-07-16",
+    "summary": ""
+  },
+  {
+    "id": "case-1",
+    "type": "case",
+    "category": "government",
+    "categoryZh": "政府",
+    "title": "国家突发公共事件预警系统项目",
+    "date": "",
+    "summary": ""
+  },
+  {
+    "id": "case-141",
+    "type": "case",
+    "category": "telecom",
+    "categoryZh": "电信",
+    "title": "四川移动客流分析系统",
+    "date": "",
+    "summary": ""
+  },
+  {
+    "id": "case-142",
+    "type": "case",
+    "category": "government",
+    "categoryZh": "政府",
+    "title": "西藏自治区投资数据管理平台",
+    "date": "",
+    "summary": ""
+  },
+  {
+    "id": "case-197",
+    "type": "case",
+    "category": "telecom",
+    "categoryZh": "电信",
+    "title": "运营商智慧中台西藏业务项目",
+    "date": "",
+    "summary": ""
+  },
+  {
+    "id": "case-198",
+    "type": "case",
+    "category": "government",
+    "categoryZh": "政府",
+    "title": "省CA中心PKI/CA 应用系统项目",
+    "date": "",
+    "summary": ""
+  },
+  {
+    "id": "case-2",
+    "type": "case",
+    "category": "finance",
+    "categoryZh": "金融",
+    "title": "瑞银信订单交易系统",
+    "date": "",
+    "summary": ""
+  },
+  {
+    "id": "case-218",
+    "type": "case",
+    "category": "finance",
+    "categoryZh": "金融",
+    "title": "工商银行MySQL数据库运维服务",
+    "date": "",
+    "summary": ""
+  },
+  {
+    "id": "case-3",
+    "type": "case",
+    "category": "finance",
+    "categoryZh": "金融",
+    "title": "深交所数据库运维项目",
+    "date": "",
+    "summary": ""
+  },
+  {
+    "id": "case-4",
+    "type": "case",
+    "category": "finance",
+    "categoryZh": "金融",
+    "title": "全国股份制银行缴费平台系统项目",
+    "date": "",
+    "summary": ""
+  },
+  {
+    "id": "case-5",
+    "type": "case",
+    "category": "energy",
+    "categoryZh": "能源",
+    "title": "国有大型电网公司全业务数据中心项目",
+    "date": "",
+    "summary": ""
+  },
+  {
+    "id": "case-587",
+    "type": "case",
+    "category": "finance",
+    "categoryZh": "金融",
+    "title": "国有大型商业银行小机下移项目",
+    "date": "",
+    "summary": ""
+  },
+  {
+    "id": "case-588",
+    "type": "case",
+    "category": "telecom",
+    "categoryZh": "电信",
+    "title": "运营商SC开关机系统项目",
+    "date": "",
+    "summary": ""
+  },
+  {
+    "id": "case-589",
+    "type": "case",
+    "category": "telecom",
+    "categoryZh": "电信",
+    "title": "运营商省公司统一接触库项目",
+    "date": "",
+    "summary": ""
+  },
+  {
+    "id": "case-6",
+    "type": "case",
+    "category": "telecom",
+    "categoryZh": "电信",
+    "title": "中国移动经分系统",
+    "date": "",
+    "summary": ""
+  }
+]
