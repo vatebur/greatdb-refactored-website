@@ -257,15 +257,15 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: var(--spacing-xl) var(--spacing-md);
+    padding: var(--spacing-xl) 0;
     position: relative;
-    overflow: hidden;
 }
 
 .hero-content {
     max-width: 1400px;
     margin: 0 auto;
     width: 100%;
+    padding: 0 var(--spacing-md);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-lg);
@@ -384,7 +384,7 @@ body {
 .hero-actions {
     display: flex;
     gap: var(--spacing-sm);
-    animation: fadeIn 0.8s ease-out 1.1s backwards;
+    animation: fadeIn 0.8s ease-out 1.1s both;
 }
 
 .btn {
@@ -392,6 +392,7 @@ body {
     border-radius: 4px;
     text-decoration: none;
     font-weight: 700;
+    font-size: 1rem;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -443,6 +444,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    perspective: 1200px;
+    padding: 100px;
+    box-sizing: border-box;
 }
 
 .data-cube {
@@ -452,6 +456,8 @@ body {
     transform-style: preserve-3d;
     animation: rotateCube 20s linear infinite;
     will-change: transform;
+    transform-origin: center center;
+    flex-shrink: 0;
 }
 
 @keyframes rotateCube {
