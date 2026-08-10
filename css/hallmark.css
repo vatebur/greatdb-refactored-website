@@ -722,14 +722,14 @@ ol {
     width: 100%;
     max-width: none;
     padding-inline: max(var(--page-gutter), calc((100% - var(--content-max)) / 2 + var(--page-gutter)));
-    background: var(--color-graphite);
-    color: var(--color-graphite-ink);
+    background: var(--color-paper-2);
+    color: var(--color-ink-2);
 }
 
 .home-section--dark h2,
 .home-section--dark h3,
 .home-section--dark a {
-    color: var(--color-graphite-ink);
+    color: var(--color-ink);
 }
 
 .section-header,

@@ -3,8 +3,6 @@
 
   const script = document.currentScript;
   const siteRoot = script ? new URL('../', script.src) : new URL('./', window.location.href);
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-
   const routes = [
     ['首页', 'index.html', '概览'],
     ['产品', 'products/index.html', 'GreatDB 产品矩阵'],
@@ -46,12 +44,7 @@
     document.querySelectorAll('[data-theme-toggle]').forEach((button) => {
       button.addEventListener('click', () => {
         const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-        const apply = () => setTheme(next);
-        if (!reducedMotion.matches && document.startViewTransition) {
-          document.startViewTransition(apply);
-        } else {
-          apply();
-        }
+        setTheme(next);
         localStorage.setItem('greatdb-theme', next);
       });
     });

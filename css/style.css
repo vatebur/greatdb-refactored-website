@@ -41,10 +41,6 @@
     --color-border: #94a3b8;
 }
 
-[data-theme="light"] .nav {
-    background: rgba(240, 244, 248, 0.85);
-}
-
 * {
     margin: 0;
     padding: 0;
