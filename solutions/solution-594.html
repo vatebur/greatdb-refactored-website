@@ -2,51 +2,64 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>数据库两地三中心解决方案 - 万里数据库 GreatDB</title>
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self';">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@700;900&family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/article.css">
     <link rel="stylesheet" href="../css/solution.css">
+    <link rel="stylesheet" href="../css/hallmark.css">
+    <link rel="icon" href="data:,">
 </head>
 <body>
     <div class="grid-overlay"></div>
-    <nav class="nav">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="../index.html" style="text-decoration:none;color:inherit;display:flex;align-items:center;gap:0.25rem;">
-                    <span class="logo-bracket">[</span>
-                    <span class="logo-text">GreatDB</span>
-                    <span class="logo-bracket">]</span>
-                    <span class="logo-cursor">_</span>
-                </a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="../products/index.html" data-text="产品">产品</a></li>
-                <li><a href="../solutions/index.html" data-text="解决方案">解决方案</a></li>
-                <li><a href="../cases/index.html" data-text="案例">案例</a></li>
-                <li><a href="../about/index.html" data-text="关于">关于</a></li>
-                <li><a href="https://greatsql.cn" target="_blank" data-text="社区">社区</a></li>
-            </ul>
-            <button class="theme-toggle" id="themeToggle" aria-label="切换主题">🌙</button>
-            <a href="../trial.html" class="nav-cta">
-                <span class="cta-text">免费试用</span>
-                <span class="cta-arrow">→</span>
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+    <header class="nav">
+        <nav class="nav-container" aria-label="主导航">
+            <a class="nav-brand" href="../index.html" aria-label="GreatDB 首页">
+                <span class="brand-mark" aria-hidden="true">G/</span>
+                <span>GreatDB</span>
             </a>
+            <button class="site-search-trigger" type="button" data-search-trigger aria-label="搜索全站">
+                <span class="site-search-trigger__icon" aria-hidden="true"></span>
+                <span class="site-search-trigger__text">搜索全站</span>
+                <kbd aria-hidden="true">⌘K</kbd>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../products/index.html">产品</a></li>
+                <li><a href="../solutions/index.html">解决方案</a></li>
+                <li><a href="../cases/index.html">案例</a></li>
+                <li><a href="../articles/index.html">文章</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换到深色模式" aria-pressed="false"><span class="theme-toggle__label">深</span></button>
+                <button class="nav-mobile-trigger" type="button" data-menu-toggle aria-controls="mobile-nav" aria-expanded="false"><span class="sr-only">打开导航</span></button>
+                <a class="nav-cta" href="../trial.html">免费试用 <span aria-hidden="true">→</span></a>
+            </div>
+        </nav>
+        <div class="mobile-nav" id="mobile-nav" data-mobile-nav aria-hidden="true">
+            <div class="mobile-nav__inner">
+                <a href="../products/index.html">产品</a>
+                <a href="../solutions/index.html">解决方案</a>
+                <a href="../cases/index.html">案例</a>
+                <a href="../articles/index.html">文章</a>
+                <a href="../about/index.html">关于</a>
+                <a href="https://greatsql.cn" target="_blank" rel="noopener noreferrer">社区</a>
+                <a href="../trial.html">免费试用</a>
+            </div>
         </div>
-    </nav>
+    </header>
 
-    <main class="solution-main">
+    <main id="main-content" class="solution-main">
         <div class="solution-layout">
             <aside class="solution-sidebar">
                 <div class="sidebar-label">解决方案</div>
                 <ul class="solution-nav">
-                    
+
                 <li class="">
                     <a href="solution-592.html">GreatDB替代MySQL解决方案</a>
                 </li>
@@ -83,25 +96,14 @@
                 </nav>
                 <article class="article-body">
                     <div class="article-content solution-article-content">
-                        <h2>数据库两地三中心解决方案</h2> 
-                 
-              <p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"></span></p><h1 style="font-size: 32px; font-weight: bold; border-bottom: 2px solid rgb(204, 204, 204); padding: 0px 4px 0px 0px; text-align: left; margin: 0px 0px 10px; line-height: normal;"><span style="color: rgb(0, 0, 0);">一、方案背景</span></h1><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">“两地三中心”中的两地是指同城、异地；三中心是指生产中心、同城灾备中心、异地灾备中心。当单个地域的业务无法幸存时，可以采用同城双中心加异地灾备的“两地三中心”容灾备份解决方案，来应对大范围自然灾害导致的业务中断和数据丢失。万里数据库两地三中心高可用灾备解决方案可以完美解决各种场景下的灾备切换问题。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">万里数据库集群支持的两地三中心容灾系统属于数据级的容灾，提供数据库的两地三中心解决方案，易用、易维护、可靠性高；并且用户可以在万里数据库的两地三中心方案上对应用和业务进行改造，构造应用级或业务级容灾系统。</span></p><p><br/></p><p><br/></p><h1 style="font-size: 32px; font-weight: bold; border-bottom: 2px solid rgb(204, 204, 204); padding: 0px 4px 0px 0px; text-align: left; margin: 0px 0px 10px; line-height: normal;"><span style="color: rgb(0, 0, 0);">二、应用场景</span></h1><p><br/></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);"><strong>1) 数据同步：</strong>在多个副本之间进行数据同步，并基于同城短距离和异地远距离的不同场景提供最优的数据同步方案；</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);"><strong>2) 双活、热备、备库可读：</strong>分担业务压力，识别读写事务并进行分发，降低单个数据副本的业务压力，提高整套系统的处理能力；</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);"><strong>3) 故障切换与故障恢复能力：</strong>保证7*24小时提供数据服务，各种软硬件故障下能够提供安全可靠的数据服务，最大程度提供数据可靠性和服务持续性；</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);"><strong>4) 独立备份：</strong>是生产数据最后的保障。即使整套业务、数据库系统都无法恢复，最后还有独立备份数据作为最终数据安全保障手段。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">&nbsp;</span></p><h1 style="font-size: 32px; font-weight: bold; border-bottom: 2px solid rgb(204, 204, 204); padding: 0px 4px 0px 0px; text-align: left; margin: 0px 0px 10px; line-height: normal;"><span style="color: rgb(0, 0, 0);">三、解决方案</span></h1><p><br/></p><p><br/></p><h2 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">1、单一大集群解决方案</span></h2><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">在同城两个机房部署一套数据库集群，两个机房各有2个副本，副本之间采用Paxos协议进行数据同步，保证数据一致性，保证数据库的同城双活。两个机房分别部署对等的业务系统，保证业务的同城双活。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">同城双机房，大集群的主要优势是切换简单，集群内故障自动完成探测切换，内置防脑裂机制成功率100%，灵活部署，可实现任意副本节点的部署，可灵活配置对外访问合规的需求。可根据业务增长进行灵活扩展，突破传统的“停机维护”。</span></p><p style="text-align: center;"><img src="../../../../ueditor/php/upload/image/20230908/1694156750667550.png" title="1694156750667550.png" alt="1.png" width="497" height="472"/><br/></p><p><br/></p><h2 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">2、机房A、B单点故障</span></h2><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">&nbsp;当机房A/B主中心节点发生单点故障，由于多副本部署，集群自动探测节点故障，自动完成切换选主，因此数据库集群仍正常提供读写服务，业务不受影响。待故障恢复后，快速完成数据同步，节点即可修复。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">&nbsp;</span></p><p style="line-height: normal; text-align: center;"><span style="color: rgb(0, 0, 0);">&nbsp;</span><img src="../../../../ueditor/php/upload/image/20230908/1694156763325642.png" title="1694156763325642.png" alt="2.png" width="701" height="229"/></p><p><br/></p><h2 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">3、机房A/B整体故障</span></h2><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">此方案是同城双活部署一个大集群方案，数据自动同步多副本，所以当机房A/B故障后，机房B/A自动接管机房A/B的所有服务，自动完成故障切换，不用担心数据丢失问题，因为远程机房肯定有一份最新数据。因此数据库集群仍正常提供读写服务，业务不受影响。待故障恢复后，快速完成数据同步，节点即可修复。</span></p><p><br/></p><p style="line-height: normal; text-align: center;"><img src="../../../../ueditor/php/upload/image/20230908/1694156770708705.png" title="1694156770708705.png" alt="3.png" width="722" height="236"/></p><p><br/></p><h2 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">4、机房A、B全部故障</span></h2><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">当机房A、B同时故障后，也就是主要的机房出故障，这时候需要应用配合，应用切换到异地机房的应用，由异地机房的应用记问异地机房的数据库。<br/></span></p><p><br/></p><p style="line-height: normal; text-align: center;"><span style="color: rgb(0, 0, 0);">&nbsp;<img src="../../../../ueditor/php/upload/image/20230908/1694156777399206.png" title="1694156777399206.png" alt="4.png" width="624" height="246"/></span></p><p><br/></p><h2 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">5、异地容灾</span></h2><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">同城双机房单一大集群，将一个集群跨同城多机房进行部署。异地机房部署灾备集群，灾备集群基于主城市集群备份进行还原，而后通过集群配套集群CDC全局binlog server和数据同步工具GreatDTS进行异步增量同步，确保灾备集群的数据应用不会影响主城市机房双活集群性能。</span></p><p><br/></p><p style="line-height: normal; text-align: center;"><img src="../../../../ueditor/php/upload/image/20230908/1694156785822530.png" title="1694156785822530.png" alt="5.png" width="659" height="551"/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">&nbsp;</span></p><p><br/></p><h2 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">6、故障恢复</span></h2><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">故障恢复功能主要基于数据库日志以及分布式事务日志进行集群事务操作的故障恢复。每个数据节点通过Redo日志、Undo日志和binlog日志进行本地事务recover，而后数据节点直接通过分布式事务日志进行协调和分布式事务recover。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">分布式事务中会包含相关事务所涉及的数据节点、分布式事务的整体提交状态、以及用于恢复的操作日志。数据节点根据分布式事务全局的提交状态和本地提交状态的对比进行分布式事务的恢复操作。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">&nbsp;</span></p><h1 style="font-size: 32px; font-weight: bold; border-bottom: 2px solid rgb(204, 204, 204); padding: 0px 4px 0px 0px; text-align: left; margin: 0px 0px 10px; line-height: normal;"><span style="color: rgb(0, 0, 0);">四、方案优势</span></h1><p><br/></p><p><br/></p><p style="line-height: normal;"><strong><span style="color: rgb(0, 0, 0);">1) 数据完整性：</span></strong><span style="color: rgb(0, 0, 0);">集群内部多副本保障数据不丢；集群外部机房级保障数据不丢；</span></p><p><br/></p><p style="line-height: normal;"><strong><span style="color: rgb(0, 0, 0);">2) 业务连续性：</span></strong><span style="color: rgb(0, 0, 0);">多副本、多机房、数据强一直，保障业务不中断。同城机房间故障秒级切换；城市级故障分钟级切换（以网络情况而定）；数据零丢失、业务可连续。</span></p>          </div>
+                        <h2>数据库两地三中心解决方案</h2>
+
+              <p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"></span></p><h1 style="font-size: 32px; font-weight: bold; border-bottom: 2px solid rgb(204, 204, 204); padding: 0px 4px 0px 0px; text-align: left; margin: 0px 0px 10px; line-height: normal;"><span style="color: rgb(0, 0, 0);">一、方案背景</span></h1><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">“两地三中心”中的两地是指同城、异地；三中心是指生产中心、同城灾备中心、异地灾备中心。当单个地域的业务无法幸存时，可以采用同城双中心加异地灾备的“两地三中心”容灾备份解决方案，来应对大范围自然灾害导致的业务中断和数据丢失。万里数据库两地三中心高可用灾备解决方案可以完美解决各种场景下的灾备切换问题。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">万里数据库集群支持的两地三中心容灾系统属于数据级的容灾，提供数据库的两地三中心解决方案，易用、易维护、可靠性高；并且用户可以在万里数据库的两地三中心方案上对应用和业务进行改造，构造应用级或业务级容灾系统。</span></p><p><br/></p><p><br/></p><h1 style="font-size: 32px; font-weight: bold; border-bottom: 2px solid rgb(204, 204, 204); padding: 0px 4px 0px 0px; text-align: left; margin: 0px 0px 10px; line-height: normal;"><span style="color: rgb(0, 0, 0);">二、应用场景</span></h1><p><br/></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);"><strong>1) 数据同步：</strong>在多个副本之间进行数据同步，并基于同城短距离和异地远距离的不同场景提供最优的数据同步方案；</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);"><strong>2) 双活、热备、备库可读：</strong>分担业务压力，识别读写事务并进行分发，降低单个数据副本的业务压力，提高整套系统的处理能力；</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);"><strong>3) 故障切换与故障恢复能力：</strong>保证7*24小时提供数据服务，各种软硬件故障下能够提供安全可靠的数据服务，最大程度提供数据可靠性和服务持续性；</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);"><strong>4) 独立备份：</strong>是生产数据最后的保障。即使整套业务、数据库系统都无法恢复，最后还有独立备份数据作为最终数据安全保障手段。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">&nbsp;</span></p><h1 style="font-size: 32px; font-weight: bold; border-bottom: 2px solid rgb(204, 204, 204); padding: 0px 4px 0px 0px; text-align: left; margin: 0px 0px 10px; line-height: normal;"><span style="color: rgb(0, 0, 0);">三、解决方案</span></h1><p><br/></p><p><br/></p><h2 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">1、单一大集群解决方案</span></h2><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">在同城两个机房部署一套数据库集群，两个机房各有2个副本，副本之间采用Paxos协议进行数据同步，保证数据一致性，保证数据库的同城双活。两个机房分别部署对等的业务系统，保证业务的同城双活。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">同城双机房，大集群的主要优势是切换简单，集群内故障自动完成探测切换，内置防脑裂机制成功率100%，灵活部署，可实现任意副本节点的部署，可灵活配置对外访问合规的需求。可根据业务增长进行灵活扩展，突破传统的“停机维护”。</span></p><p style="text-align: center;"><span class="missing-asset" role="note">原始图示未随学习版存档 · 1.png</span><br/></p><p><br/></p><h2 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">2、机房A、B单点故障</span></h2><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">&nbsp;当机房A/B主中心节点发生单点故障，由于多副本部署，集群自动探测节点故障，自动完成切换选主，因此数据库集群仍正常提供读写服务，业务不受影响。待故障恢复后，快速完成数据同步，节点即可修复。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">&nbsp;</span></p><p style="line-height: normal; text-align: center;"><span style="color: rgb(0, 0, 0);">&nbsp;</span><span class="missing-asset" role="note">原始图示未随学习版存档 · 2.png</span></p><p><br/></p><h2 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">3、机房A/B整体故障</span></h2><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">此方案是同城双活部署一个大集群方案，数据自动同步多副本，所以当机房A/B故障后，机房B/A自动接管机房A/B的所有服务，自动完成故障切换，不用担心数据丢失问题，因为远程机房肯定有一份最新数据。因此数据库集群仍正常提供读写服务，业务不受影响。待故障恢复后，快速完成数据同步，节点即可修复。</span></p><p><br/></p><p style="line-height: normal; text-align: center;"><span class="missing-asset" role="note">原始图示未随学习版存档 · 3.png</span></p><p><br/></p><h2 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">4、机房A、B全部故障</span></h2><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">当机房A、B同时故障后，也就是主要的机房出故障，这时候需要应用配合，应用切换到异地机房的应用，由异地机房的应用记问异地机房的数据库。<br/></span></p><p><br/></p><p style="line-height: normal; text-align: center;"><span style="color: rgb(0, 0, 0);">&nbsp;<span class="missing-asset" role="note">原始图示未随学习版存档 · 4.png</span></span></p><p><br/></p><h2 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">5、异地容灾</span></h2><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">同城双机房单一大集群，将一个集群跨同城多机房进行部署。异地机房部署灾备集群，灾备集群基于主城市集群备份进行还原，而后通过集群配套集群CDC全局binlog server和数据同步工具GreatDTS进行异步增量同步，确保灾备集群的数据应用不会影响主城市机房双活集群性能。</span></p><p><br/></p><p style="line-height: normal; text-align: center;"><span class="missing-asset" role="note">原始图示未随学习版存档 · 5.png</span></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">&nbsp;</span></p><p><br/></p><h2 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">6、故障恢复</span></h2><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">故障恢复功能主要基于数据库日志以及分布式事务日志进行集群事务操作的故障恢复。每个数据节点通过Redo日志、Undo日志和binlog日志进行本地事务recover，而后数据节点直接通过分布式事务日志进行协调和分布式事务recover。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">分布式事务中会包含相关事务所涉及的数据节点、分布式事务的整体提交状态、以及用于恢复的操作日志。数据节点根据分布式事务全局的提交状态和本地提交状态的对比进行分布式事务的恢复操作。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">&nbsp;</span></p><h1 style="font-size: 32px; font-weight: bold; border-bottom: 2px solid rgb(204, 204, 204); padding: 0px 4px 0px 0px; text-align: left; margin: 0px 0px 10px; line-height: normal;"><span style="color: rgb(0, 0, 0);">四、方案优势</span></h1><p><br/></p><p><br/></p><p style="line-height: normal;"><strong><span style="color: rgb(0, 0, 0);">1) 数据完整性：</span></strong><span style="color: rgb(0, 0, 0);">集群内部多副本保障数据不丢；集群外部机房级保障数据不丢；</span></p><p><br/></p><p style="line-height: normal;"><strong><span style="color: rgb(0, 0, 0);">2) 业务连续性：</span></strong><span style="color: rgb(0, 0, 0);">多副本、多机房、数据强一直，保障业务不中断。同城机房间故障秒级切换；城市级故障分钟级切换（以网络情况而定）；数据零丢失、业务可连续。</span></p>          </div>
      </div>
   </div>
   </div>
-
-<script>
- $(function(){ 
-  $(".alxq_l li.bg").prev().css('border-bottom-color','transparent');   
-		$(".al_dhx p").css("font-family","siyuanheiti");
-	$(".al_dhx span").css("font-family","siyuanheiti");
-	$(".al_dhx h1").css("font-family","siyuanheiti");
-	$(".al_dhx h2").css("font-family","siyuanheiti");
-	$(".al_dhx a").css("font-family","siyuanheiti");
- });
-</script>
 <!--main end -->
-  
+
 <!--footer begin -->
                     </div>
                 </article>
@@ -112,50 +114,21 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <div class="footer-logo">
-                    <span class="logo-bracket">[</span><span class="logo-text">GreatDB</span><span class="logo-bracket">]</span>
-                </div>
-                <p class="footer-tagline">新一代分布式数据库系统</p>
+                <a class="footer-logo" href="../index.html"><span class="brand-mark" aria-hidden="true">G/</span><span>GreatDB</span></a>
+                <p class="footer-tagline">面向关键业务的数据基础设施。金融级安全、高性能并发、自主可控。</p>
             </div>
-            <div class="footer-links">
-                <div class="footer-column">
-                    <h4>产品</h4>
-                    <ul>
-                        <li><a href="../products/centralized.html">安全数据库集中式</a></li>
-                        <li><a href="../products/distributed.html">安全数据库分布式</a></li>
-                        <li><a href="../products/management.html">数据库管理平台</a></li>
-                        <li><a href="../products/migration.html">数据迁移服务平台</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>解决方案</h4>
-                    <ul>
-                        <li><a href="solution-592.html">GreatDB替代MySQL解决方案</a></li>
-                        <li><a href="solution-593.html">GreatDB替代Oracle解决方案</a></li>
-                        <li><a href="solution-594.html">数据库两地三中心解决方案</a></li>
-                        <li><a href="solution-595.html">数据库上云解决方案</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>关于我们</h4>
-                    <ul>
-                        <li><a href="../about/index.html">公司介绍</a></li>
-                        <li><a href="../about/careers.html">加入我们</a></li>
-                        <li><a href="../about/partners.html">合作伙伴</a></li>
-                        <li><a href="https://greatsql.cn" target="_blank">开源社区</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>联系方式</h4>
-                    <ul>
-                        <li>业务专线: 400-032-7868</li>
-                        <li>简历投递: hr@greatdb.com</li>
-                    </ul>
-                </div>
-            </div>
+            <nav class="footer-links-inline" aria-label="页脚导航">
+                <a href="../products/index.html">产品</a>
+                <a href="../solutions/index.html">解决方案</a>
+                <a href="../cases/index.html">客户案例</a>
+                <a href="../downloads/index.html">下载中心</a>
+                <a href="../about/index.html">关于我们</a>
+                <a href="https://greatsql.cn" target="_blank" rel="noopener noreferrer">GreatSQL 社区</a>
+            </nav>
         </div>
         <div class="footer-bottom">
-            <p>© 2020 北京万里开源软件有限公司 | 京ICP备06057874号</p>
+            <span>© 2020 北京万里开源软件有限公司</span>
+            <span>非官方前端重构学习实践 · 业务专线 400-032-7868</span>
         </div>
     </footer>
     <script src="../js/main.js"></script>

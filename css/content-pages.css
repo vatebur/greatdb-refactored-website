@@ -1,4 +1,4 @@
-/* Content Page Styles */
+/* Hallmark · Workbench compatibility layer · active design system: design.md + tokens.css · designed-as-app */
 .content-page {
     max-width: 1200px;
     margin: 0 auto;
@@ -11,10 +11,9 @@
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: var(--spacing-md);
-    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    background: none;
+    color: var(--color-ink);
+    -webkit-text-fill-color: currentColor;
 }
 
 .content-page h2 {

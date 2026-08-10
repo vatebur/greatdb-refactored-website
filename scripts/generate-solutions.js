@@ -167,3 +167,4 @@ for (const sol of SOLUTIONS) {
   fs.writeFileSync(path.join(OUT_DIR, `solution-${sol.id}.html`), generateDetailPage(sol));
 }
 console.log(`Generated ${SOLUTIONS.length} solution detail pages`);
+require('./apply-hallmark-shell').applyAll();

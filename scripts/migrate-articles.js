@@ -243,3 +243,4 @@ for (const article of articles) {
 
 console.log(`Done: ${generated} articles (${articles.filter(a=>a.type==='news').length} news, ${articles.filter(a=>a.type==='case').length} cases)`);
 console.log(`Index: articles/data.json`);
+require('./apply-hallmark-shell').applyAll();

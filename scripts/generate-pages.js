@@ -2,15 +2,15 @@
 
 /**
  * GreatDB Page Generator
- * Generates new pages with Tech-Brutalist design from extracted content
+ * Generates pages from extracted content, then applies the shared Hallmark shell.
  */
 
 const fs = require('fs');
 const path = require('path');
 
-const TEMPLATE_PATH = '/root/greatdb/refactored-website/components/page-template.html';
-const EXTRACTED_DIR = '/root/greatdb/refactored-website/extracted-content';
-const OUTPUT_DIR = '/root/greatdb/refactored-website';
+const TEMPLATE_PATH = path.join(__dirname, '..', 'components', 'page-template.html');
+const EXTRACTED_DIR = path.join(__dirname, '..', 'extracted-content');
+const OUTPUT_DIR = path.join(__dirname, '..');
 
 // Read template
 const template = fs.readFileSync(TEMPLATE_PATH, 'utf-8');
@@ -101,3 +101,4 @@ const duration = ((Date.now() - startTime) / 1000).toFixed(2);
 
 console.log(`\n======================`);
 console.log(`✓ Generated ${totalGenerated} pages in ${duration}s`);
+require('./apply-hallmark-shell').applyAll();

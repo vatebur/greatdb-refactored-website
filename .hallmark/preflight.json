@@ -1,0 +1,67 @@
+{
+  "scanned_at": "2026-08-10T11:05:51+08:00",
+  "project": {
+    "framework": "vanilla-html-css-js",
+    "framework_evidence": [
+      "index.html:1",
+      "index.html:15",
+      "No package.json or framework configuration found"
+    ]
+  },
+  "design_system": {
+    "locked_design_file": null,
+    "font_stack": {
+      "display": "Orbitron",
+      "body": "Noto Sans SC",
+      "mono": "JetBrains Mono",
+      "evidence": [
+        "index.html:14",
+        "css/style.css:12",
+        "css/style.css:13",
+        "css/style.css:14"
+      ]
+    },
+    "palette": {
+      "format": "hex custom properties",
+      "modes": ["dark", "light"],
+      "evidence": [
+        "css/style.css:1",
+        "css/style.css:31"
+      ]
+    },
+    "spacing": {
+      "scale": "8px-derived custom properties",
+      "evidence": ["css/style.css:16"]
+    },
+    "motion": {
+      "dependency_stance": "motion-cut (no package.json or motion library)",
+      "observed_stance": "motion-on (CSS keyframes and JavaScript animation)",
+      "reduced_motion_supported": true,
+      "conflict": "No motion library is installed, but the production UI contains substantial CSS and JavaScript motion.",
+      "evidence": [
+        "css/style.css:75",
+        "css/style.css:104",
+        "css/style.css:942",
+        "js/main.js:89",
+        "js/main.js:139"
+      ]
+    }
+  },
+  "preserve": [
+    "Orbitron + Noto Sans SC + JetBrains Mono font roles",
+    "existing dark/light palette intent",
+    "existing spacing scale",
+    "vanilla HTML/CSS/JS implementation boundaries"
+  ],
+  "introduce": [
+    "intentional macrostructure",
+    "interaction-state discipline",
+    "Hallmark slop-test gates",
+    "mobile verification at 320, 375, 414, and 768 px"
+  ],
+  "source_mtimes": {
+    "index.html": 1786331151,
+    "css/style.css": 1786331151,
+    "js/main.js": 1786331151
+  }
+}

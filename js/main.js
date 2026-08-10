@@ -1,366 +1,313 @@
-function animateCounter(element, target, duration = 2000) {
-    const start = 0;
-    const startTime = performance.now();
+(() => {
+  'use strict';
 
-    function update(currentTime) {
-        const elapsed = currentTime - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        const current = start + (target - start) * progress;
+  const script = document.currentScript;
+  const siteRoot = script ? new URL('../', script.src) : new URL('./', window.location.href);
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-        element.textContent = Math.floor(current);
+  const routes = [
+    ['首页', 'index.html', '概览'],
+    ['产品', 'products/index.html', 'GreatDB 产品矩阵'],
+    ['GreatDB 数据库', 'products/greatdb.html', '核心数据库产品'],
+    ['GreatDB Cluster', 'products/cluster.html', '高可用集群'],
+    ['GreatDB TDSQL', 'products/tdsql.html', '分布式数据库'],
+    ['GreatDB MPP', 'products/mpp.html', '分析型数据库'],
+    ['解决方案', 'solutions/index.html', '行业与场景方案'],
+    ['客户案例', 'cases/index.html', '真实业务实践'],
+    ['文章', 'articles/index.html', '新闻、观点与动态'],
+    ['关于我们', 'about/index.html', '公司与团队'],
+    ['社区', 'about/community.html', '开发者与生态'],
+    ['下载中心', 'downloads/index.html', '产品资料与下载'],
+    ['免费试用', 'trial.html', '提交试用需求']
+  ];
 
-        if (progress < 1) {
-            requestAnimationFrame(update);
+  function resolve(relativePath) {
+    return new URL(relativePath, siteRoot).href;
+  }
+
+  function setTheme(theme) {
+    document.documentElement.dataset.theme = theme;
+    document.documentElement.style.colorScheme = theme;
+    document.querySelectorAll('[data-theme-toggle]').forEach((button) => {
+      const label = button.querySelector('.theme-toggle__label');
+      button.setAttribute('aria-label', theme === 'dark' ? '切换到浅色模式' : '切换到深色模式');
+      button.setAttribute('aria-pressed', String(theme === 'dark'));
+      if (label) label.textContent = theme === 'dark' ? '浅' : '深';
+    });
+  }
+
+  function initTheme() {
+    const stored = localStorage.getItem('greatdb-theme');
+    const initial = stored === 'dark' || stored === 'light'
+      ? stored
+      : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    setTheme(initial);
+
+    document.querySelectorAll('[data-theme-toggle]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        const apply = () => setTheme(next);
+        if (!reducedMotion.matches && document.startViewTransition) {
+          document.startViewTransition(apply);
         } else {
-            element.textContent = target;
+          apply();
         }
-    }
-
-    requestAnimationFrame(update);
-}
-
-// Initialize counters when in viewport
-const observerOptions = {
-    threshold: 0.5,
-    rootMargin: '0px'
-};
-
-const counterObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const target = parseFloat(entry.target.dataset.target);
-            animateCounter(entry.target, target);
-            counterObserver.unobserve(entry.target);
-        }
+        localStorage.setItem('greatdb-theme', next);
+      });
     });
-}, observerOptions);
+  }
 
-document.querySelectorAll('.stat-number').forEach(counter => {
-    counterObserver.observe(counter);
-});
-
-// Smooth scroll for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const href = this.getAttribute('href');
-        // Validate href to prevent XSS via querySelector
-        if (href && /^#[\w-]+$/.test(href)) {
-            const target = document.querySelector(href);
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        }
+  function initNavigation() {
+    const current = new URL(window.location.href).pathname.replace(/\/index\.html$/, '/');
+    document.querySelectorAll('.nav-menu a, .mobile-nav a').forEach((link) => {
+      const target = new URL(link.href).pathname.replace(/\/index\.html$/, '/');
+      if (target !== '/' && current.startsWith(target)) link.setAttribute('aria-current', 'page');
+      if (target === '/' && current === '/') link.setAttribute('aria-current', 'page');
     });
-});
 
-// Parallax effect for hero visual
-const PARALLAX_MULTIPLIER = 20;
-const PARALLAX_EASING = 0.05;
-const PARALLAX_ROTATION = 2;
+    const toggle = document.querySelector('[data-menu-toggle]');
+    const panel = document.querySelector('[data-mobile-nav]');
+    if (!toggle || !panel) return;
 
-let mouseX = 0;
-let mouseY = 0;
-let cubeX = 0;
-let cubeY = 0;
-const cube = document.querySelector('.data-cube');
-
-function throttle(func, delay) {
-    let lastCall = 0;
-    return function(...args) {
-        const now = Date.now();
-        if (now - lastCall >= delay) {
-            lastCall = now;
-            func(...args);
-        }
+    const setOpen = (open) => {
+      toggle.setAttribute('aria-expanded', String(open));
+      panel.setAttribute('aria-hidden', String(!open));
+      panel.dataset.open = String(open);
     };
-}
 
-const handleMouseMove = throttle((e) => {
-    mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
-    mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
-}, 16);
-
-document.addEventListener('mousemove', handleMouseMove);
-
-function animateCube() {
-    if (document.hidden || !cube) {
-        requestAnimationFrame(animateCube);
-        return;
-    }
-
-    cubeX += (mouseX * PARALLAX_MULTIPLIER - cubeX) * PARALLAX_EASING;
-    cubeY += (mouseY * PARALLAX_MULTIPLIER - cubeY) * PARALLAX_EASING;
-
-    cube.style.transform = `translate(${cubeX}px, ${cubeY}px) rotateX(${cubeY * PARALLAX_ROTATION}deg) rotateY(${cubeX * PARALLAX_ROTATION}deg)`;
-
-    requestAnimationFrame(animateCube);
-}
-
-if (cube) {
-    animateCube();
-}
-
-// Card hover effects with 3D tilt
-const TILT_DIVISOR = 10;
-const TILT_PERSPECTIVE = 1000;
-const TILT_LIFT = -8;
-
-const cardContainer = document.querySelector('.products-grid, .cases-grid');
-if (cardContainer) {
-    cardContainer.addEventListener('mousemove', (e) => {
-        const card = e.target.closest('.product-card, .case-card');
-        if (!card) return;
-
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-
-        const rotateX = (y - centerY) / TILT_DIVISOR;
-        const rotateY = (centerX - x) / TILT_DIVISOR;
-
-        card.style.transform = `perspective(${TILT_PERSPECTIVE}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(${TILT_LIFT}px)`;
+    toggle.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
+    panel.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => setOpen(false)));
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        setOpen(false);
+        toggle.focus();
+      }
     });
+  }
 
-    cardContainer.addEventListener('mouseleave', (e) => {
-        const card = e.target.closest('.product-card, .case-card');
-        if (card) {
-            card.style.transform = '';
-        }
-    });
-}
+  function createSearchDialog() {
+    const dialog = document.createElement('dialog');
+    dialog.className = 'cmdk';
+    dialog.id = 'site-search-dialog';
+    dialog.setAttribute('aria-labelledby', 'site-search-title');
+    dialog.innerHTML = `
+      <div class="cmdk__panel">
+        <div class="cmdk__header">
+          <span class="cmdk__mark" aria-hidden="true">G/</span>
+          <label class="sr-only" id="site-search-title" for="site-search-input">搜索全站</label>
+          <input id="site-search-input" class="cmdk__input" type="search" autocomplete="off" placeholder="搜索产品、方案、案例与文章…">
+          <button class="cmdk-close" type="button" data-search-close aria-label="关闭搜索">Esc</button>
+        </div>
+        <p class="cmdk__status" data-search-status aria-live="polite">输入关键词开始搜索</p>
+        <div class="cmdk__results" data-search-results role="listbox" aria-label="搜索结果"></div>
+        <div class="cmdk__footer"><span>↑↓ 选择</span><span>Enter 打开</span><span>Esc 关闭</span></div>
+      </div>`;
+    document.body.append(dialog);
+    return dialog;
+  }
 
-// Intersection Observer for fade-in animations
-const fadeObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
-});
+  function initSearch() {
+    const triggers = [...document.querySelectorAll('[data-search-trigger]')];
+    if (!triggers.length) return;
 
-// Apply fade-in to sections
-document.querySelectorAll('.product-card, .case-card, .news-item').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-    fadeObserver.observe(el);
-});
+    const dialog = document.getElementById('site-search-dialog') || createSearchDialog();
+    const input = dialog.querySelector('.cmdk__input');
+    const results = dialog.querySelector('[data-search-results]');
+    const status = dialog.querySelector('[data-search-status]');
+    const close = dialog.querySelector('[data-search-close]');
+    let catalogue = routes.map(([title, path, description]) => ({ title, path, description, type: '页面' }));
+    let articleRequest;
+    let activeIndex = 0;
+    let visible = [];
+    let returnFocus;
 
-// Data stream animation in hero
-const STREAM_INTERVAL = 200;
-const STREAM_CLEANUP_DELAY = 5000;
-let streamIntervalId = null;
-
-function createDataStream() {
-    const container = document.querySelector('.data-streams');
-    if (!container) return;
-
-    const stream = document.createElement('div');
-    stream.className = 'data-stream';
-    stream.style.cssText = `
-        position: absolute;
-        width: 2px;
-        height: 100px;
-        background: linear-gradient(to bottom, transparent, var(--color-primary), transparent);
-        left: ${Math.random() * 100}%;
-        top: -100px;
-        animation: streamFall ${3 + Math.random() * 2}s linear;
-        opacity: ${0.3 + Math.random() * 0.4};
-    `;
-
-    container.appendChild(stream);
-
-    setTimeout(() => {
-        stream.remove();
-    }, STREAM_CLEANUP_DELAY);
-}
-
-// Only create streams when hero is visible
-const heroObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting && !streamIntervalId) {
-            streamIntervalId = setInterval(createDataStream, STREAM_INTERVAL);
-        } else if (!entry.isIntersecting && streamIntervalId) {
-            clearInterval(streamIntervalId);
-            streamIntervalId = null;
-        }
-    });
-});
-
-const heroSection = document.querySelector('.hero');
-if (heroSection) {
-    heroObserver.observe(heroSection);
-}
-
-// Navbar scroll effect
-const SCROLL_THRESHOLD = 100;
-const nav = document.querySelector('.nav');
-
-const handleScroll = throttle(() => {
-    const currentScroll = window.pageYOffset;
-
-    if (currentScroll > SCROLL_THRESHOLD) {
-        nav.style.background = 'rgba(10, 14, 20, 0.95)';
-        nav.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
-    } else {
-        nav.style.background = 'rgba(10, 14, 20, 0.8)';
-        nav.style.boxShadow = 'none';
-    }
-}, 100);
-
-window.addEventListener('scroll', handleScroll, { passive: true });
-
-// Glitch effect on hover for titles
-document.querySelectorAll('.hero-title, .section-title').forEach(title => {
-    title.addEventListener('mouseenter', function() {
-        this.style.animation = 'glitch 0.3s ease-in-out';
-    });
-
-    title.addEventListener('animationend', function() {
-        this.style.animation = '';
-    });
-});
-
-// Add glitch keyframes
-const glitchStyle = document.createElement('style');
-glitchStyle.textContent = `
-    @keyframes glitch {
-        0% { transform: translate(0); }
-        20% { transform: translate(-2px, 2px); }
-        40% { transform: translate(-2px, -2px); }
-        60% { transform: translate(2px, 2px); }
-        80% { transform: translate(2px, -2px); }
-        100% { transform: translate(0); }
-    }
-`;
-document.head.appendChild(glitchStyle);
-
-// Typing effect for hero label
-const TYPING_DELAY = 50;
-const TYPING_START_DELAY = 500;
-
-const heroLabel = document.querySelector('.hero-label span:last-child');
-if (heroLabel) {
-    const text = heroLabel.textContent;
-    heroLabel.textContent = '';
-    let i = 0;
-
-    function typeWriter() {
-        if (i < text.length) {
-            heroLabel.textContent += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, TYPING_DELAY);
-        }
-    }
-
-    setTimeout(typeWriter, TYPING_START_DELAY);
-}
-
-// Add particle effect on card hover
-const MAX_PARTICLES = 3;
-const PARTICLE_SIZE = 4;
-const PARTICLE_FADE_RATE = 0.02;
-
-document.querySelectorAll('.product-card').forEach(card => {
-    card.addEventListener('mouseenter', function(e) {
-        for (let i = 0; i < MAX_PARTICLES; i++) {
-            createParticle(e.clientX, e.clientY);
-        }
-    });
-});
-
-function createParticle(x, y) {
-    const particle = document.createElement('div');
-    particle.style.cssText = `
-        position: fixed;
-        width: ${PARTICLE_SIZE}px;
-        height: ${PARTICLE_SIZE}px;
-        background: var(--color-primary);
-        border-radius: 50%;
-        pointer-events: none;
-        left: ${x}px;
-        top: ${y}px;
-        z-index: 9999;
-    `;
-
-    document.body.appendChild(particle);
-
-    const angle = Math.random() * Math.PI * 2;
-    const velocity = 2 + Math.random() * 3;
-    const vx = Math.cos(angle) * velocity;
-    const vy = Math.sin(angle) * velocity;
-
-    let posX = 0;
-    let posY = 0;
-    let opacity = 1;
-
-    function animate() {
-        posX += vx;
-        posY += vy;
-        opacity -= PARTICLE_FADE_RATE;
-
-        particle.style.transform = `translate(${posX}px, ${posY}px)`;
-        particle.style.opacity = opacity;
-
-        if (opacity > 0) {
-            requestAnimationFrame(animate);
-        } else {
-            particle.remove();
-        }
-    }
-
-    animate();
-}
-
-// Console easter egg (disable in production)
-if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-    console.log('%c[GreatDB]', 'color: #00ffff; font-size: 20px; font-weight: bold;');
-    console.log('%c新一代分布式数据库系统', 'color: #ff00ff; font-size: 14px;');
-    console.log('%c想加入我们？发送简历至 hr@greatdb.com', 'color: #8b949e; font-size: 12px;');
-}
-
-// Performance optimization: Reduce animations on low-end devices
-if (navigator.hardwareConcurrency && navigator.hardwareConcurrency < 4) {
-    document.body.classList.add('reduced-motion');
-    const reducedStyle = document.createElement('style');
-    reducedStyle.textContent = `
-        .reduced-motion * {
-            animation-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
-        }
-    `;
-    document.head.appendChild(reducedStyle);
-}
-
-if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-    console.log('%c✓ Website initialized', 'color: #00ff88; font-weight: bold;');
-}
-
-// Theme toggle
-(function() {
-    const saved = localStorage.getItem('theme') || 'dark';
-    document.documentElement.setAttribute('data-theme', saved === 'light' ? 'light' : 'dark');
-
-    document.addEventListener('DOMContentLoaded', () => {
-        const btn = document.getElementById('themeToggle');
-        if (!btn) return;
-        btn.textContent = document.documentElement.getAttribute('data-theme') === 'light' ? '🌙' : '☀️';
-        btn.addEventListener('click', () => {
-            const next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-            document.documentElement.setAttribute('data-theme', next);
-            localStorage.setItem('theme', next);
-            btn.textContent = next === 'light' ? '🌙' : '☀️';
+    const loadArticles = () => {
+      if (articleRequest) return articleRequest;
+      status.textContent = '正在载入文章索引…';
+      articleRequest = fetch(resolve('articles/data.json'))
+        .then((response) => {
+          if (!response.ok) throw new Error('Article index unavailable');
+          return response.json();
+        })
+        .then((items) => {
+          const articles = items.map((item) => ({
+            title: item.title || '未命名文章',
+            description: [item.category, item.date].filter(Boolean).join(' · '),
+            type: '文章',
+            path: `articles/${item.id}.html`
+          }));
+          catalogue = catalogue.concat(articles);
+          status.textContent = '输入关键词开始搜索';
+        })
+        .catch(() => {
+          status.textContent = '文章索引暂时不可用，仍可搜索主要页面。';
         });
+      return articleRequest;
+    };
+
+    const render = (items) => {
+      visible = items.slice(0, 12);
+      activeIndex = Math.min(activeIndex, Math.max(visible.length - 1, 0));
+      results.replaceChildren();
+      visible.forEach((item, index) => {
+        const link = document.createElement('a');
+        link.className = 'cmdk__item';
+        link.href = resolve(item.path);
+        link.role = 'option';
+        link.id = `site-search-result-${index}`;
+        link.setAttribute('aria-selected', String(index === activeIndex));
+        link.innerHTML = '<span class="cmdk__result-copy"><strong class="cmdk__item-title"></strong><small></small></span><span class="cmdk__item-kind"></span>';
+        link.querySelector('strong').textContent = item.title;
+        link.querySelector('small').textContent = item.description;
+        link.querySelector('.cmdk__item-kind').textContent = item.type;
+        link.addEventListener('pointermove', () => {
+          activeIndex = index;
+          updateActive();
+        });
+        results.append(link);
+      });
+      input.setAttribute('aria-activedescendant', visible.length ? `site-search-result-${activeIndex}` : '');
+    };
+
+    const updateActive = () => {
+      results.querySelectorAll('.cmdk__item').forEach((item, index) => {
+        item.setAttribute('aria-selected', String(index === activeIndex));
+      });
+      input.setAttribute('aria-activedescendant', visible.length ? `site-search-result-${activeIndex}` : '');
+    };
+
+    const search = () => {
+      const query = input.value.trim().toLocaleLowerCase('zh-CN');
+      if (!query) {
+        status.textContent = '输入关键词开始搜索';
+        render(catalogue.slice(0, 7));
+        return;
+      }
+      const matches = catalogue.filter((item) => `${item.title} ${item.description}`.toLocaleLowerCase('zh-CN').includes(query));
+      status.textContent = matches.length ? `找到 ${matches.length} 个结果` : '没有找到结果，试试更短的关键词。';
+      activeIndex = 0;
+      render(matches);
+    };
+
+    let debounce;
+    input.addEventListener('input', () => {
+      window.clearTimeout(debounce);
+      debounce = window.setTimeout(search, 250);
     });
+    input.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowDown' && visible.length) {
+        event.preventDefault();
+        activeIndex = (activeIndex + 1) % visible.length;
+        updateActive();
+      }
+      if (event.key === 'ArrowUp' && visible.length) {
+        event.preventDefault();
+        activeIndex = (activeIndex - 1 + visible.length) % visible.length;
+        updateActive();
+      }
+      if (event.key === 'Enter' && visible[activeIndex]) {
+        event.preventDefault();
+        window.location.href = resolve(visible[activeIndex].path);
+      }
+    });
+
+    const open = (trigger) => {
+      returnFocus = trigger;
+      dialog.showModal();
+      document.body.classList.add('is-modal-open');
+      input.value = '';
+      render(catalogue.slice(0, 7));
+      loadArticles().then(search);
+      window.requestAnimationFrame(() => input.focus());
+    };
+    const closeDialog = () => dialog.close();
+
+    triggers.forEach((trigger) => trigger.addEventListener('click', () => open(trigger)));
+    close.addEventListener('click', closeDialog);
+    dialog.addEventListener('click', (event) => {
+      const rect = dialog.getBoundingClientRect();
+      const outside = event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom;
+      if (outside) closeDialog();
+    });
+    dialog.addEventListener('close', () => {
+      document.body.classList.remove('is-modal-open');
+      if (returnFocus) returnFocus.focus();
+    });
+    document.addEventListener('keydown', (event) => {
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') {
+        event.preventDefault();
+        if (dialog.open) closeDialog(); else open(triggers[0]);
+      }
+    });
+  }
+
+  function initProductTabs() {
+    document.querySelectorAll('.products-section').forEach((section) => {
+      const tabs = [...section.querySelectorAll('.product-tab[data-product]')];
+      const panels = [...section.querySelectorAll('.product-panel[data-product]')];
+      if (!tabs.length || !panels.length) return;
+      tabs.forEach((tab) => {
+        tab.setAttribute('role', 'tab');
+        tab.tabIndex = tab.classList.contains('active') ? 0 : -1;
+        tab.addEventListener('click', () => {
+          const id = tab.dataset.product;
+          tabs.forEach((item) => {
+            const active = item === tab;
+            item.classList.toggle('active', active);
+            item.setAttribute('aria-selected', String(active));
+            item.tabIndex = active ? 0 : -1;
+          });
+          panels.forEach((panel) => {
+            const active = panel.dataset.product === id;
+            panel.classList.toggle('active', active);
+            panel.hidden = !active;
+          });
+        });
+      });
+    });
+  }
+
+  function initTrialForm() {
+    const form = document.querySelector('[data-trial-form]');
+    if (!form) return;
+    const status = form.querySelector('[data-form-status]');
+    form.querySelectorAll('input, select, textarea').forEach((field) => {
+      const helper = field.closest('.field')?.querySelector('.field-helper');
+      if (helper) helper.dataset.defaultText = helper.textContent;
+
+      const updateValidity = () => {
+        const invalid = field.value.length > 0 && !field.validity.valid;
+        const missing = field.required && field.value.length === 0;
+        field.setAttribute('aria-invalid', String(invalid || missing));
+        if (!helper) return;
+        if (invalid || missing) {
+          helper.dataset.tone = 'error';
+          helper.textContent = field.validity.typeMismatch ? '请填写有效的邮箱地址。' : '此项为必填信息。';
+        } else {
+          delete helper.dataset.tone;
+          helper.textContent = helper.dataset.defaultText;
+        }
+      };
+
+      field.addEventListener('blur', updateValidity);
+      field.addEventListener('input', () => {
+        if (field.getAttribute('aria-invalid') === 'true') updateValidity();
+      });
+    });
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        if (status) status.textContent = '请补全必填信息后再提交。';
+        return;
+      }
+      if (status) status.textContent = '此学习版页面未连接申请后台。请通过官方渠道提交试用需求。';
+    });
+  }
+
+  initTheme();
+  initNavigation();
+  initSearch();
+  initProductTabs();
+  initTrialForm();
 })();

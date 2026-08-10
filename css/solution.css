@@ -1,4 +1,4 @@
-/* Solution detail layout */
+/* Hallmark · Map / Diagram compatibility layer · active design system: design.md + tokens.css · designed-as-app */
 .solution-main {
     padding: 7rem 2rem 4rem;
     min-height: 100vh;
@@ -43,7 +43,7 @@
     color: var(--color-text-secondary);
     text-decoration: none;
     border-left: 2px solid transparent;
-    transition: all var(--transition-fast);
+    transition: none;
     line-height: 1.4;
 }
 

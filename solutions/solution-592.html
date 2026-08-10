@@ -2,51 +2,64 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>GreatDB替代MySQL解决方案 - 万里数据库 GreatDB</title>
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self';">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@700;900&family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/article.css">
     <link rel="stylesheet" href="../css/solution.css">
+    <link rel="stylesheet" href="../css/hallmark.css">
+    <link rel="icon" href="data:,">
 </head>
 <body>
     <div class="grid-overlay"></div>
-    <nav class="nav">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="../index.html" style="text-decoration:none;color:inherit;display:flex;align-items:center;gap:0.25rem;">
-                    <span class="logo-bracket">[</span>
-                    <span class="logo-text">GreatDB</span>
-                    <span class="logo-bracket">]</span>
-                    <span class="logo-cursor">_</span>
-                </a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="../products/index.html" data-text="产品">产品</a></li>
-                <li><a href="../solutions/index.html" data-text="解决方案">解决方案</a></li>
-                <li><a href="../cases/index.html" data-text="案例">案例</a></li>
-                <li><a href="../about/index.html" data-text="关于">关于</a></li>
-                <li><a href="https://greatsql.cn" target="_blank" data-text="社区">社区</a></li>
-            </ul>
-            <button class="theme-toggle" id="themeToggle" aria-label="切换主题">🌙</button>
-            <a href="../trial.html" class="nav-cta">
-                <span class="cta-text">免费试用</span>
-                <span class="cta-arrow">→</span>
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+    <header class="nav">
+        <nav class="nav-container" aria-label="主导航">
+            <a class="nav-brand" href="../index.html" aria-label="GreatDB 首页">
+                <span class="brand-mark" aria-hidden="true">G/</span>
+                <span>GreatDB</span>
             </a>
+            <button class="site-search-trigger" type="button" data-search-trigger aria-label="搜索全站">
+                <span class="site-search-trigger__icon" aria-hidden="true"></span>
+                <span class="site-search-trigger__text">搜索全站</span>
+                <kbd aria-hidden="true">⌘K</kbd>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../products/index.html">产品</a></li>
+                <li><a href="../solutions/index.html">解决方案</a></li>
+                <li><a href="../cases/index.html">案例</a></li>
+                <li><a href="../articles/index.html">文章</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换到深色模式" aria-pressed="false"><span class="theme-toggle__label">深</span></button>
+                <button class="nav-mobile-trigger" type="button" data-menu-toggle aria-controls="mobile-nav" aria-expanded="false"><span class="sr-only">打开导航</span></button>
+                <a class="nav-cta" href="../trial.html">免费试用 <span aria-hidden="true">→</span></a>
+            </div>
+        </nav>
+        <div class="mobile-nav" id="mobile-nav" data-mobile-nav aria-hidden="true">
+            <div class="mobile-nav__inner">
+                <a href="../products/index.html">产品</a>
+                <a href="../solutions/index.html">解决方案</a>
+                <a href="../cases/index.html">案例</a>
+                <a href="../articles/index.html">文章</a>
+                <a href="../about/index.html">关于</a>
+                <a href="https://greatsql.cn" target="_blank" rel="noopener noreferrer">社区</a>
+                <a href="../trial.html">免费试用</a>
+            </div>
         </div>
-    </nav>
+    </header>
 
-    <main class="solution-main">
+    <main id="main-content" class="solution-main">
         <div class="solution-layout">
             <aside class="solution-sidebar">
                 <div class="sidebar-label">解决方案</div>
                 <ul class="solution-nav">
-                    
+
                 <li class="active">
                     <a href="solution-592.html">GreatDB替代MySQL解决方案</a>
                 </li>
@@ -83,25 +96,14 @@
                 </nav>
                 <article class="article-body">
                     <div class="article-content solution-article-content">
-                        <h2>GreatDB替代MySQL解决方案</h2> 
-                 
-              <h1 style="font-size: 32px; font-weight: bold; border-bottom: 2px solid rgb(204, 204, 204); padding: 0px 4px 0px 0px; text-align: left; margin: 0px 0px 10px; line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);">一、方案背景</span></h1><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">MySQL数据库作为全球范围内最流行的开源关系型数据库，在国内拥有广泛的用户和生态。但行业用户在使用过程中发现开源MySQL数据库高可靠方案不完备、缺乏标准的运维管理、功能不足、MySQL社区对于bug和新需求响应速度慢等问题，加之国内的数据库国产趋势要求，因此需要完成开源MySQL数据库的替换。</span></p><p style="line-height: normal;"><br/></p><h1 style="font-size: 32px; font-weight: bold; border-bottom: 2px solid rgb(204, 204, 204); padding: 0px 4px 0px 0px; text-align: left; margin: 0px 0px 10px; line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);">二、解决方案</span></h1><p><br/></p><h3 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">1）GreatDB完美合规替代MySQL</span></h3><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">GreatDB集中式产品完全兼容MySQL协议；MySQL的表结构、视图、数据库对象（存储过程、用户自定义函数、触发器）、业务SQL语句都可以直接迁移到GreatDB集中式，基本无需任何改造；产品无缝衔接上下游应用与工具，基于MySQL的业务程序可以无缝迁移到GreatDB集中式。</span></p><p><br/></p><h3 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">2）GreatDB灵活替代MySQL</span></h3><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">万里数据库提供GreatDB集中式单机和GreatDB集中式集群，分别用于用户单机MySQL和生产环境MySQL集群的替代。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">若用户在国产替代中想沿用现有的MySQL高可靠架构，仅需对MySQL数据库实例进行替换。GreatDB集中式单机可以满足这类场景需求，通过替换可提升原MySQL集群的性能、稳定性、并获得及时的源码级支持维护。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">若用户需要进行MySQL集群的整体替换，可以使用GreatDB集中式集群。集群由GreatDB集中式单机和高可用路由组件GreatDB Router组成，配套运维管理平台，实现金融生产级的高可用、高性能、易维护。</span></p><p><br/></p><h3 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">3）GreatDB替代MySQL数据迁移与同步</span></h3><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">MySQL的数据与对象可以通过mysqldump&amp;mydumper全量迁移到GreatDB集中式产品。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">对于GreatDB集中式单机，可直接作为MySQL的从库进行同步，并通过滚动的方式完成所有MySQL版本的替换。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">对于GreatDB集中式集群，可使用GreatDTS工具进行源端生产MySQL库到GreatDB集中式集群的同步；并在完成业务割接后，基于GreatDTS工具实现从GreatDB集中式集群到生产MySQL库的反向同步，甚至是双向同步；可实现生产MySQL集群到GreatDB集中式集群的平滑切换。</span></p><p><br/></p><h3 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">4）GreatDB提供完备的高可靠部署</span></h3><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">GreatDB集中式集群支持基于半同步和MGR两种方式的高可靠部署。对于半同步部署，GreatDB集中式单机配合万里GreatDB Router高可用组件，实现了自适应半同步多数派判定以满足多AZ高可用架构的需要。能够完成自动对半同步故障原主库进行异常数据的闪回、自动进行故障选主、自动等待新主完成relay日志应用、自动屏蔽故障从库等功能，确保节点在故障自动恢复后的数据一致性和完整性，确保RPO=0，RTO&lt;60s，为业务提供高可靠、持续稳定的数据服务。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">对于MGR部署，万里数据库对MGR进行大量的修补与增强，在数据一致性、吞吐稳定性、集群可靠性等方面大幅改进。同时针对金融等强一致场景做了定向优化，增加地理标签功能和全新的流控机制。</span></p><p><br/></p><h3 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">5）GreatADM全生命周期运维管理</span></h3><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">GreatADM数据库运维管理平台为海量GreatDB集群提供统一标准的运维管理服务。产品通过友好的图形操作界面，全面的运维支撑体系，和丰富的跨平台兼容支持，实现GreatDB数据库集群全生命周期的运维管理。</span></p><p><br/></p><h3 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">6）GreatDB Oracle兼容</span></h3><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">GreatDB集中式产品兼容部分Oracle 语法，其支持的语法类别全面覆盖数据库语法类别，包括DDL 数据定义语言、DML 数据操纵语言、数据管理语言、事务控制语言（TCL）、常用函数、程序控制语言、批处理语法、序列等。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">且配套GreatDTS迁移评估工具，提高Oracle迁移改造过程中的采集、评估、对象自动转换等3个环节的便捷性、效率与正确性，对工作量评估难度最高的改造环节提供SQL与对象不兼容点列表参考，增加改造工作量评估的准确性，提高改造效率。</span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"><br/></span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"></span></p><p style="text-wrap: wrap; text-align: center; line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"><img src="../../../../ueditor/php/upload/image/20230908/1694153661858365.png" title="1694153661858365.png" alt="1.png"/></span></p><p style="text-wrap: wrap; text-align: center; line-height: normal;"><span style="color: rgb(0, 0, 0);">图 GreatDTS数据迁移评估工具工作原理</span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"><br/></span></p><p><br/></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"><br/></span></p><h1 style="font-size: 32px; font-weight: bold; border-bottom: 2px solid rgb(204, 204, 204); padding: 0px 4px 0px 0px; text-align: left; margin: 0px 0px 10px; line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);">三、方案价值</span></h1><p><br/></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);">1、 更完备的金融生产级高可靠保证；</span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"><br/></span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);">2、更统一全面的运维体系；</span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"><br/></span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);">3、完美的MySQL兼容与更强大的Oracle兼容；</span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"><br/></span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);">4、更强劲的性能吞吐与更高的数据库稳定性；</span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"><br/></span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);">5、国产化合规；</span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"><br/></span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);">6、商业数据库源码级维护与高效及时的服务响应。</span></p><p><br/></p><p><br/></p>          </div>
+                        <h2>GreatDB替代MySQL解决方案</h2>
+
+              <h1 style="font-size: 32px; font-weight: bold; border-bottom: 2px solid rgb(204, 204, 204); padding: 0px 4px 0px 0px; text-align: left; margin: 0px 0px 10px; line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);">一、方案背景</span></h1><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">MySQL数据库作为全球范围内最流行的开源关系型数据库，在国内拥有广泛的用户和生态。但行业用户在使用过程中发现开源MySQL数据库高可靠方案不完备、缺乏标准的运维管理、功能不足、MySQL社区对于bug和新需求响应速度慢等问题，加之国内的数据库国产趋势要求，因此需要完成开源MySQL数据库的替换。</span></p><p style="line-height: normal;"><br/></p><h1 style="font-size: 32px; font-weight: bold; border-bottom: 2px solid rgb(204, 204, 204); padding: 0px 4px 0px 0px; text-align: left; margin: 0px 0px 10px; line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);">二、解决方案</span></h1><p><br/></p><h3 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">1）GreatDB完美合规替代MySQL</span></h3><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">GreatDB集中式产品完全兼容MySQL协议；MySQL的表结构、视图、数据库对象（存储过程、用户自定义函数、触发器）、业务SQL语句都可以直接迁移到GreatDB集中式，基本无需任何改造；产品无缝衔接上下游应用与工具，基于MySQL的业务程序可以无缝迁移到GreatDB集中式。</span></p><p><br/></p><h3 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">2）GreatDB灵活替代MySQL</span></h3><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">万里数据库提供GreatDB集中式单机和GreatDB集中式集群，分别用于用户单机MySQL和生产环境MySQL集群的替代。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">若用户在国产替代中想沿用现有的MySQL高可靠架构，仅需对MySQL数据库实例进行替换。GreatDB集中式单机可以满足这类场景需求，通过替换可提升原MySQL集群的性能、稳定性、并获得及时的源码级支持维护。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">若用户需要进行MySQL集群的整体替换，可以使用GreatDB集中式集群。集群由GreatDB集中式单机和高可用路由组件GreatDB Router组成，配套运维管理平台，实现金融生产级的高可用、高性能、易维护。</span></p><p><br/></p><h3 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">3）GreatDB替代MySQL数据迁移与同步</span></h3><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">MySQL的数据与对象可以通过mysqldump&amp;mydumper全量迁移到GreatDB集中式产品。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">对于GreatDB集中式单机，可直接作为MySQL的从库进行同步，并通过滚动的方式完成所有MySQL版本的替换。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">对于GreatDB集中式集群，可使用GreatDTS工具进行源端生产MySQL库到GreatDB集中式集群的同步；并在完成业务割接后，基于GreatDTS工具实现从GreatDB集中式集群到生产MySQL库的反向同步，甚至是双向同步；可实现生产MySQL集群到GreatDB集中式集群的平滑切换。</span></p><p><br/></p><h3 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">4）GreatDB提供完备的高可靠部署</span></h3><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">GreatDB集中式集群支持基于半同步和MGR两种方式的高可靠部署。对于半同步部署，GreatDB集中式单机配合万里GreatDB Router高可用组件，实现了自适应半同步多数派判定以满足多AZ高可用架构的需要。能够完成自动对半同步故障原主库进行异常数据的闪回、自动进行故障选主、自动等待新主完成relay日志应用、自动屏蔽故障从库等功能，确保节点在故障自动恢复后的数据一致性和完整性，确保RPO=0，RTO&lt;60s，为业务提供高可靠、持续稳定的数据服务。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">对于MGR部署，万里数据库对MGR进行大量的修补与增强，在数据一致性、吞吐稳定性、集群可靠性等方面大幅改进。同时针对金融等强一致场景做了定向优化，增加地理标签功能和全新的流控机制。</span></p><p><br/></p><h3 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">5）GreatADM全生命周期运维管理</span></h3><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">GreatADM数据库运维管理平台为海量GreatDB集群提供统一标准的运维管理服务。产品通过友好的图形操作界面，全面的运维支撑体系，和丰富的跨平台兼容支持，实现GreatDB数据库集群全生命周期的运维管理。</span></p><p><br/></p><h3 style="line-height: normal;"><span style="color: rgb(0, 0, 0);">6）GreatDB Oracle兼容</span></h3><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">GreatDB集中式产品兼容部分Oracle 语法，其支持的语法类别全面覆盖数据库语法类别，包括DDL 数据定义语言、DML 数据操纵语言、数据管理语言、事务控制语言（TCL）、常用函数、程序控制语言、批处理语法、序列等。</span></p><p><br/></p><p style="line-height: normal;"><span style="color: rgb(0, 0, 0);">且配套GreatDTS迁移评估工具，提高Oracle迁移改造过程中的采集、评估、对象自动转换等3个环节的便捷性、效率与正确性，对工作量评估难度最高的改造环节提供SQL与对象不兼容点列表参考，增加改造工作量评估的准确性，提高改造效率。</span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"><br/></span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"></span></p><p style="text-wrap: wrap; text-align: center; line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"><span class="missing-asset" role="note">原始图示未随学习版存档 · 1.png</span></span></p><p style="text-wrap: wrap; text-align: center; line-height: normal;"><span style="color: rgb(0, 0, 0);">图 GreatDTS数据迁移评估工具工作原理</span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"><br/></span></p><p><br/></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"><br/></span></p><h1 style="font-size: 32px; font-weight: bold; border-bottom: 2px solid rgb(204, 204, 204); padding: 0px 4px 0px 0px; text-align: left; margin: 0px 0px 10px; line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);">三、方案价值</span></h1><p><br/></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);">1、 更完备的金融生产级高可靠保证；</span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"><br/></span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);">2、更统一全面的运维体系；</span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"><br/></span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);">3、完美的MySQL兼容与更强大的Oracle兼容；</span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"><br/></span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);">4、更强劲的性能吞吐与更高的数据库稳定性；</span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"><br/></span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);">5、国产化合规；</span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);"><br/></span></p><p style="line-height: normal;"><span style="text-wrap: nowrap; color: rgb(0, 0, 0);">6、商业数据库源码级维护与高效及时的服务响应。</span></p><p><br/></p><p><br/></p>          </div>
      </div>
   </div>
   </div>
-
-<script>
- $(function(){ 
-  $(".alxq_l li.bg").prev().css('border-bottom-color','transparent');   
-		$(".al_dhx p").css("font-family","siyuanheiti");
-	$(".al_dhx span").css("font-family","siyuanheiti");
-	$(".al_dhx h1").css("font-family","siyuanheiti");
-	$(".al_dhx h2").css("font-family","siyuanheiti");
-	$(".al_dhx a").css("font-family","siyuanheiti");
- });
-</script>
 <!--main end -->
-  
+
 <!--footer begin -->
                     </div>
                 </article>
@@ -112,50 +114,21 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <div class="footer-logo">
-                    <span class="logo-bracket">[</span><span class="logo-text">GreatDB</span><span class="logo-bracket">]</span>
-                </div>
-                <p class="footer-tagline">新一代分布式数据库系统</p>
+                <a class="footer-logo" href="../index.html"><span class="brand-mark" aria-hidden="true">G/</span><span>GreatDB</span></a>
+                <p class="footer-tagline">面向关键业务的数据基础设施。金融级安全、高性能并发、自主可控。</p>
             </div>
-            <div class="footer-links">
-                <div class="footer-column">
-                    <h4>产品</h4>
-                    <ul>
-                        <li><a href="../products/centralized.html">安全数据库集中式</a></li>
-                        <li><a href="../products/distributed.html">安全数据库分布式</a></li>
-                        <li><a href="../products/management.html">数据库管理平台</a></li>
-                        <li><a href="../products/migration.html">数据迁移服务平台</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>解决方案</h4>
-                    <ul>
-                        <li><a href="solution-592.html">GreatDB替代MySQL解决方案</a></li>
-                        <li><a href="solution-593.html">GreatDB替代Oracle解决方案</a></li>
-                        <li><a href="solution-594.html">数据库两地三中心解决方案</a></li>
-                        <li><a href="solution-595.html">数据库上云解决方案</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>关于我们</h4>
-                    <ul>
-                        <li><a href="../about/index.html">公司介绍</a></li>
-                        <li><a href="../about/careers.html">加入我们</a></li>
-                        <li><a href="../about/partners.html">合作伙伴</a></li>
-                        <li><a href="https://greatsql.cn" target="_blank">开源社区</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>联系方式</h4>
-                    <ul>
-                        <li>业务专线: 400-032-7868</li>
-                        <li>简历投递: hr@greatdb.com</li>
-                    </ul>
-                </div>
-            </div>
+            <nav class="footer-links-inline" aria-label="页脚导航">
+                <a href="../products/index.html">产品</a>
+                <a href="../solutions/index.html">解决方案</a>
+                <a href="../cases/index.html">客户案例</a>
+                <a href="../downloads/index.html">下载中心</a>
+                <a href="../about/index.html">关于我们</a>
+                <a href="https://greatsql.cn" target="_blank" rel="noopener noreferrer">GreatSQL 社区</a>
+            </nav>
         </div>
         <div class="footer-bottom">
-            <p>© 2020 北京万里开源软件有限公司 | 京ICP备06057874号</p>
+            <span>© 2020 北京万里开源软件有限公司</span>
+            <span>非官方前端重构学习实践 · 业务专线 400-032-7868</span>
         </div>
     </footer>
     <script src="../js/main.js"></script>

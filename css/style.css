@@ -1,3 +1,4 @@
+/* Hallmark · legacy compatibility layer · active design system: design.md + tokens.css · designed-as-app */
 :root {
     --color-bg: #0a0e14;
     --color-bg-secondary: #151b24;
@@ -59,16 +60,14 @@ body {
     position: relative;
 }
 
-/* Animated Grid Background */
+/* Retained legacy hook; the Hallmark layer hides it. */
 .grid-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image:
-        linear-gradient(var(--color-border) 1px, transparent 1px),
-        linear-gradient(90deg, var(--color-border) 1px, transparent 1px);
+    background-image: none;
     background-size: var(--grid-size) var(--grid-size);
     opacity: 0.3;
     z-index: -1;
@@ -197,7 +196,7 @@ body {
     color: var(--color-primary);
     overflow: hidden;
     width: 0;
-    transition: width var(--transition-base);
+    transition: none;
 }
 
 .nav-menu a:hover {
@@ -209,7 +208,7 @@ body {
 }
 
 .nav-cta {
-    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    background: var(--color-primary);
     color: var(--color-bg);
     padding: 0.75rem 1.5rem;
     border-radius: 4px;
@@ -329,10 +328,9 @@ body {
 }
 
 .title-highlight {
-    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    background: none;
+    color: var(--color-primary);
+    -webkit-text-fill-color: currentColor;
     position: relative;
 }
 
@@ -396,7 +394,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    transition: all var(--transition-base);
+    transition: none;
     border: 2px solid transparent;
     cursor: pointer;
 }
@@ -519,7 +517,7 @@ section {
     border: 1px solid var(--color-border);
     padding: var(--spacing-md);
     position: relative;
-    transition: all var(--transition-base);
+    transition: none;
     overflow: hidden;
 }
 
@@ -560,7 +558,7 @@ section {
 .card-icon {
     color: var(--color-primary);
     opacity: 0.6;
-    transition: all var(--transition-base);
+    transition: none;
 }
 
 .product-card:hover .card-icon {
@@ -644,7 +642,7 @@ section {
     border: 1px solid var(--color-border);
     padding: var(--spacing-md);
     position: relative;
-    transition: all var(--transition-base);
+    transition: none;
 }
 
 .case-large {
@@ -706,7 +704,7 @@ section {
 .case-highlight {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    background: var(--color-primary);
     color: var(--color-bg);
     font-weight: 700;
     margin: var(--spacing-sm) 0;
@@ -737,7 +735,7 @@ section {
     padding: var(--spacing-md);
     border-bottom: 1px solid var(--color-border);
     align-items: center;
-    transition: all var(--transition-base);
+    transition: none;
 }
 
 .news-item:hover {
@@ -961,10 +959,9 @@ section {
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: var(--spacing-md);
-    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    background: none;
+    color: var(--color-ink);
+    -webkit-text-fill-color: currentColor;
 }
 
 .content-page h2 {

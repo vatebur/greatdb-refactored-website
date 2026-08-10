@@ -168,3 +168,4 @@ for (const cs of ALL_CASES) {
   fs.writeFileSync(path.join(OUT_DIR, `case-${cs.id}.html`), generateDetailPage(cs));
 }
 console.log(`Generated ${ALL_CASES.length} case detail pages`);
+require('./apply-hallmark-shell').applyAll();

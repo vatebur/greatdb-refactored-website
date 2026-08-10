@@ -1,4 +1,4 @@
-/* Article pages */
+/* Hallmark · Long Document compatibility layer · active design system: design.md + tokens.css · designed-as-app */
 .article-main {
     padding: 7rem 2rem 4rem;
     min-height: 100vh;
@@ -135,7 +135,7 @@
     color: var(--color-text-secondary);
     cursor: pointer;
     border-radius: 2px;
-    transition: all var(--transition-fast);
+    transition: none;
 }
 
 .filter-btn:hover,

@@ -2,45 +2,58 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>展会 | 叮！万里数据库向您发出一封2021中国电子信息博览会邀请函~ - 万里数据库 GreatDB</title>
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self';">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@700;900&family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/article.css">
+    <link rel="stylesheet" href="../css/hallmark.css">
+    <link rel="icon" href="data:,">
 </head>
 <body>
     <div class="grid-overlay"></div>
-    <nav class="nav">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="../index.html" style="text-decoration:none;color:inherit;display:flex;align-items:center;gap:0.25rem;">
-                    <span class="logo-bracket">[</span>
-                    <span class="logo-text">GreatDB</span>
-                    <span class="logo-bracket">]</span>
-                    <span class="logo-cursor">_</span>
-                </a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="../products/index.html" data-text="产品">产品</a></li>
-                <li><a href="../solutions/index.html" data-text="解决方案">解决方案</a></li>
-                <li><a href="../cases/index.html" data-text="案例">案例</a></li>
-                <li><a href="../about/index.html" data-text="关于">关于</a></li>
-                <li><a href="https://greatsql.cn" target="_blank" data-text="社区">社区</a></li>
-            </ul>
-            <button class="theme-toggle" id="themeToggle" aria-label="切换主题">🌙</button>
-            <a href="../trial.html" class="nav-cta">
-                <span class="cta-text">免费试用</span>
-                <span class="cta-arrow">→</span>
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+    <header class="nav">
+        <nav class="nav-container" aria-label="主导航">
+            <a class="nav-brand" href="../index.html" aria-label="GreatDB 首页">
+                <span class="brand-mark" aria-hidden="true">G/</span>
+                <span>GreatDB</span>
             </a>
+            <button class="site-search-trigger" type="button" data-search-trigger aria-label="搜索全站">
+                <span class="site-search-trigger__icon" aria-hidden="true"></span>
+                <span class="site-search-trigger__text">搜索全站</span>
+                <kbd aria-hidden="true">⌘K</kbd>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../products/index.html">产品</a></li>
+                <li><a href="../solutions/index.html">解决方案</a></li>
+                <li><a href="../cases/index.html">案例</a></li>
+                <li><a href="../articles/index.html">文章</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换到深色模式" aria-pressed="false"><span class="theme-toggle__label">深</span></button>
+                <button class="nav-mobile-trigger" type="button" data-menu-toggle aria-controls="mobile-nav" aria-expanded="false"><span class="sr-only">打开导航</span></button>
+                <a class="nav-cta" href="../trial.html">免费试用 <span aria-hidden="true">→</span></a>
+            </div>
+        </nav>
+        <div class="mobile-nav" id="mobile-nav" data-mobile-nav aria-hidden="true">
+            <div class="mobile-nav__inner">
+                <a href="../products/index.html">产品</a>
+                <a href="../solutions/index.html">解决方案</a>
+                <a href="../cases/index.html">案例</a>
+                <a href="../articles/index.html">文章</a>
+                <a href="../about/index.html">关于</a>
+                <a href="https://greatsql.cn" target="_blank" rel="noopener noreferrer">社区</a>
+                <a href="../trial.html">免费试用</a>
+            </div>
         </div>
-    </nav>
+    </header>
 
-    <main class="article-main">
+    <main id="main-content" class="article-main">
         <div class="article-container">
             <nav class="article-breadcrumb">
                 <a href="../index.html">首页</a>
@@ -72,49 +85,21 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <div class="footer-logo">
-                    <span class="logo-bracket">[</span><span class="logo-text">GreatDB</span><span class="logo-bracket">]</span>
-                </div>
-                <p class="footer-tagline">新一代分布式数据库系统</p>
+                <a class="footer-logo" href="../index.html"><span class="brand-mark" aria-hidden="true">G/</span><span>GreatDB</span></a>
+                <p class="footer-tagline">面向关键业务的数据基础设施。金融级安全、高性能并发、自主可控。</p>
             </div>
-            <div class="footer-links">
-                <div class="footer-column">
-                    <h4>产品</h4>
-                    <ul>
-                        <li><a href="../products/centralized.html">安全数据库集中式</a></li>
-                        <li><a href="../products/distributed.html">安全数据库分布式</a></li>
-                        <li><a href="../products/management.html">数据库管理平台</a></li>
-                        <li><a href="../products/migration.html">数据迁移服务平台</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>文章</h4>
-                    <ul>
-                        <li><a href="../articles/index.html">全部文章</a></li>
-                        <li><a href="../articles/index.html?cat=news">公司新闻</a></li>
-                        <li><a href="../articles/index.html?cat=case">客户案例</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>关于我们</h4>
-                    <ul>
-                        <li><a href="../about/index.html">公司介绍</a></li>
-                        <li><a href="../about/careers.html">加入我们</a></li>
-                        <li><a href="../about/partners.html">合作伙伴</a></li>
-                        <li><a href="https://greatsql.cn" target="_blank">开源社区</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>联系方式</h4>
-                    <ul>
-                        <li>业务专线: 400-032-7868</li>
-                        <li>简历投递: hr@greatdb.com</li>
-                    </ul>
-                </div>
-            </div>
+            <nav class="footer-links-inline" aria-label="页脚导航">
+                <a href="../products/index.html">产品</a>
+                <a href="../solutions/index.html">解决方案</a>
+                <a href="../cases/index.html">客户案例</a>
+                <a href="../downloads/index.html">下载中心</a>
+                <a href="../about/index.html">关于我们</a>
+                <a href="https://greatsql.cn" target="_blank" rel="noopener noreferrer">GreatSQL 社区</a>
+            </nav>
         </div>
         <div class="footer-bottom">
-            <p>© 2020 北京万里开源软件有限公司 | 京ICP备06057874号</p>
+            <span>© 2020 北京万里开源软件有限公司</span>
+            <span>非官方前端重构学习实践 · 业务专线 400-032-7868</span>
         </div>
     </footer>
     <script src="../js/main.js"></script>
